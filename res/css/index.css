@@ -1,0 +1,111 @@
+
+/* Portrait / phone */
+@media screen{
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .header{
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        min-height: 15vh;
+        width: 100%;
+        background-color: black;
+        background-image: linear-gradient(#000000,#555555);
+        color: white;
+    }
+    .content{
+        position: relative;
+        min-height: 70vh;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+    .footer{
+        position: relative;
+        min-height: 30vh;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        background-color: black;
+        background-image: linear-gradient(#555555,#000000);
+        color: white;
+    }   
+}
+
+/* Tablet / tall aspact ratio */
+@media screen and (min-aspect-ratio: 1/3) and (min-aspect-ratio: 3/4) and (min-width:300px){
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .header{
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        min-height: 15vh;
+        width: 100%;
+        background-color: black;
+        background-image: linear-gradient(#000000,#555555);
+        color: white;
+    }
+    .content{
+        position: relative;
+        min-height: 70vh;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+    .footer{
+        position: relative;
+        min-height: 30vh;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        background-color: black;
+        background-image: linear-gradient(#555555,#000000);
+        color: white;
+    }   
+}
+
+/*    <--  Landscape layout / Standard (with min-width) -->     */
+@media screen and (min-aspect-ratio: 3/2) and (min-width:400px) {
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .header{
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        min-height: 15vh;
+        width: 100%;
+        background-color: black;
+        background-image: linear-gradient(#000000,#555555);
+        color: white;
+    }
+    .content{
+        position: relative;
+        min-height: 70vh;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+    .footer{
+        position: relative;
+        min-height: 30vh;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        background-color: black;
+        background-image: linear-gradient(#555555,#000000);
+        color: white;
+    }   
+}
