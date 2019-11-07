@@ -7,8 +7,7 @@
     body{
         padding: 0px;
         margin: 0px;
-    }body::after{ position:fixed;bottom:4vh;font-size:4vh;text-align:center;left:0;width:100%;height:0;content:"Portrait"; }
-    
+    }
     .headbar{
         position: fixed;
         padding: 0px;
