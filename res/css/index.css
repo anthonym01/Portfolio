@@ -1,7 +1,6 @@
-@font-face{
-    font-family: mc11;
-    src:url(../Minecrafter.Reg.ttf);
-}
+@font-face{ font-family: mc11; src:url(../Minecrafter.Reg.ttf); } 
+@font-face{ font-family: cowboy; src:url(../Cowboys_2.0.otf); }
+@font-face{ font-family: handwriting; src:url(../handwriting.otf); }
 
 /* Portrait / phone */
 @media screen{
@@ -42,6 +41,7 @@
         transition: box-shadow 500ms,background-color 500ms,color 500ms;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+        border-radius: 0.5vh;
     }
     .action_txt{     /*   text- transform effect   */
         transform: translate(0,0.4vh);
@@ -92,13 +92,14 @@
         transition: box-shadow 500ms,background-color 500ms,color 500ms;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+        border-radius: 0.5vh;
     }
     .action_txt{     /*   text- transform effect   */
         transform: translate(0,0.6vh);
         height: 100%;
         width: 100%;
         transition:transform 400ms;
-    }.action_txt:hover{transform: translate(0,0.4vh);}
+    }.action_txt:hover{transform: translate(0,0.2vh);}
     .actionbtn:active{transition: box-shadow 0ms,background-color 0ms,color 0ms;}
 
 }
