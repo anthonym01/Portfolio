@@ -5,35 +5,14 @@
 }
 
 /*   Action button colors   */
-#service_btn{
-    border-bottom: 0.4vh solid #000000;
-    box-shadow: 0vh 0vh 0vh 0vh #000000;
-    background-color: #ffffff;
-}
-#service_btn:hover{
-    box-shadow: 0vh 0vh 1vh 0vh #000000;
-}
-#service_btn:active{
-    color: #ffffff;
-    background-color: #000000;
-}
-#project_btn{
-    border-bottom: 0.4vh solid #ff0000;
-}
-#project_btn:hover{
-    box-shadow: 0vh 0vh 1vh 0vh #ff0000
-}
-#project_btn:active{
-    color: #ffffff;
-    background-color: #ff0000;
-}
-#about_btn{/*  About button    */
-    border-bottom: 0.4vh solid #0026ff
-}
-#about_btn:hover{
-    box-shadow: 0vh 0vh 1vh 0vh #0026ff
-}
-#about_btn:active{
-    color: #ffffff;
-    background-color: #0026ff;
-}
+#service_btn{ border-bottom: 0.4vh solid #ff0000; box-shadow: 0vh 0vh 0vh 0vh #ff0000; }/*  Service button    */
+#service_btn:hover{box-shadow: 0vh 0vh 1vh 0vh #ff0000; }
+#service_btn:active{ color: #ffffff; background-color: #ff0000; }
+
+#project_btn{ border-bottom: 0.4vh solid #2bff00;box-shadow: 0vh 0vh 0vh 0vh #2bff00;}/*  Project button    */
+#project_btn:hover{box-shadow: 0vh 0vh 1vh 0vh #2bff00;}
+#project_btn:active{color: #ffffff;background-color: #2bff00;}
+
+#about_btn{border-bottom: 0.4vh solid #0026ff;box-shadow: 0vh 0vh 0vh 0vh #0026ff;}/*  About button    */
+#about_btn:hover{box-shadow: 0vh 0vh 1vh 0vh #0026ff;}
+#about_btn:active{color: #ffffff;background-color: #0026ff;}

@@ -99,6 +99,7 @@
         height: 100%;
         width: 100%;
         transition:transform 400ms;
+    }.action_txt:hover{transform: translate(0,0.4vh);}
     .actionbtn:active{transition: box-shadow 0ms,background-color 0ms,color 0ms;}
 
 }
