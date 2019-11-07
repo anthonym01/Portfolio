@@ -1,50 +1,104 @@
+@font-face{
+    font-family: mc11;
+    src:url(../Minecrafter.Reg.ttf);
+}
 
 /* Portrait / phone */
 @media screen{
     body{
         padding: 0px;
         margin: 0px;
+    }body::after{ position:fixed;bottom:4vh;font-size:4vh;text-align:center;left:0;width:100%;height:0;content:"Portrait"; }
+    
+    .headbar{
+        position: fixed;
+        padding: 0px;
+        width: 100%;
+        height: 10vh;
+        top:0;
     }
-
+    .maincontent{
+        margin-top: 10vh;
+        padding: 0px;
+        width: 100%;
+        min-height: 90vh;
+    }
+    .btnbar{
+        width: 98vw;
+        margin-left: auto;
+        margin-right: auto;
+        height:4.5vw;
+    }
+    .actionbtn{     /*   Action buttons at the top of the main content section   */
+        font-family: mc11;
+        margin-left: 1vw;
+        height: 5.5vw;
+        font-size:5vw;
+        padding: 0.5vw;
+        text-align: center;
+        float:left;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: box-shadow 500ms,background-color 500ms,color 500ms;
+        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+        -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    }
+    .action_txt{     /*   text- transform effect   */
+        transform: translate(0,0.4vh);
+        height: 100%;
+        width: 100%;
+        transition:none;
+    }
+    .actionbtn:active{transition: box-shadow 0ms,background-color 0ms,color 0ms;}
 }
 
 /*    <--  Landscape layout / Standard (with min-width) -->     */
-@media screen and (min-aspect-ratio: 1/2) and (min-width:400px) {
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     body{
         padding: 0px;
         margin: 0px;
     }
-    .Tabconsole{
+
+    .headbar{
         position: fixed;
-        width: 20vw;
-        min-height: 100vh;
-        background-color: #444444;
-        background-position: 150% 200%;
-        background-size: cover;
-        background-image: url('../img/background-1.jpg');
+        padding: 0px;
+        width: 100%;
+        height: 12vh;
+        top:0;
     }
-    .titlebar{
-        position: absolute;
-        top:2vh;
-        height:12vh;
-        width:100%;
+    .maincontent{
+        margin-top: 12vh;
+        padding: 0px;
+        width: 100%;
+        min-height: 88vh;
     }
-    #titletxt{
-        margin-left: 10vh;
-        height:100%;
+    .btnbar{
+        width: 64vw;
+        margin-left: auto;
+        margin-right: auto;
+        height:4.5vw;
     }
-    #avatar{
-        position: relative;
-        height: 10vh;
-        width: 10vh;
-        border-radius: 10vh;
-        background-size: contain;
-        background-image: url('../favico.jpg');
+    .actionbtn{     /*   Action buttons at the top of the main content section   */
+        font-family: mc11;
+        margin-left: 0.5vw;
+        height: 3.4vw;
+        font-size:3.2vw;
+        padding: 0.4vw;
+        text-align: center;
+        float:left;
+        white-space: nowrap;
+        border-bottom: 0.4vw solid #000000;/*   Default color    */
+        cursor: pointer;
+        transition: box-shadow 500ms,background-color 500ms,color 500ms;
+        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+        -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     }
-    .Tabright{
-        position: relative;
-        margin-left:20vw;
-        width: 80vw;
-        min-height: 100vh;
-    }
+    .action_txt{     /*   text- transform effect   */
+        transform: translate(0,0.6vh);
+        height: 100%;
+        width: 100%;
+        transition:transform 400ms;
+    }.action_txt:hover{transform: translate(0,0.4vh);}
+    .actionbtn:active{transition: box-shadow 0ms,background-color 0ms,color 0ms;}
+
 }
