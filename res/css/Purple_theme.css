@@ -32,7 +32,7 @@ body{
 
 #contact_btn{border-bottom: 0.4vh solid #ff00ff;box-shadow: 0vh 0vh 0vh 0vh #ff00ff;}/*  About button    */
 #contact_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff00ff;}
-#contact_btn:active{color: #ffffff;background-color: #ff00ff;}
+#contact_btn:active{color: #000000;background-color: #ff00ff;}
 /*    pedistal    */
 .pedistal{/* Convert to rtf or em scaling */
     background-color: #000000;
