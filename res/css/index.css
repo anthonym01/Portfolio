@@ -22,11 +22,12 @@
         z-index: 5;
     }
     .btnbar{
-        width: 97vw;
+        width: 98vw;
         margin-left: auto;
         margin-right: auto;
         height:calc(6.5vw + 0.4vh);
         z-index: 5;
+        padding: 0px;
     }
     .actionbtn{     /*   Action buttons at the top of the main content section   */
         font-family: mc11;
@@ -79,20 +80,17 @@
         height: 80vw;
         width: 84vw;
         cursor: pointer;
-        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         overflow: hidden;
         transition:color 400ms,background-color 400ms;
     }
-    .pedistal:active .pedistal_text{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
     .pedistal_img{
         position: absolute;
         top:0;
         right:0;
         height:50vw;
         width:100%;
-        background-image: url('../img/background-1.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -209,22 +207,29 @@
         width: 15vw;
         cursor: pointer;
         transition:box-shadow 400ms,transform 400ms,color 400ms,background-color 400ms;
-        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         overflow: hidden;
     }
-    .pedistal:hover{box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;transform: translate(0,-1vh);}
-    .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
+    .pedistal:hover{transform: translate(0,-1vh);}
     .pedistal_img{
         position: absolute;
         top:0;
         right:0;
         height:10vw;
         width:15vw;
-        background-image: url('../img/background-1.jpg');
         background-size: cover;
     }
+    .pedistal_img::after{
+        position: absolute;
+        right: 0;
+        height:10vw;
+        width:20vw;
+        transform: rotate(30deg) translate(10vw,-20vw);
+        transition:transform 500ms;
+        content: "";
+    }
+    .pedistal:hover .pedistal_img::after{transform: rotate(30deg) translate(3vw,-6vw)}
     .pedistal_title{
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
