@@ -82,6 +82,7 @@
         margin-bottom:3vw;
         height: 80vw;
         width: 84vw;
+        padding: 0px;
         cursor: pointer;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
@@ -90,8 +91,8 @@
     }
     .pedistal_img{
         position: absolute;
-        top:0;
-        right:0;
+        top:0px;
+        right:0px;
         height:50vw;
         width:100%;
         background-size: cover;

@@ -15,7 +15,7 @@ body{
     color: #ffffff;
     box-shadow: 0vh 0vh 0vh 0vh #ffffff;
 }
-.actionbtn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #000000; }
+.actionbtn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
 .actionbtn:active{ color: #000000; background-color: #ffffff; }
 
 #service_btn{ border-bottom: 0.4vh solid #ff0000; box-shadow: 0vh 0vh 0vh 0vh #ff0000; }/*  Service button    */
