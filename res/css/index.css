@@ -70,51 +70,56 @@
     #project_view{
         display: none;
     }
-    .pedistal{
+    .pedistal{  /* Convert to rtf or em scaling */
         position: relative;
         float: left;
-        margin-left:2.3vw;
-        margin-right:2.3vw;
-        margin-top:1.5vw;
-        margin-bottom:1.5vw;
-        height: 20vw;
-        width: 15vw;
+        margin-left:8vw;
+        margin-top:3vw;
+        margin-bottom:3vw;
+        height: 80vw;
+        width: 84vw;
         cursor: pointer;
         transition:box-shadow 400ms,transform 400ms,color 400ms,background-color 400ms;
+        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+        overflow: hidden;
     }
-    .pedistal:hover{box-shadow: 0vh 0.4vh 1.3vh 0vh #ffffff;transform: translate(0,-1vh);}
     .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
     .pedistal_img{
         position: absolute;
         top:0;
         right:0;
-        height:10vw;
-        width:15vw;
+        height:50vw;
+        width:100%;
         background-image: url('../img/background-1.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
     }
     .pedistal_title{
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         position: absolute;
-        top:10vw;
-        height:2.5vw;
-        font-size: 2vw;
-        width:15vw;
+        top:41vw;
+        height:9vw;
+        font-size: 8vw;
+        width:100%;
         text-align: center;
     }
     .pedistal_text{
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         position: absolute;
-        top:12.6vw;
-        height:9vw;
-        padding:0.3vw;
-        font-size: 1.3vw;
-        width:14.4vw;
+        top:50vw;
+        height:35vw;
+        padding-top:1vw;
+        padding-bottom:1vw;
+        padding-left:3vw;
+        padding-right: 3vw;
+        font-size: 6vw;
+        width:calc(100%-6vw);
         text-align: center;
+        
     }
 
     /*  ABout view  */
@@ -194,7 +199,7 @@
     #project_view{
         display: none;
     }
-    .pedistal{
+    .pedistal{/* Convert to rtf or em scaling */
         position: relative;
         float: left;
         margin-left:2.3vw;
@@ -205,10 +210,12 @@
         width: 15vw;
         cursor: pointer;
         transition:box-shadow 400ms,transform 400ms,color 400ms,background-color 400ms;
+        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+        overflow: hidden;
     }
-    .pedistal:hover{box-shadow: 0vh 0.4vh 1.3vh 0vh #ffffff;transform: translate(0,-1vh);}
+    .pedistal:hover{box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;transform: translate(0,-1vh);}
     .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
     .pedistal_img{
         position: absolute;
@@ -224,7 +231,7 @@
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         position: absolute;
         top:10vw;
-        height:2.5vw;
+        height:2vw;
         font-size: 2vw;
         width:15vw;
         text-align: center;
@@ -233,11 +240,11 @@
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         position: absolute;
-        top:12.6vw;
-        height:9vw;
+        top:12vw;
+        height:7.3vw;
         padding:0.3vw;
-        font-size: 1.3vw;
-        width:14.4vw;
+        font-size: 1.2vw;
+        width:calc(100%-0.6vw);
         text-align: center;
     }
     #about_view{
