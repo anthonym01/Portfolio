@@ -30,6 +30,7 @@
         padding: 0px;
     }
     .actionbtn{     /*   Action buttons at the top of the main content section   */
+        position: relative;
         font-family: mc11;
         margin-left: 1vw;
         height: 5.5vw;
@@ -46,7 +47,6 @@
         -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
         border-radius: 0.5vh;
     }
-    .actionbtn:hover{box-shadow: 0vh 0vh 1vh 0vh #000000; }
     .actionbtn:active{ color: #ffffff; background-color: #000000;transition: box-shadow 0ms,background-color 0ms,color 0ms;}
     .action_txt{     /*   text- transform effect   */
         transform: translate(0,0.4vh);
@@ -61,7 +61,6 @@
         min-height:70vh;
         margin-top:0.5vh;
         width:100%;
-        font-size:2.5vh;
     }
     #service_view{
         display: block;
@@ -127,58 +126,24 @@
 
 /*    <--  Landscape layout / Standard (with min-width) -->     */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    body{
-        padding: 0px;
-        margin: 0px;
-    }
     .headbar{/* Aestetic only   */
-        position: relative;
-        padding: 0px;
-        width: 100%;
         height: 3vh;
-    }
-    /* The Meat of the ui (everything not in the headbar)*/
-    .maincontent{
-        margin-top: 1vh;
-        padding: 0px;
-        width: 100%;
-        min-height: 92.5vh;
-        z-index: 5;
     }
     .btnbar{
         width: 64vw;
-        margin-left: auto;
-        margin-right: auto;
         height: calc(4.2vw + 0.4vh);
-        z-index: 5;
     }
     .actionbtn{     /*   Action buttons at the top of the main content section   */
-        position: relative;
-        font-family: mc11;
         margin-left: 0.5vw;
         height: 3.4vw;
         font-size:3.2vw;
         padding: 0.4vw;
-        text-align: center;
-        float:left;
-        white-space: nowrap;
-        border-bottom: 0.4vh solid #000000;/*   Default color    */
-        box-shadow: 0vh 0vh 0vh 0vh #000000;
-        cursor: pointer;
-        transition: box-shadow 500ms,background-color 500ms,color 500ms;
-        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-        -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-        border-radius: 0.5vh;
     }
     .actionbtn:hover{box-shadow: 0vh 0vh 1vh 0vh #000000; }
-    .actionbtn:active{ color: #ffffff; background-color: #000000; }
     .action_txt{     /*   text- transform effect   */
         transform: translate(0,0.6vh);
-        height: 100%;
-        width: 100%;
         transition:transform 400ms;
     }.action_txt:hover{transform: translate(0,0.4vh);}
-    .actionbtn:active{transition: box-shadow 0ms,background-color 0ms,color 0ms;}
     
     main_view{
         position: relative;
@@ -186,7 +151,6 @@
         min-height:70vh;
         margin-top:0.5vh;
         width:100%;
-        font-size:3vh;
     }
     #service_view{
         display: block;
