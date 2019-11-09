@@ -83,6 +83,7 @@
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         overflow: hidden;
+        transition:color 400ms,background-color 400ms;
     }
     .pedistal:active .pedistal_text{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
     .pedistal_img{
@@ -118,7 +119,6 @@
         font-size: 4.5vw;
         width:calc(100%-6vw);
         text-align: center;
-        transition:color 400ms,background-color 400ms;
     }
 
     /*  ABout view  */
