@@ -79,13 +79,12 @@
         height: 80vw;
         width: 84vw;
         cursor: pointer;
-        transition:box-shadow 400ms,transform 400ms,color 400ms,background-color 400ms;
         box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         overflow: hidden;
     }
-    .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
+    .pedistal:active .pedistal_text{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
     .pedistal_img{
         position: absolute;
         top:0;
@@ -116,10 +115,10 @@
         padding-bottom:1vw;
         padding-left:3vw;
         padding-right: 3vw;
-        font-size: 6vw;
+        font-size: 4.5vw;
         width:calc(100%-6vw);
         text-align: center;
-        
+        transition:color 400ms,background-color 400ms;
     }
 
     /*  ABout view  */
