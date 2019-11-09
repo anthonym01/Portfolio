@@ -147,7 +147,10 @@
     .pedistal{
         position: relative;
         float: left;
-        margin:2.3vw;
+        margin-left:2.3vw;
+        margin-right:2.3vw;
+        margin-top:1.5vw;
+        margin-bottom:1.5vw;
         height: 20vw;
         width: 15vw;
         cursor: pointer;
