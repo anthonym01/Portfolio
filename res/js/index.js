@@ -49,16 +49,36 @@ let UI = {
             document.getElementById('service_view').style.display='block';
             document.getElementById('about_view').style.display='none';
             document.getElementById('project_view').style.display='none';
+            document.getElementById('home_view').style.display='none';
+            document.getElementById('contact_view').style.display='none';
         });
         document.getElementById('about_btn').addEventListener('click',()=>{
             document.getElementById('service_view').style.display='none';
             document.getElementById('about_view').style.display='block';
             document.getElementById('project_view').style.display='none';
+            document.getElementById('home_view').style.display='none';
+            document.getElementById('contact_view').style.display='none';
         });
         document.getElementById('project_btn').addEventListener('click',()=>{
             document.getElementById('service_view').style.display='none';
             document.getElementById('about_view').style.display='none';
             document.getElementById('project_view').style.display='block';
+            document.getElementById('home_view').style.display='none';
+            document.getElementById('contact_view').style.display='none';
+        });
+        document.getElementById('home_btn').addEventListener('click',()=>{
+            document.getElementById('service_view').style.display='none';
+            document.getElementById('about_view').style.display='none';
+            document.getElementById('project_view').style.display='none';
+            document.getElementById('home_view').style.display='block';
+            document.getElementById('contact_view').style.display='none';
+        });
+        document.getElementById('contact_btn').addEventListener('click',()=>{
+            document.getElementById('service_view').style.display='none';
+            document.getElementById('about_view').style.display='none';
+            document.getElementById('project_view').style.display='none';
+            document.getElementById('home_view').style.display='none';
+            document.getElementById('contact_view').style.display='block';
         });
     },
 }
