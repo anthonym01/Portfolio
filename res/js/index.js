@@ -82,3 +82,9 @@ let UI = {
         });
     },
 }
+
+let nav = {
+    initalize:function(){
+
+    },
+}

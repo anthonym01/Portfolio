@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="icon" href="img/favicon.png" type="image/filextension" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/line-dark.css">
+    <title>Random Number generator prototype</title>
+</head>
+<body>
+<view id="NumberGenUI">
+	<menubar>
+
+	</menubar>
+	<numberpannel>
+		<div id="numdisplay">#</div>
+	</numberpannel>
+	<historypannel>																									<!--History pannel placeholder-->
+		<div id="historydisplay">
+			<div id="historytitle" class="centered">Number history <button id="themechanger" class="rounded"> test Change theme button</button> </div>
+		</div>
+	</historypannel>
+	<inputpannel>
+		<table class="rangeselector rounded">
+			<tr>
+				<td><button class="incrimentorbtn" id="min--">&#60;</button></td>
+				<td class="lowerglasis"><input class="rangeinput" id="minput" type="text" placeholder="Minimum" title="Minimum"><div class="errorinput" id="minputerror">not a number!</div></td>
+				<td><button class="incrimentorbtn" id="min++">&#62;</button></td>
+				<td style="font-size: 200%;text-align: center">-</td>
+				<td><button class="incrimentorbtn" id="max--">&#60;</button></td>
+				<td class="lowerglasis"><input class="rangeinput" id="maxput" type="text" placeholder="Maximum" title="Maximum"><div class="errorinput" id="maxputerror">not a number!</div></td>
+				<td><button class="incrimentorbtn" id="max++">&#62;</button></td>
+			</tr>
+			<tr>
+				<td colspan="7"><button id="generatebtn" class="rounded">Generate</button></td>
+			</tr>
+		</table>
+	</inputpannel>
+</view>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

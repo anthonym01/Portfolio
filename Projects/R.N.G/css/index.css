@@ -1,0 +1,230 @@
+/*  Animations  */
+@keyframes fade {from { opacity: 0.8; } 50% { opacity: 0.4; } to { opacity: 0.8; }}
+.blink {animation:fade 5000ms infinite;}
+
+/*  Portrait/default layout */
+body{
+    padding:0px;
+    margin:0px;
+}
+body::before{/* Remove upon deployment*/
+    position: absolute;
+    z-index:-1;
+    content:"Prototype v1.0 (Portrait)";
+    font-size:3vh;
+    bottom:0vh;
+    height:auto;
+    width:98vw;
+    white-space: nowrap;
+    text-align: center;
+    animation:fade 3000ms infinite;
+}
+
+/*    <--  Landscape layout (with min-width) -->     */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    body::before{/* Remove upon deployment*/
+        position: absolute;
+        z-index:-1;
+        content:"Prototype v1.0 (Landscape)";
+        font-size:5vh;
+        bottom:0vh;
+        height:auto;
+        width:98vw;
+        white-space: nowrap;
+        text-align: center;
+        animation:fade 3000ms infinite;
+    }
+        
+    .centered{
+        position:relative;
+        margin:auto;
+        padding:0px;
+    }
+    .rounded{
+        border-radius: 3vw;
+    }
+    view{
+        position:fixed;
+        top:0;
+        right:0;
+        padding:0px;
+        margin:0px;
+    }
+
+        /*Number Generator UI*/
+    #NumberGenUI{
+        display:none;
+    }
+                                            /*      Number Pannel       */
+
+    numberpannel{
+        position: fixed;
+        top:0;
+        left:0;
+        padding:0px;
+        height:60vh;
+        width:70vw;
+        transition:width;
+        transition-duration: 500ms;
+    }
+    #numdisplay{
+        position: absolute;
+        top:0px;
+        width:100%;
+        height:100%;
+        text-align: center;
+        font-size:35vh;
+        padding:0px;
+        margin:0px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        cursor: default;
+    }
+
+                                            /*      Input Pannel        */
+    inputpannel{
+        position: fixed;
+        bottom:0;
+        left:0;
+        padding:0px;
+        height:40vh;
+        width:100vw;
+        transition:height,position;
+        transition-duration: 500ms;
+    }
+    .rangeselector{
+        position:relative;
+        margin: auto;
+        width:95vw;
+        height:40vh;
+        font-size: 4vh;
+        border:solid;
+        border-width: 0.5vw;
+    }
+    .rangeselector .upperglasis{
+        width:100%;
+        font-size:120%;
+    }
+    .rangeselector .lowerglasis{
+        width:45%;
+        font-size:100%;
+    }
+    .rangeselector td{
+        text-align:center;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    #generatebtn{
+        width:90%;
+        height:100%;
+        padding:10px;
+        font-size:10vh;
+        border:solid;
+        border-width: 0.4vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .rangeinput{
+        width:100%;
+        padding-top:5px;
+        padding-bottom:0px;
+        font-size:7vh;
+        border-bottom:solid;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-width: 0.7vh;
+    }
+    .incrimentorbtn{
+        position:relative;
+        margin:0px;
+        padding-bottom:10px;
+        height:50%;
+        width:100%;
+        font-size:8vh;
+        border:solid;
+        border-width: 0.3vw;
+        display: inline-block;
+        vertical-align:center;
+        align-self: baseline;
+        border-radius:100%;
+    }
+    .errorinput{
+        display:none;
+        position: absolute;
+        border:solid;
+        border-width: 0.25vw;
+        padding:3px;
+        top:-6px;
+        z-index: 100;
+        border-radius: 25px;
+        float:right;
+    }
+
+                                            /*      History pannel      */
+
+    historypannel{
+        position: fixed;
+        top:6%;
+        right:0;
+        padding:0px;
+        margin:0px;
+        height:54vh;
+        width:30vw;
+        opacity: 1.0;
+        transition:opacity;
+        transition-duration: 1s;
+    }
+    #historydisplay{
+        position: absolute;
+        top:0;
+        right:0;
+        height:100%;
+        width:100%;
+        overflow-y: auto;
+        display:block;
+    }
+    .historyelement{
+        margin-top:3px;
+        margin-bottom:2px;
+        margin-left:5%;
+        width:90%;
+        margin-right:5%;
+        margin-bottom:8px;
+        font-size:6.5vh;
+        transition: font-size;
+        transition-duration: 500ms;
+        border:solid;
+        border-width: 1vw;
+        box-shadow: 2px 3px 2px #ffffff;
+    }.historyelement:hover{box-shadow: #afafaf;font-size:7vh;}
+    .front{width:70%;}.back{width:30%;}.fat{width:100%;}.tall{height:100%;}
+    .recopybtn{
+        right:0px;
+        top:0px;
+        height:100%;
+        padding:0px;
+        margin:0px;
+        font-size:6.5vh;
+        border:solid;
+        border-width:0.3vh;
+        transition: font-size;
+        transition-duration: 300ms;
+    }
+    .recopybtn:hover{font-size:7.5vh;}
+    #historytitle{
+        position: absolute;
+        top:50%;
+        width:100%;   
+        font-size:200%;
+        text-align:center;
+    }
+    #themechanger{
+        height:100%;
+        padding:10px;
+        border:solid;
+        font-size:4vh;
+        border-width: 0.2vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
