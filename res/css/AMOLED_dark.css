@@ -1,5 +1,6 @@
 body{
     background-color: #000000;
+    color: #ffffff;
 }
 /*  headbar */
 .headbar{
@@ -11,7 +12,7 @@ body{
 .actionbtn{     /*   Action buttons at the top of the main content section   */
     border-bottom: 0.4vh solid #ffffff;/*   Default color    */
     color: #ffffff;
-    background-color: #232323;
+    background-color: #000000;
     box-shadow: 0vh 0vh 0vh 0vh #ffffff;
 }
 .actionbtn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #000000; }

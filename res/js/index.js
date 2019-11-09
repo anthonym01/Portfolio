@@ -1,30 +1,26 @@
+
 window.addEventListener('load',function(){//window loads
-    if(localStorage.getItem(config.configlocation))
-        {
-            config.load();
-            config.data.usecount++;
-        }
-        else
-        {
-            config.save();
-            config.load();
-            config.data.usecount=1;
-        }
-        config.save();
+    if(localStorage.getItem("SamuelAMatheson_cfg"))
+    {
+        config.load();
+    }
+    else
+    {
+        config.validate();
+    }
+    UI.initalize();
 });
 
 var config={
     data:{
-        usecount:0,
     },
-    configlocation:"Websitename_cfg",//not strict, can be anything. Think of it as a file name/path
     save:function(){//Save the config file
-        localStorage.setItem(config.configlocation,JSON.stringify(config.data));
+        localStorage.setItem("SamuelAMatheson_cfg",JSON.stringify(config.data));
         console.log('config saved: ');
         console.table(config.data);
     },
     load:function(){//Load the config file into memory
-        config.data=JSON.parse(localStorage.getItem(config.configlocation));
+        config.data=JSON.parse(localStorage.getItem("SamuelAMatheson_cfg"));
         console.log('config Loaded: ');
         console.table(config.data);
         this.validate();
@@ -32,18 +28,6 @@ var config={
     validate:function(){//validate configuration file
         console.log('Config is being validated');
         var configisvalid = true;
-        if(this.data.usecount){
-            if(this.data.usecount==undefined ||this.data.usecount<0){
-                this.data.usecount=1;
-                configisvalid=false;
-                console.log('"usecount" was found to be invalid and was set to default');
-            }
-        }else{
-            this.data.usecount=1;
-            configisvalid=false;
-            console.log('"usecount" did not exist and was set to default');
-        }
-        
         if(!configisvalid){
             console.log('config was found to be invalid and will be overwritten');
             this.save();//Save new confog because old config is no longer valid
@@ -52,9 +36,29 @@ var config={
         }
     },
     delete:function(){//Does not delete the file itself. Just sets it to empty
-        localStorage.clear(config.configlocation);
+        localStorage.clear("SamuelAMatheson_cfg");
         console.log('config deleted: ');
         console.table(config.data);
         this.validate();
     }
+}
+
+let UI = {
+    initalize:function(){
+        document.getElementById('service_btn').addEventListener('click',()=>{
+            document.getElementById('service_view').style.display='block';
+            document.getElementById('about_view').style.display='none';
+            document.getElementById('project_view').style.display='none';
+        });
+        document.getElementById('about_btn').addEventListener('click',()=>{
+            document.getElementById('service_view').style.display='none';
+            document.getElementById('about_view').style.display='block';
+            document.getElementById('project_view').style.display='none';
+        });
+        document.getElementById('project_btn').addEventListener('click',()=>{
+            document.getElementById('service_view').style.display='none';
+            document.getElementById('about_view').style.display='none';
+            document.getElementById('project_view').style.display='block';
+        });
+    },
 }

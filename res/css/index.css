@@ -26,7 +26,7 @@
         width: 97vw;
         margin-left: auto;
         margin-right: auto;
-        height:4.5vw;
+        height:calc(6.5vw + 0.4vh);
     }
     .actionbtn{     /*   Action buttons at the top of the main content section   */
         font-family: mc11;
@@ -46,14 +46,31 @@
         border-radius: 0.5vh;
     }
     .actionbtn:hover{box-shadow: 0vh 0vh 1vh 0vh #000000; }
-    .actionbtn:active{ color: #ffffff; background-color: #000000; }
+    .actionbtn:active{ color: #ffffff; background-color: #000000;transition: box-shadow 0ms,background-color 0ms,color 0ms;}
     .action_txt{     /*   text- transform effect   */
         transform: translate(0,0.4vh);
         height: 100%;
         width: 100%;
         transition:none;
     }
-    .actionbtn:active{transition: box-shadow 0ms,background-color 0ms,color 0ms;}
+
+    main_view{
+        position: relative;
+        display: none;
+        min-height:70vh;
+        margin-top:0.5vh;
+        width:100%;
+        font-size:2.5vh;
+    }
+    #service_view{
+        display: block;
+    }
+    #project_view{
+        display: none;
+    }
+    #about_view{
+        display: none;
+    }
 }
 
 /*    <--  Landscape layout / Standard (with min-width) -->     */
@@ -63,7 +80,7 @@
         margin: 0px;
     }
 
-    .headbar{
+    .headbar{/* Switch headbar to view with defined */
         position: fixed;
         padding: 0px;
         width: 100%;
@@ -71,6 +88,42 @@
         top:0;
         z-index: 50;
     }
+    /* Rework user plate later */
+    .user_plate{
+        position: absolute;
+        right:0.7vw;
+        top:0.8vh;
+        height:6vh;
+        width: 10vw;
+        border:0.3vh solid #6d6d6d;
+        border-radius: 1.5vh;
+        transition:background-color 400ms, color 400ms;
+        cursor: pointer;
+        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+        -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    }
+    .user_plate:active{
+        transition:background-color 0ms, color 0ms;
+        color: rgb(0, 0, 0);
+        background-color: white;
+    }
+    .user_plate #profile_pick{
+        position: absolute;
+        right:0.5vw;
+        top:0.5vh;
+        height:5vh;
+        width: 5vh;
+        border-radius: 2.5vh;
+        background-size:cover;
+        background-image:url('../img/default-user-image.png') ;
+    }
+    .user_plate #user_name{
+        position: absolute;
+        top:0.5vh;
+        left:0.4vw;
+    }
+
+    /* The Meat of the ui (everything not in the headbar)*/
     .maincontent{
         margin-top: 7.5vh;
         padding: 0px;
@@ -81,9 +134,10 @@
         width: 64vw;
         margin-left: auto;
         margin-right: auto;
-        height:4.5vw;
+        height: calc(4.2vw + 0.4vh);
     }
     .actionbtn{     /*   Action buttons at the top of the main content section   */
+        position: relative;
         font-family: mc11;
         margin-left: 0.5vw;
         height: 3.4vw;
@@ -109,5 +163,22 @@
         transition:transform 400ms;
     }.action_txt:hover{transform: translate(0,0.4vh);}
     .actionbtn:active{transition: box-shadow 0ms,background-color 0ms,color 0ms;}
-
+    
+    main_view{
+        position: relative;
+        display: none;
+        min-height:70vh;
+        margin-top:0.5vh;
+        width:100%;
+        font-size:3vh;
+    }
+    #service_view{
+        display: block;
+    }
+    #project_view{
+        display: none;
+    }
+    #about_view{
+        display: none;
+    }
 }
