@@ -1,12 +1,11 @@
 body{
     background-color: #000000;
     color: #ffffff;
-    background-image: url('../img/background-dark-1');
+    background-image: url('../img/background-dark-2.png');
 }
 /*  headbar */
 .headbar{
-    background-color: #000000;
-    background-image: linear-gradient(#494949,#000000);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0));
 }
 
 /*   Action button colors   */
@@ -16,7 +15,7 @@ body{
     background-color: #000000;
     box-shadow: 0vh 0vh 0vh 0vh #ffffff;
 }
-.actionbtn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #000000; }
+.actionbtn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
 .actionbtn:active{ color: #000000; background-color: #ffffff; }
 
 #service_btn{ border-bottom: 0.4vh solid #ff0000; box-shadow: 0vh 0vh 0vh 0vh #ff0000; }/*  Service button    */
@@ -31,6 +30,9 @@ body{
 #about_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #0026ff;}
 #about_btn:active{color: #000000;background-color: #0026ff;}
 
+#contact_btn{border-bottom: 0.4vh solid #ff00ff;box-shadow: 0vh 0vh 0vh 0vh #ff00ff;}/*  About button    */
+#contact_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff00ff;}
+#contact_btn:active{color: #ffffff;background-color: #ff00ff;}
 /*    pedistal    */
 .pedistal{/* Convert to rtf or em scaling */
     background-color: #000000;
@@ -40,7 +42,7 @@ body{
 .pedistal:hover{box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;}
 .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
 .pedistal_img{
-    background-image: url('../img/background-dark-1.jpg');
+    background-image: url('../img/background-dark-3.jpg');
 }
 .pedistal_img::after{
     background-image: linear-gradient(0deg,rgba(255,255,255,0.0),rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.3),rgba(255,255,255,0.4),rgba(255,255,255,0.5));
