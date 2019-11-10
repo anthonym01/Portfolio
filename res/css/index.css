@@ -15,7 +15,14 @@
     cursor: pointer;
     color: white;
 }
-
+#page_shade{
+    position: fixed;
+    background-color: rgba(0,0,0,1);
+    transition:background-color 400ms;
+    height:100%;
+    width:100%;
+    z-index: 500;
+}
 
 body{
     padding: 0px;

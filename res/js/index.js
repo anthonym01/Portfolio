@@ -9,6 +9,7 @@ window.addEventListener('load',function(){//window loads
         config.validate();
     }
     UI.initalize();
+    UI.unblurse();//must happen last, blursing takes the place of a loading screen
 });
 
 var config={
@@ -114,6 +115,10 @@ let UI = {
             config.data.current_view="contact";
             config.save();
         },
+    },
+    unblurse:function(){
+        document.getElementById('page_shade').style.backgroundColor="rgba(0,0,0,0)";
+        setTimeout(()=>{document.getElementById('page_shade').style.display="none";},400);
     }
 }
 
