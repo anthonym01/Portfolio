@@ -2,6 +2,21 @@
 @font-face{ font-family: cowboy; src:url(../Cowboys_2.0.otf); }
 @font-face{ font-family: handwriting; src:url(../handwriting.otf); }
 
+#back_to_top{/* Placeholder */
+    position: fixed;
+    bottom: 2vh;
+    right:2vh;
+    height:auto;
+    width: auto;
+    border-radius: 3vh;
+    padding: 1vh;
+    background-color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+
 body{
     padding: 0px;
     margin: 0px;

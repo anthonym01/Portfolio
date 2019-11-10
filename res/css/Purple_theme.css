@@ -48,7 +48,7 @@ body{
     background-image: linear-gradient(0deg,rgba(255,255,255,0.0),rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.3),rgba(255,255,255,0.4),rgba(255,255,255,0.5));
 }
 
-.pallet_swap{color: #000000;}/* For light images    */
+.pallet_swap .pedistal_title{color: #000000;}/* For light images    */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .pallet_swap .pedistal_title{color: #ffffff;}
     .pallet_swap .pedistal_img::after{/*   Temporary   */
