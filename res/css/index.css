@@ -155,7 +155,6 @@ main_view{
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .headbar{/* Aestetic only   */
         height: 4.5vw;
-        
     }
     .headbar_content{
         padding:0px;
@@ -175,9 +174,9 @@ main_view{
     }
     .actionbtn:hover{box-shadow: 0vh 0vh 1vh 0vh #000000; }
     .action_txt{     /*   text- transform effect   */
-        transform: translate(0,0.6vh);
+        transform: translate(0,0.5vw);
         transition:transform 400ms;
-    }.action_txt:hover{transform: translate(0,0.4vh);}
+    }.action_txt:hover{transform: translate(0,0.2vw);}
     
     main_view{
         position: relative;

@@ -1,20 +1,14 @@
 
 window.addEventListener('load',function(){//window loads
-    if(localStorage.getItem("SamuelAMatheson_cfg"))
-    {
-        config.load();
-    }
-    else
-    {
-        config.validate();
-    }
+    if(localStorage.getItem("SamuelAMatheson_cfg")){config.load()}
+    else{config.validate()}
     UI.initalize();
     UI.unblurse();//must happen last, blursing takes the place of a loading screen
 });
 
-var config={
+var config = {/*  Configuaration manager  */
     data:{
-        current_view:"home",
+        current_view:"home",//
     },
     save:function(){//Save the config file
         localStorage.setItem("SamuelAMatheson_cfg",JSON.stringify(config.data));
@@ -51,7 +45,7 @@ var config={
 }
 
 let UI = {
-    initalize:function(){
+    initalize:function(){//Put the listeners in after the page loads so people cant break things by clicking
         document.getElementById('service_btn').addEventListener('click',this.navigate.service);
         document.getElementById('about_btn').addEventListener('click',this.navigate.about);
         document.getElementById('project_btn').addEventListener('click',this.navigate.project);
@@ -59,7 +53,7 @@ let UI = {
         document.getElementById('contact_btn').addEventListener('click',this.navigate.contact);
         this.startup();
     },
-    startup:function(){
+    startup:function(){//Takes the page to the last view screen, add functionality to scroll to last point in the page
         switch(config.data.current_view){
             case "home": this.navigate.home();break;
             case "about": this.navigate.about();break;
@@ -69,7 +63,7 @@ let UI = {
             default: this.navigate.home();
         }
     },
-    navigate:{
+    navigate:{//Navigate to a view
         service:function(){
             document.getElementById('service_view').style.display='block';
             document.getElementById('about_view').style.display='none';
@@ -116,14 +110,8 @@ let UI = {
             config.save();
         },
     },
-    unblurse:function(){
+    unblurse:function(){//Un-sade the page after loading is complete
         document.getElementById('page_shade').style.backgroundColor="rgba(0,0,0,0)";
         setTimeout(()=>{document.getElementById('page_shade').style.display="none";},400);
     }
-}
-
-let nav = {
-    initalize:function(){
-
-    },
 }
