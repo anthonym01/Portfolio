@@ -37,9 +37,10 @@ body{
     position: relative;
     padding: 0px;
     width: 100%;
-    height: 2vh;
+    height: 13vw;
 }
 .maincontent{
+    position: relative;
     margin-top: 1vh;
     padding: 0px;
     width: 100%;
@@ -87,8 +88,15 @@ main_view{
     margin-top:0.5vh;
     width:100%;
 }
-#service_view{
+
+/*  Home view   */
+#home_view{
     display: block;
+}
+
+/*  Service view    */
+#service_view{
+    display: none;
 }
 
 /*  Project view    */
@@ -144,7 +152,7 @@ main_view{
     text-align: center;
 }
 #RNG_pedistal .pedistal_img{background-image: url('../img/rng_gif.gif');}
-#Color_selector_pedistal .pedistal_img{background-image: url('../img/Colorwheel.png');background-color: #ffffff;}
+#Color_selector_pedistal .pedistal_img{background-image: url('../img/Colorwheel.png');}
 /*  ABout view  */
 #about_view{
     display: none;
@@ -188,19 +196,10 @@ main_view{
     }
 
     /*  Home view   */
-    #home_view{
-        display: block;
-    }
 
     /*  Service view    */
-    #service_view{
-        display: none;
-    }
 
     /*  Project view    */
-    #project_view{
-        display: none;
-    }
     .pedistal{/* Convert to rtf or em scaling */
         position: relative;
         float: left;
@@ -256,15 +255,8 @@ main_view{
         width:calc(100%-0.6vw);
         text-align: center;
     }
-    #Color_selector_pedistal
     /*  About view  */
-    #about_view{
-        display: none;
-    }
 
     /*  Contact view   */
-    #contact_view{
-        display: none;
-    }
 
 }
