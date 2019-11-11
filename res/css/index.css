@@ -2,19 +2,6 @@
 @font-face{ font-family: cowboy; src:url(../Cowboys_2.0.otf); }
 @font-face{ font-family: handwriting; src:url(../handwriting.otf); }
 
-#back_to_top{/* Placeholder */
-    position: fixed;
-    bottom: 2vh;
-    right:2vh;
-    height:auto;
-    width: auto;
-    border-radius: 3vh;
-    padding: 1vh;
-    background-color: #000000;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-}
 #page_shade{
     position: fixed;
     background-color: rgba(0,0,0,1);
@@ -43,6 +30,7 @@ body{
     position: relative;
     margin-top: 1vh;
     padding: 0px;
+    height:100%;
     width: 100%;
     min-height: 92.5vh;
     z-index: 5;
@@ -161,10 +149,10 @@ main_view{
 
 /*    <--  Landscape overwrite -->     */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .headbar{/* Aestetic only   */
+    .headbar{
         height: 4.5vw;
     }
-    .headbar_content{
+    .headbar_content{/* Centers The buttons */
         padding:0px;
         height:100%;
         width: 66vw;
@@ -189,7 +177,7 @@ main_view{
     main_view{
         position: relative;
         display: none;
-        min-height:70vh;
+        height:auto;
         margin-top:0.5vh;
         width:100%;
         font-size: 2vw; /*  Temp    */
