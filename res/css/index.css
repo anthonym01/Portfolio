@@ -140,7 +140,7 @@ main_view{
     text-align: center;
 }
 #RNG_pedistal .pedistal_img{background-image: url('../img/rng_gif.gif');}
-#Color_selector_pedistal .pedistal_img{background-image: url('../img/Colorwheel.png');}
+#Color_selector_pedistal .pedistal_img{background-image: url('../img/Colorwheel.webp');}
 /*  ABout view  */
 #about_view{
     display: none;
