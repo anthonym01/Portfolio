@@ -70,6 +70,11 @@ let UI = {
             document.getElementById('project_view').style.display='none';
             document.getElementById('home_view').style.display='none';
             document.getElementById('contact_view').style.display='none';
+            document.getElementById('service_btn').className="actionbtn_active";
+            document.getElementById('about_btn').className="actionbtn";
+            document.getElementById('project_btn').className="actionbtn";
+            document.getElementById('home_btn').className="actionbtn";
+            document.getElementById('contact_btn').className="actionbtn";
             config.data.current_view="service";
             config.save();
         },
@@ -79,6 +84,11 @@ let UI = {
             document.getElementById('project_view').style.display='none';
             document.getElementById('home_view').style.display='none';
             document.getElementById('contact_view').style.display='none';
+            document.getElementById('service_btn').className="actionbtn";
+            document.getElementById('about_btn').className="actionbtn_active";
+            document.getElementById('project_btn').className="actionbtn";
+            document.getElementById('home_btn').className="actionbtn";
+            document.getElementById('contact_btn').className="actionbtn";
             config.data.current_view="about";
             config.save();
         },
@@ -88,6 +98,11 @@ let UI = {
             document.getElementById('project_view').style.display='block';
             document.getElementById('home_view').style.display='none';
             document.getElementById('contact_view').style.display='none';
+            document.getElementById('service_btn').className="actionbtn";
+            document.getElementById('about_btn').className="actionbtn";
+            document.getElementById('project_btn').className="actionbtn_active";
+            document.getElementById('home_btn').className="actionbtn";
+            document.getElementById('contact_btn').className="actionbtn";
             config.data.current_view="project";
             config.save();
         },
@@ -97,6 +112,11 @@ let UI = {
             document.getElementById('project_view').style.display='none';
             document.getElementById('home_view').style.display='block';
             document.getElementById('contact_view').style.display='none';
+            document.getElementById('service_btn').className="actionbtn";
+            document.getElementById('about_btn').className="actionbtn";
+            document.getElementById('project_btn').className="actionbtn";
+            document.getElementById('home_btn').className="actionbtn_active";
+            document.getElementById('contact_btn').className="actionbtn";
             config.data.current_view="home";
             config.save();
         },
@@ -106,6 +126,11 @@ let UI = {
             document.getElementById('project_view').style.display='none';
             document.getElementById('home_view').style.display='none';
             document.getElementById('contact_view').style.display='block';
+            document.getElementById('service_btn').className="actionbtn";
+            document.getElementById('about_btn').className="actionbtn";
+            document.getElementById('project_btn').className="actionbtn";
+            document.getElementById('home_btn').className="actionbtn";
+            document.getElementById('contact_btn').className="actionbtn_active";
             config.data.current_view="contact";
             config.save();
         },

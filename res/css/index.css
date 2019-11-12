@@ -53,7 +53,7 @@ body{
     border-bottom: 0.4vh solid #000000;/*   Default color    */
     box-shadow: 0vh 0vh 0vh 0vh #000000;
     text-align: center;
-    float: right;;
+    float: right;
     white-space: nowrap;
     cursor: pointer;
     transition: box-shadow 500ms,background-color 500ms,color 500ms;
@@ -68,7 +68,26 @@ body{
     width: 100%;
     transition:none;
 }
-
+.actionbtn_active{     /*   Action buttons at the top of the main content section   */
+    position: relative;
+    font-family: mc11;
+    margin-left: 1vw;
+    height: 5.5vw;
+    font-size:5vw;
+    padding: 0.5vw;
+    border-bottom: 0.4vh solid #000000;/*   Default color    */
+    box-shadow: 0vh 0vh 0vh 0vh #000000;
+    text-align: center;
+    float: right;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: box-shadow 500ms,background-color 500ms,color 500ms;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    border-radius: 0.5vh;
+    text-shadow: 0vh 0vh 2.5vw #ffffff
+    /*text-shadow: 0.05vh 0.05vh 0.5vh #ffffff,-0.05vh 0.05vh 0.5vh #ffffff,0.05vh -0.05vh 0.5vh #ffffff,-0.05vh -0.05vh 0.5vh #ffffff;*/
+}
 main_view{
     position: relative;
     display: none;
@@ -173,7 +192,14 @@ main_view{
         transform: translate(0,0.5vw);
         transition:transform 400ms;
     }.action_txt:hover{transform: translate(0,0.2vw);}
-    
+    .actionbtn_active{
+        margin-right: 0.6vw;
+        margin-left: 0vw;
+        margin-top:0.55vw;
+        height: 2.4vw;
+        font-size:2vw;
+        padding: 0.4vw;
+    }
     main_view{
         position: relative;
         display: none;

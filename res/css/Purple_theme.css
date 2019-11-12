@@ -9,13 +9,13 @@ body{
 }
 
 /*   Action button colors   */
-.actionbtn{     /*   Action buttons at the top of the main content section   */
+.actionbtn, .actionbtn_active{     /*   Action buttons at the top of the main content section   */
     border-bottom: 0.4vh solid #ffffff;/*   Default color    */
     color: #ffffff;
     box-shadow: 0vh 0vh 0vh 0vh #ffffff;
 }
-.actionbtn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
-.actionbtn:active{ color: #000000; background-color: #ffffff; }
+.actionbtn:hover,.actionbtn_active:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
+.actionbtn:active,.actionbtn_active:active{ color: #000000; background-color: #ffffff; }
 
 #service_btn{ border-bottom: 0.4vh solid #ff0000; box-shadow: 0vh 0vh 0vh 0vh #ff0000; }/*  Service button    */
 #service_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff0000; }
