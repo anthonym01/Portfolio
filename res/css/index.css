@@ -160,6 +160,7 @@ main_view{
 }
 #RNG_pedistal .pedistal_img{background-image: url('../img/rng_gif.gif');}
 #Color_selector_pedistal .pedistal_img{background-image: url('../img/Colorwheel.webp');}
+#Password_warrior_pedistal .pedistal_img{background-image: url('../img/password\ worrior\ icon\ prototype.webp');}
 /*  ABout view  */
 #about_view{
     display: none;
