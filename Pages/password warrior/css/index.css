@@ -1,21 +1,45 @@
-
-/* Portrait / phone */
-@media screen{
-    body{padding:0px;margin: 0px;}
+@keyframes bobber{
+    0%{transform:translate(0,0vh)}
+    50%{transform:translate(0,120vh)}
+    75%{transform:translate(0,100vh)}
+    100%{transform:translate(0,105vh)}
 }
+body{
+    padding:0px;margin: 0px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('../img/placeholder.webp');
+}
+#page_shade{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,1);
+    transition: background-color 1s;
+}
+
 
 /*    <--  Landscape layout / Standard (with min-width) -->     */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:700px) {
 
     #login_screen{
+        /*position: relative;
+        margin-right: auto;
+        margin-left: auto;*/
         position: fixed;
-        top: 10vh;
-        right: 35vw;
-        width: 30vw;
-        height: 80vh;
+        top: -100vh;
+        right:35vw;
+        width: 60vh;
+        height: 90vh;
         border-radius: 3vh;
-        box-shadow: 0vw 0vw 10vw 0vw #ffffff, 0vw 0vw 100vw 0vw #000000;
+        box-shadow: 0vw 0vw 10vw 0vw #000000;
         background-color: #303030;
+        padding-top:1px;
+        animation: bobber 1s linear;
+        /*transition: transform 400ms;
+        transform:translate(0,105vh)*/
     }
     #logo{
         position: relative;
@@ -36,28 +60,73 @@
         color: #ffffff;
         margin-bottom: 1vh;
     }
-
+    .swap_container{
+        position: relative;
+        display: flex;
+        width:100%;
+        height:4vh;
+        font-size: 2.5vh;
+        margin-bottom: 2vh;
+    }
+    .swapbox{width:50%;height:100%;font-size: inherit;}
+    .swapbtn{
+        height:100%;
+        width:40%;
+        font-size: inherit;
+        background-color: rgb(78, 78, 78);
+        color: rgb(133, 133, 133);
+        border:none;
+        cursor: pointer;
+        text-align: center;
+        
+    }
+    .swapbtn_active{
+        height:100%;
+        width:40%;
+        font-size: inherit;
+        background-color: rgb(116, 116, 116);
+        color: rgb(255, 255, 255);
+        border:none;
+        cursor: pointer;
+        text-align: center;
+        
+    }
+    #login_btn{ float: right;border-radius: 1.2vh 0vh 0vh 1.2vh;}
+    #signup_btn{ float: left;border-radius: 0vh 1.2vh 1.2vh 0vh;}
+    
     .label{
         position: relative;
-        margin-left:2vw;
+        margin-left:0;
         width:100%;
-        text-align: left;
-        font-size: 3vh;
+        text-align: center;
+        font-size: 3.5vh;
         color: #ffffff;
+        margin-bottom: 0.5vh;
     }
-    .login_put{
+    .login_put_container{
         position: relative;
         color: white;
-        margin-right: 1.6vw;
-        margin-left: 1.6vw;
-        margin-bottom:3vh;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom:2vh;
         font-size: 3vh;
-        width: 25vw;
+        width: 90%;
         height: 5vh;
-        padding: 1.3vh 1.3vh;
+        padding: 1vh 1.3vh;
+        border:0.4vh solid #1F2325;
         background-color: #1F2325;
         border: none;
         border-radius: 1vh;
     }
+    .login_put{
+        position: relative;
+        color: white;
+        font-size: 3vh;
+        width: 100%;
+        height: 100%;
+        background-color: #1F2325;
+        background:none;
+        border:none;
+    }.login_put:focus{outline: none;}
 
 }
