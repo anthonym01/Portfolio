@@ -142,18 +142,12 @@ let UI = {
 }
 
 let notify = {  /*  Notification handler  */
-    preset_height:22,//2 more than the height in the css
-    previous_type:1,
+    preset_height:17,//2 more than the height in the css
     animate_old:true,//turn on and off old notification Animation
     current:0,//Current is incimented every time theres a new notifyer
     resizecheck:window.addEventListener('resize',()=>{notify.clearall()}),
-    new:function(title,body,style){
-        var doot;
+    new:function(title,body){
         this.current++;//Inciment the current pisition
-        if(this.previous_type!=style){
-            this.clearall();
-        }
-        this.previous_type=style;
         
         //create the notification holder
         var tempnotif = document.createElement("div");      //create a div
@@ -177,27 +171,7 @@ let notify = {  /*  Notification handler  */
         tempnotif.addEventListener('click',function(){notify.clearall()});//click to close notifications
         tempnotif.title='click to dismiss';
 
-        switch(style){//style switch change default to change default
-            case 1:
-                    tempnotif.setAttribute("class", "notification_style1");    //set the class of the div to 'notification_style1'
-                    this.preset_height=22;
-            break;
-            case 2:
-                    tempnotif.setAttribute("class", "notification_style2");    //set the class of the div to 'notification_style2'
-                    this.preset_height=16;
-            break;
-            case 3:
-                    tempnotif.setAttribute("class", "notification_style3");    //set the class of the div to 'notification_style2'
-                    this.preset_height=16;
-            break;
-            case 4:
-                    tempnotif.setAttribute("class", "notification_style4");    //set the class of the div to 'notification_style2'
-                    this.preset_height=22;
-            break;
-            default:tempnotif.setAttribute("class", "notification_style1");    //defaults the class of the div to 'notification_style1'
-                console.warn('Notifier takes style value selectors 1-4, you have selected',style);
-                this.preset_height=22;
-        }
+        tempnotif.setAttribute("class", "notification");    //set the class of the div to 'notification_style1'
 
         this.timing_effects(this.current,tempnotif);//Timing in seperate function to avoid using 'new' object calls or extra variables
 

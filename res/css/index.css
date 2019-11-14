@@ -60,14 +60,27 @@
         color: #ffffff;
         box-shadow: 0vh 0vh 0vh 0vh #ffffff;
     }
-    .actionbtn:active{ color: #ffffff; background-color: #000000;transition: box-shadow 0ms,background-color 0ms,color 0ms;}
+    .actionbtn:active,.actionbtn_active:active{ color: #000000; background-color: #ffffff;transition: box-shadow 0ms,background-color 0ms,color 0ms;}
     .action_txt{     /*   text- transform effect   */
         transform: translate(0,0.4vh);
         height: 100%;
         width: 100%;
         transition:none;
     }
-    main_view{
+    #service_btn{ border-bottom: 0.4vh solid #ff0000; box-shadow: 0vh 0vh 0vh 0vh #ff0000; }/*  Service button    */
+    #service_btn:active{ color: #000000; background-color: #ff0000; }
+
+    #project_btn{ border-bottom: 0.4vh solid #2bff00;box-shadow: 0vh 0vh 0vh 0vh #2bff00;}/*  Project button    */
+    #project_btn:active{color: #000000;background-color: #2bff00;}
+
+    #about_btn{border-bottom: 0.4vh solid #0026ff;box-shadow: 0vh 0vh 0vh 0vh #0026ff;}/*  About button    */
+    #about_btn:active{color: #000000;background-color: #0026ff;}
+
+    #contact_btn{border-bottom: 0.4vh solid #ff00ff;box-shadow: 0vh 0vh 0vh 0vh #ff00ff;}/*  About button    */
+    #contact_btn:active{color: #000000;background-color: #ff00ff;}
+
+        /* View pannels */
+    .main_view{
         position: relative;
         display: none;
         min-height:70vh;
@@ -89,6 +102,7 @@
     #project_view{
         display: none;
     }
+    /*  Content pedistals   */
     .pedistal{  /* Convert to rtf or em scaling */
         position: relative;
         float: left;
@@ -103,7 +117,11 @@
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         overflow: hidden;
         transition:color 400ms,background-color 400ms;
+        background-color: #000000;
+        color: #ffffff;
+        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
     }
+    .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
     .pedistal_img{
         position: absolute;
         top:0px;
@@ -112,6 +130,10 @@
         width:100%;
         background-size: cover;
         background-repeat: no-repeat;
+        background-image: url('../img/background-dark-3.webp');
+    }
+    .pedistal_img::after{
+        background-image: linear-gradient(0deg,rgba(255,255,255,0.0),rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.3),rgba(255,255,255,0.4),rgba(255,255,255,0.5));
     }
     .pedistal_title{
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
@@ -137,9 +159,11 @@
         width:calc(100%-6vw);
         text-align: center;
     }
+    .pallet_swap .pedistal_title{color: #000000;}/* For light images    */
     #RNG_pedistal .pedistal_img{background-image: url('../img/rng_gif.gif');}
     #Color_selector_pedistal .pedistal_img{background-image: url('../img/Colorwheel.webp');}
     #Password_warrior_pedistal .pedistal_img{background-image: url('../img/password\ worrior\ icon\ prototype.webp');}
+    
     /*  ABout view  */
     #about_view{
         display: none;
@@ -160,7 +184,7 @@
         margin-right: auto;
     }
 
-    .actionbtn{     /*   Action buttons at the top of the main content section   */
+    .actionbtn, .actionbtn_active{     /*   Action buttons at the top of the main content section   */
         margin-right: 0.6vw;
         margin-left: 0vw;
         margin-top:0.55vw;
@@ -168,27 +192,15 @@
         font-size:2vw;
         padding: 0.4vw;
     }
-    .actionbtn:hover{box-shadow: 0vh 0vh 1vh 0vh #000000; }
+    .actionbtn:hover,.actionbtn_active:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
     .action_txt{     /*   text- transform effect   */
         transform: translate(0,0.5vw);
         transition:transform 400ms;
     }.action_txt:hover{transform: translate(0,0.2vw);}
-    .actionbtn_active{
-        margin-right: 0.6vw;
-        margin-left: 0vw;
-        margin-top:0.55vw;
-        height: 2.4vw;
-        font-size:2vw;
-        padding: 0.4vw;
-    }
-    main_view{
-        position: relative;
-        display: none;
-        height:auto;
-        margin-top:0.5vh;
-        width:100%;
-        font-size: 2vw; /*  Temp    */
-    }
+    #service_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff0000;}
+    #project_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #2bff00;}
+    #about_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #0026ff;}
+    #contact_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff00ff;}
 
     /*  Home view   */
 
@@ -210,7 +222,7 @@
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         overflow: hidden;
     }
-    .pedistal:hover{transform: translate(0,-1vh);}
+    .pedistal:hover{transform: translate(0,-1vh);box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;}
     .pedistal_img{
         position: absolute;
         top:0;
@@ -250,289 +262,8 @@
         width:calc(100%-0.6vw);
         text-align: center;
     }
-    /*  About view  */
-
-    /*  Contact view   */
-
-}
-
-    /*  Stitch this mess back together tomorrow, or fiday, or whenever i dont give a f**k   */
-
-.actionbtn:hover,.actionbtn_active:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
-.actionbtn:active,.actionbtn_active:active{ color: #000000; background-color: #ffffff; }
-
-#service_btn{ border-bottom: 0.4vh solid #ff0000; box-shadow: 0vh 0vh 0vh 0vh #ff0000; }/*  Service button    */
-#service_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff0000; }
-#service_btn:active{ color: #000000; background-color: #ff0000; }
-
-#project_btn{ border-bottom: 0.4vh solid #2bff00;box-shadow: 0vh 0vh 0vh 0vh #2bff00;}/*  Project button    */
-#project_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #2bff00;}
-#project_btn:active{color: #000000;background-color: #2bff00;}
-
-#about_btn{border-bottom: 0.4vh solid #0026ff;box-shadow: 0vh 0vh 0vh 0vh #0026ff;}/*  About button    */
-#about_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #0026ff;}
-#about_btn:active{color: #000000;background-color: #0026ff;}
-
-#contact_btn{border-bottom: 0.4vh solid #ff00ff;box-shadow: 0vh 0vh 0vh 0vh #ff00ff;}/*  About button    */
-#contact_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff00ff;}
-#contact_btn:active{color: #000000;background-color: #ff00ff;}
-/*    pedistal    */
-.pedistal{/* Convert to rtf or em scaling */
-    background-color: #000000;
-    color: #ffffff;
-    box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
-}
-.pedistal:hover{box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;}
-.pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
-.pedistal_img{
-    background-image: url('../img/background-dark-3.webp');
-}
-.pedistal_img::after{
-    background-image: linear-gradient(0deg,rgba(255,255,255,0.0),rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.3),rgba(255,255,255,0.4),rgba(255,255,255,0.5));
-}
-
-.pallet_swap .pedistal_title{color: #000000;}/* For light images    */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .pallet_swap .pedistal_title{color: #ffffff;}
     .pallet_swap .pedistal_img::after{/*   Temporary   */
         background-image: linear-gradient(0deg,rgba(0,0,0,0.0),rgba(0,0,0,0.1),rgba(0,0,0,0.2),rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgba(0,0,0,0.5));
     }
-}
-
-
-
-
-/*  Notification    */
-
-@keyframes stretch {from{width:0%}to{width:100%}}
-
-/*   Type 1 notification   */
-.notification_style1{
-    position: fixed;
-    bottom:2vh;
-    right:1vw;
-    height:20vh;
-    width:98%;
-    border-radius: 1vw;
-    transform: translate(0vw,25vh);
-    border-top:0.5vh solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
-    overflow: hidden;
-    box-shadow: 0vh 0vh 0.5vh 0vh #000000;
-    cursor: pointer;
-    opacity: 1.0;
-    transition:transform 500ms,box-shadow 200ms,opacity 300ms;
-    z-index: 999;
-}
-.notification_style1:hover{box-shadow: 0vh 0vh 2vh 0vh #000000;}
-.notification_style1 .title{
-    position: absolute;
-    opacity:inherit;
-    top:0;
-    right:0;
-    width:100%;
-    height:5.5vh;
-    font-size:4.5vh;
-    text-align:center;
-    border-bottom:0.25vh solid rgb(0, 0, 0);
-    white-space: nowrap;
-    cursor: inherit;
-}
-.notification_style1 .title::before{
-    position:absolute;
-    opacity:inherit;
-    transform:translate(0,100%);
-    bottom:0;
-    left:0;
-    z-index: 99;
-    background-color:black;
-    height:0.5vh;
-    animation: stretch 11000ms;
-    content:"";
-    cursor: inherit;
-}
-.notification_style1 .notifbody{
-    position: absolute;
-    opacity:inherit;
-    bottom:0;
-    left:0;
-    width:95%;
-    padding:0.5vh 0.5vw;
-    height:13vh;
-    font-size:2.5vh;
-    overflow: hidden;
-    cursor: inherit;
-}
-
-/*   Type 2 notification   */
-.notification_style2{
-    position: fixed;
-    bottom:2vh;
-    right:1vw;
-    height:20vh;
-    width:98%;
-    transform: translate(0vw,25vh);
-    border-top:0.5vw solid #00aaff;
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
-    overflow: hidden;
-    box-shadow: 0vh 0vh 0.5vh 0vh #000000;
-    cursor: pointer;
-    transition:transform 500ms,box-shadow 200ms;
-    z-index: 999;
-}
-.notification_style2:hover{box-shadow: 0vh 0vh 2vh 0vh #000000;}
-.notification_style2 .title{
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:5.5vh;
-    font-size:4.5vh;
-    padding-left: 1vw;
-    text-align:left;
-    white-space: nowrap;
-    cursor: inherit;
-}
-.notification_style2 .title::before{
-    position:absolute;
-    transform:translate(0,100%);
-    bottom:0;
-    left:0;
-    z-index: 99;
-    background-color:black;
-    height:0.5vh;
-    animation: stretch 11000ms;
-    content:"";
-    cursor: inherit;
-}
-.notification_style2 .notifbody{
-    position: absolute;
-    bottom:0;
-    left:0;
-    width:95%;
-    padding:0.5vh 0.5vw;
-    height:13.5vh;
-    font-size:2.5vh;
-    overflow: hidden;
-    cursor: inherit;
-}
-
-/*   Type 3 notification   */
-.notification_style3{
-    position: fixed;
-    bottom:2vh;
-    right:1vw;
-    height:20vh;
-    width:98%;
-    transform: translate(0vw,25vh);
-    border-top:0.5vw solid #00aaff;
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
-    overflow: hidden;
-    box-shadow: 0vh 0vh 0.5vh 0vh #000000;
-    cursor: pointer;
-    transition:transform 500ms,box-shadow 200ms;
-    z-index: 999;
-}
-.notification_style3:hover{box-shadow: 0vh 0vh 2vh 0vh #000000;}
-.notification_style3 .title{
-    position: absolute;
-    top:0;
-    right:0;
-    width:100%;
-    height:5.5vh;
-    font-size:4.5vh;
-    padding-right: 1vw;
-    text-align:right;
-    white-space: nowrap;
-    cursor: inherit;
-}
-.notification_style3 .title::after{
-    position:absolute;
-    top:0;
-    left:1.2vw;
-    height:5.5vh;
-    width:5.5vh;
-    background-image: url('../img/favico.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    content:"";
-    cursor: inherit;
-}
-.notification_style3 .title::before{
-    position:absolute;
-    transform:translate(0,100%);
-    bottom:0;
-    left:0;
-    z-index: 99;
-    background-color:black;
-    height:0.5vh;
-    animation: stretch 11000ms;
-    content:"";
-    cursor: inherit;
-}
-.notification_style3 .notifbody{
-    position: absolute;
-    bottom:0;
-    left:0;
-    width:95%;
-    padding:0.5vh 0.5vw;
-    height:13.5vh;
-    font-size:2.5vh;
-    overflow: hidden;
-    cursor: inherit;
-}
-
-/*   Type 4 notification   */
-.notification_style4{
-    position: fixed;
-    bottom:2vh;
-    right:1vw;
-    height:20vh;
-    width:98%;
-    transform: translate(0vw,25vh);
-    background-color: rgba(255, 255, 255,0.6);
-    color:rgb(0, 0, 0);
-    overflow: hidden;
-    box-shadow: 0vh 0vh 0.5vh 0vh #000000;
-    cursor: pointer;
-    transition:transform 500ms,box-shadow 200ms;
-    z-index: 999;
-}
-.notification_style4:hover{box-shadow: 0vh 0vh 2vh 0vh #000000;}
-.notification_style4 .title{
-    position: absolute;
-    top:0;
-    right:0;
-    width:100%;
-    height:5.5vh;
-    font-size:4.5vh;
-    text-align:center;
-    white-space: nowrap;
-    cursor: inherit;
-}
-.notification_style4 .title::before{
-    position:absolute;
-    transform:translate(0,0vh);
-    top:0;
-    left:0;
-    z-index: 99;
-    background-color:black;
-    height:0.5vh;
-    animation: stretch 11000ms;
-    content:"";
-    cursor: inherit;
-}
-.notification_style4 .notifbody{
-    position: absolute;
-    bottom:0;
-    left:0;
-    width:95%;
-    padding:0.5vh 0.5vw;
-    height:13vh;
-    font-size:2.5vh;
-    overflow: hidden;
-    cursor: inherit;
 }
