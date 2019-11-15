@@ -75,7 +75,9 @@
         height: 100%;
         width: 100%;
         overflow: scroll;
-    } .main_view::-webkit-scrollbar{ width: 0vw; }
+        -ms-overflow-style: none; /* IE 11 */
+        scrollbar-width: none; /* Firefox 64 */
+    } .main_view::-webkit-scrollbar{ width: 0vw; }/* chrome */
     
     /*  Home view   */
     #home_view{
