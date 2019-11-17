@@ -36,9 +36,9 @@
         background-image: url('../img/background-purple.jpg');
         color: #ffffff;
     }
-    body::before{content: "";}
+    body::before{content: "";display: none;}
 
-    body::after{content: "";}
+    body::after{content: "";display: none;}
 
     .headbar{
         height: 4.5vw;
