@@ -8,7 +8,7 @@ window.addEventListener('load',function(){//window loads
 
 var config = {/*  Configuaration manager  */
     data:{
-        current_view:"home",//
+        current_view:"project",//switch back to home when complete
     },
     save:function(){//Save the config file
         localStorage.setItem("SamuelAMatheson_cfg",JSON.stringify(config.data));
@@ -27,7 +27,7 @@ var config = {/*  Configuaration manager  */
         if(typeof(this.data.current_view)!=='undefined'){
 
         }else{
-            this.data.current_view='home'
+            this.data.current_view='project';
         }
         if(!configisvalid){
             console.log('config was found to be invalid and will be overwritten');
