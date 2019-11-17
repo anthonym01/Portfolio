@@ -1,6 +1,9 @@
 @font-face{ font-family: mc11; src:url(../Minecrafter.Reg.ttf); } 
 @font-face{ font-family: cowboy; src:url(../Cowboys_2.0.otf); }
 @font-face{ font-family: handwriting; src:url(../handwriting.otf); }
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Lexend Deca', sans-serif;*/
 
 #page_shade{position: fixed;background-color: rgba(0,0,0,1);transition:background-color 600ms;height:100%;width:100%;z-index: 500;}
 
@@ -35,6 +38,7 @@
         background-color: white;
         background-image: url('../img/background-purple.jpg');
         color: #ffffff;
+        
     }
     body::before{content: "";display: none;}
 
@@ -163,6 +167,7 @@
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         overflow: hidden;
+
     }
     .pedistal:hover{transform: translate(0,-1vh);box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;}
     .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
@@ -210,6 +215,7 @@
         font-size: 2vw;
         width:15vw;
         text-align: center;
+        
     }
     .pedistal_text{
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
@@ -227,12 +233,13 @@
         -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
         position: absolute;
-        top:12vw;
-        height:7.3vw;
+        top:12.1vw;
+        height:7.1vw;
         padding:0.3vw;
         font-size: 1.2vw;
         width:calc(100%-0.6vw);
         text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
     }
     .pallet_swap .pedistal_title{color: #ffffff;}
     .pallet_swap .pedistal_img::after{/*   Temporary   */
