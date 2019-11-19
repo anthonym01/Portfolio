@@ -9,7 +9,7 @@ font-family: 'Lexend Deca', sans-serif;*/
 
 @media screen{
     body::before{
-        position: absolute;
+        position: fixed;
         content: "";
         top:0;
         right:0;
@@ -19,7 +19,7 @@ font-family: 'Lexend Deca', sans-serif;*/
         background-color: #ffffff;
     }
     body::after{
-        position: absolute;
+        position: fixed;
         content: "Portrait mode under construction. Please rotate your device.";
         text-align: center;
         white-space: wrap;
@@ -91,7 +91,7 @@ font-family: 'Lexend Deca', sans-serif;*/
     .actionbtn:hover,.actionbtn_active:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
     .actionbtn:active,.actionbtn_active:active{ color: #000000; background-color: #ffffff;transition: box-shadow 0ms,background-color 0ms,color 0ms;}
     .action_txt{     /*   text- transform effect   */
-        transform: translate(0,0.4vh);
+        transform: translate(0,0.8vh);
         height: 100%;
         width: 100%;
         transition:transform 400ms;
