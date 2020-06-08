@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-    <link rel="icon" href="res/img/favico.webp" type="image/jpg" sizes="32x32">
+    <link rel="icon" href="res/img/favico.webp" type="image/webp" sizes="32x32">
     <link rel="stylesheet" type="text/css" href="res/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" type="text/css" href="res/css/notification-dark.css">-->
@@ -29,7 +29,7 @@
             <div class="actionbtn" id="service_btn">
                 <div class="action_txt">Services</div>
             </div>
-            <div class="actionbtn" id="home_btn">
+            <div class="actionbtn" id="home_btn" style="display:none">
                 <div class="action_txt">Homepage</div>
             </div>
         </div>
@@ -120,7 +120,41 @@
 
     <!--    Contact info view   -->
     <div class="main_view" id="contact_view">
-        contact placeholder
+        <div id="contact_container">
+
+            <a class="contact_dot" id="phone_btn" href="tel:+18765744801" title="Copy to clipboard/activate dialer">
+                <div class="icon"></div>
+                <div class="name">Phone</div>
+            </a>
+            <a class="contact_dot" id="whatsapp_btn" href="tel:+18765744801" title="Copy to clipboard/activate dialer">
+                <div class="icon"></div>
+                <div class="name">Whattsap</div>
+            </a>
+            
+            <a class="contact_dot" id="twitter_btn" href="https://twitter.com/SamuelM56522253" target="_blank"  title="Open Profile">
+                <div class="icon"></div>
+                <div class="name">Twitter</div>
+            </a>
+
+            <div class="contact_dot" id="discord_btn"  title="Copy to clipboard">
+                <div class="icon"></div>
+                <div class="name">Discord</div>
+            </div>
+
+            <a class="contact_dot" id="email_btn" href="mailto:samuelmatheson20@gmail.com"  title="mail to samuelmatheson20@gmail.com">
+                <div class="icon"></div>
+                <div class="name">E-mail</div>
+            </a>
+
+            <a class="contact_dot" id="steam_btn" href="https://steamcommunity.com/profiles/76561198254711232/" target="_blank"  title="Open Profile">
+                <div class="icon"></div>
+                <div class="name">Steam</div>
+            </a>
+            <a class="contact_dot" id="linkedin_btn" href="https://www.linkedin.com/in/samuel-matheson-b7402a1b0/" target="_blank"  title="Open Profile">
+                <div class="icon"></div>
+                <div class="name">LinkedIn</div>
+            </a>
+        </div>
     </div>
 
     <script type="text/javascript" src="res/js/index.js"></script>

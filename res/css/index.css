@@ -1,36 +1,20 @@
-@font-face{ font-family: mc11; src:url(../Minecrafter.Reg.ttf); } 
-@font-face{ font-family: cowboy; src:url(../Cowboys_2.0.otf); }
-@font-face{ font-family: handwriting; src:url(../handwriting.otf); }
+@font-face {
+    font-family: mc11;
+    src: url(../Minecrafter.Reg.ttf);
+}
+
+@font-face {
+    font-family: handwriting;
+    src: url(../handwriting.otf);
+}
+
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Lexend Deca', sans-serif;*/
 
-#page_shade{position: fixed;background-color: rgba(0,0,0,1);transition:background-color 600ms;height:100%;width:100%;z-index: 500;}
 
-@media screen{
-    body::before{
-        position: fixed;
-        content: "";
-        top:0;
-        right:0;
-        height: 100%;
-        width: 100%;
-        z-index: 999;
-        background-color: #ffffff;
-    }
-    body::after{
-        position: fixed;
-        content: "Portrait mode under construction. Please rotate your device.";
-        text-align: center;
-        white-space: wrap;
-        font-size: 7vw;
-        z-index: 999;
-    }
-}
-
-/*    <--  Landscape overwrite -->     */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    body{
+@media screen {
+    body {
         margin: 0px;
         background-size: cover;
         background-attachment: fixed;
@@ -38,41 +22,53 @@ font-family: 'Lexend Deca', sans-serif;*/
         background-color: white;
         background-image: url('../img/background-purple.jpg');
         color: #ffffff;
-        
+
     }
-    body::before{content: "";display: none;}
 
-    body::after{content: "";display: none;}
+    #page_shade {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 1);
+        transition: background-color 600ms;
+        height: 100%;
+        width: 100%;
+        z-index: 500;
+    }
 
-    .headbar{
+    .headbar {
         height: 4.5vw;
         position: relative;
         padding: 0px;
         width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     }
-    .btnbar{/*  Contains action buttons  */
+
+    .btnbar {
+        /*  Contains action buttons  */
         width: 98vw;
         margin-left: auto;
         margin-right: auto;
-        height:calc(6.5vw + 0.4vh);
+        height: calc(6.5vw + 0.4vh);
         z-index: 5;
         padding: 0px;
     }
-    .headbar_content{/* Centers The buttons */
-        padding:0px;
-        height:100%;
+
+    .headbar_content {
+        /* Centers The buttons */
+        padding: 0px;
+        height: 100%;
         width: 66vw;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .actionbtn, .actionbtn_active{     /*   Action buttons at the top of the main content section   */
+
+    .actionbtn,
+    .actionbtn_active {
+        /*   Action buttons at the top of the main content section   */
         margin-right: 0.6vw;
         margin-left: 0vw;
-        margin-top:0.55vw;
+        margin-top: 0.55vw;
         height: 2.4vw;
-        font-size:2vw;
+        font-size: 2vw;
         padding: 0.4vw;
         position: relative;
         font-family: mc11;
@@ -80,64 +76,129 @@ font-family: 'Lexend Deca', sans-serif;*/
         float: right;
         white-space: nowrap;
         cursor: pointer;
-        transition: box-shadow 500ms,background-color 500ms,color 500ms;
-        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-        -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+        transition: box-shadow 500ms, background-color 500ms, color 500ms;
+        -webkit-touch-callout: none;
+        /* prevent callout to copy image, etc when tap to hold */
+        -webkit-user-select: none;
+        /* prevent copy paste, to allow, change 'none' to 'text' */
         border-radius: 0.5vh;
-        border-bottom: 0.4vh solid #ffffff;/*   Default color    */
+        border-bottom: 0.4vh solid #ffffff;
+        /*   Default color    */
         color: #ffffff;
         box-shadow: 0vh 0vh 0vh 0vh #ffffff;
     }
-    .actionbtn:hover,.actionbtn_active:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ffffff; }
-    .actionbtn:active,.actionbtn_active:active{ color: #000000; background-color: #ffffff;transition: box-shadow 0ms,background-color 0ms,color 0ms;}
-    .action_txt{     /*   text- transform effect   */
-        transform: translate(0,0.8vh);
+
+    .actionbtn:hover,
+    .actionbtn_active:hover {
+        box-shadow: 0vh 0vh 1.5vh 0vh #ffffff;
+    }
+
+    .actionbtn:active,
+    .actionbtn_active:active {
+        color: #000000;
+        background-color: #ffffff;
+        transition: box-shadow 0ms, background-color 0ms, color 0ms;
+    }
+
+    .action_txt {
+        /*   text- transform effect   */
+        transform: translate(0, 0.8vh);
         height: 100%;
         width: 100%;
-        transition:transform 400ms;
-    }.action_txt:hover{transform: translate(0,0.2vw);}
-    #service_btn{ border-bottom: 0.4vh solid #ff0000; box-shadow: 0vh 0vh 0vh 0vh #ff0000; }/*  Service button    */
-    #service_btn:active{ color: #000000; background-color: #ff0000; }
+        transition: transform 400ms;
+    }
 
-    #project_btn{ border-bottom: 0.4vh solid #2bff00;box-shadow: 0vh 0vh 0vh 0vh #2bff00;}/*  Project button    */
-    #project_btn:active{color: #000000;background-color: #2bff00;}
+    .action_txt:hover {
+        transform: translate(0, 0.2vw);
+    }
 
-    #about_btn{border-bottom: 0.4vh solid #0026ff;box-shadow: 0vh 0vh 0vh 0vh #0026ff;}/*  About button    */
-    #about_btn:active{color: #000000;background-color: #0026ff;}
+    #service_btn {
+        border-bottom: 0.4vh solid #ff0000;
+        box-shadow: 0vh 0vh 0vh 0vh #ff0000;
+    }
 
-    #contact_btn{border-bottom: 0.4vh solid #ff00ff;box-shadow: 0vh 0vh 0vh 0vh #ff00ff;}/*  About button    */
-    #contact_btn:active{color: #000000;background-color: #ff00ff;}
+    /*  Service button    */
+    #service_btn:active {
+        color: #000000;
+        background-color: #ff0000;
+    }
 
-    #service_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff0000;}
-    #project_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #2bff00;}
-    #about_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #0026ff;}
-    #contact_btn:hover{box-shadow: 0vh 0vh 1.5vh 0vh #ff00ff;}
+    #project_btn {
+        border-bottom: 0.4vh solid #2bff00;
+        box-shadow: 0vh 0vh 0vh 0vh #2bff00;
+    }
+
+    /*  Project button    */
+    #project_btn:active {
+        color: #000000;
+        background-color: #2bff00;
+    }
+
+    #about_btn {
+        border-bottom: 0.4vh solid #0026ff;
+        box-shadow: 0vh 0vh 0vh 0vh #0026ff;
+    }
+
+    /*  About button    */
+    #about_btn:active {
+        color: #000000;
+        background-color: #0026ff;
+    }
+
+    #contact_btn {
+        border-bottom: 0.4vh solid #ff00ff;
+        box-shadow: 0vh 0vh 0vh 0vh #ff00ff;
+    }
+
+    /*  About button    */
+    #contact_btn:active {
+        color: #000000;
+        background-color: #ff00ff;
+    }
+
+    #service_btn:hover {
+        box-shadow: 0vh 0vh 1.5vh 0vh #ff0000;
+    }
+
+    #project_btn:hover {
+        box-shadow: 0vh 0vh 1.5vh 0vh #2bff00;
+    }
+
+    #about_btn:hover {
+        box-shadow: 0vh 0vh 1.5vh 0vh #0026ff;
+    }
+
+    #contact_btn:hover {
+        box-shadow: 0vh 0vh 1.5vh 0vh #ff00ff;
+    }
 
     /* View pannels */
-    .main_view{
+    .main_view {
         display: none;
         height: 100%;
         width: 100%;
         overflow: scroll;
-        -ms-overflow-style: none; /* IE 11 */
-        scrollbar-width: none; /* Firefox 64 */
-    } .main_view::-webkit-scrollbar{ width: 0vw; }/* chrome */
-    
-    /*  Home view   */
-    #home_view{
-        display: block;
+        -ms-overflow-style: none;
+        /* IE 11 */
+        scrollbar-width: none;
+        /* Firefox 64 */
     }
-    
+
+    .main_view::-webkit-scrollbar {
+        width: 0vw;
+    }
+
     /*  Service view    */
-    #service_view{
+    #service_view {
         display: none;
     }
-    
+
     /*  Project view    */
-    #project_view{
+    #project_view {
         display: none;
     }
-    .pedistals_container{
+
+    .pedistals_container {
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -145,9 +206,13 @@ font-family: 'Lexend Deca', sans-serif;*/
         width: 100%;
         height: 100vh;
     }
-    .pedistal{/* Convert to rtf or em scaling */
-        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-        -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+
+    .pedistal {
+        /* Convert to rtf or em scaling */
+        -webkit-touch-callout: none;
+        /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none;
+        /* prevent webkit from resizing text to fit */
         background-color: #000000;
         color: #ffffff;
         box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
@@ -156,72 +221,367 @@ font-family: 'Lexend Deca', sans-serif;*/
         width: 15vw;
         margin: 2vw;
         cursor: pointer;
-        transition:box-shadow 400ms,transform 400ms,color 400ms,background-color 400ms;
-        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-        -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+        transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms;
+        -webkit-touch-callout: none;
+        /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none;
+        /* prevent webkit from resizing text to fit */
         overflow: hidden;
         flex: auto;
 
     }
-    .pedistal:hover{transform: translate(0,-1vh);box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;}
-    .pedistal:active{background-color: #ffffff;color: #000000;transition:color 0ms,background-color 0ms;}
-    .pedistal_img{
+
+    .pedistal:hover {
+        transform: translate(0, -1vh);
+        box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;
+    }
+
+    .pedistal:active {
+        background-color: #ffffff;
+        color: #000000;
+        transition: color 0ms, background-color 0ms;
+    }
+
+    .pedistal_img {
         position: absolute;
-        top:0px;
-        right:0px;
-        height:50%;
-        width:100%;
+        top: 0px;
+        right: 0px;
+        height: 50%;
+        width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('../img/background-dark-3.webp');
         background-size: cover;
     }
-    .pedistal_img::after{
-        background-image: linear-gradient(0deg,rgba(255,255,255,0.0),rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.3),rgba(255,255,255,0.4),rgba(255,255,255,0.5));
+
+    .pedistal_img::after {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
         position: absolute;
         right: 0;
-        height:100%;
-        width:100%;
-        transform: rotate(30deg) translate(100%,-200%);
-        transition:transform 500ms;
+        height: 100%;
+        width: 100%;
+        transform: rotate(30deg) translate(100%, -200%);
+        transition: transform 500ms;
         content: "";
     }
-    .pedistal:hover .pedistal_img::after{transform: rotate(40deg) translate(20%,-50%)}
-    .pedistal_title{
-        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-        -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-        position: absolute;
-        top:50%;
-        height:10%;
-        font-size: 2vmax;
-        width:100%;
-        text-align: center;
-        
+
+    .pedistal:hover .pedistal_img::after {
+        transform: rotate(40deg) translate(20%, -50%)
     }
-    .pedistal_text{
-        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-        -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+
+    .pedistal_title {
+        -webkit-touch-callout: none;
+        /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none;
+        /* prevent webkit from resizing text to fit */
         position: absolute;
-        top:63%;
-        height:37%;
+        top: 50%;
+        height: 10%;
+        font-size: 2vmax;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .pedistal_text {
+        -webkit-touch-callout: none;
+        /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none;
+        /* prevent webkit from resizing text to fit */
+        position: absolute;
+        top: 63%;
+        height: 37%;
         font-size: 1.2vw;
-        width:calc(100% - 1vw);
+        width: calc(100% - 1vw);
         margin-left: 0.5vw;
         margin-right: 0.5vw;
         text-align: center;
         font-family: 'Lexend Deca', sans-serif;
     }
-    .pallet_swap .pedistal_title{color: #ffffff;}
-    .pallet_swap .pedistal_img::after{/*   Temporary   */
-        background-image: linear-gradient(0deg,rgba(0,0,0,0.0),rgba(0,0,0,0.1),rgba(0,0,0,0.2),rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgba(0,0,0,0.5));
+
+    .pallet_swap .pedistal_title {
+        color: #ffffff;
     }
+
+    .pallet_swap .pedistal_img::after {
+        /*   Temporary   */
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+    }
+
     /*  Pallet images   */
-    #RNG_pedistal .pedistal_img{background-image: url('../img/rng_gif.gif');}
-    #Color_selector_pedistal .pedistal_img{background-image: url('../img/Colorwheel.webp');}
-    #Password_warrior_pedistal .pedistal_img{background-image: url('../img/password\ worrior\ icon\ prototype.webp');}
+    #RNG_pedistal .pedistal_img {
+        background-image: url('../img/rng_gif.gif');
+    }
+
+    #Color_selector_pedistal .pedistal_img {
+        background-image: url('../img/Colorwheel.webp');
+    }
+
+    #Password_warrior_pedistal .pedistal_img {
+        background-image: url('../img/password\ worrior\ icon\ prototype.webp');
+    }
 
     /*  ABout view  */
-    #about_view{
+    #about_view {
         display: none;
     }
+
+    /* Contact */
+    #contact_container {
+        /* Barkened square */
+        position: fixed;
+        top: 10vh;
+        left: 5vw;
+        height: 85vh;
+        width: 90vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow-y: auto;
+        font-family: 'Lexend Deca', sans-serif;
+
+    }
+
+    .contact_dot {
+        position: relative;
+        height: 10em;
+        width: 10em;
+        margin: 1.5em;
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: background-color 300ms, transform 300ms;
+        transform: translate(0, 0);
+        -webkit-user-select: none;
+    }
+
+    .contact_dot:hover {
+        background-color: #000000;
+    }
+
+    .contact_dot:active {
+        transition: transform 0ms;
+        transform: translate(0, 5%);
+    }
+
+    .contact_dot .name {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1.5em;
+        font-size: 1.5em;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .contact_dot .icon {
+        position: absolute;
+        bottom: 1.5em;
+        width: 100%;
+        height: 8.5em;
+        color: #ffffff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+
+    #whatsapp_btn .icon {
+        background-image: url('../img/whatsapp_icon.webp');
+        background-size: 85%;
+    }
+
+    #phone_btn .icon {
+        background-image: url('../img/phone_icon.webp');
+        background-size: 70%;
+    }
+
+    #twitter_btn .icon {
+        background-image: url('../img/Twitter_Logo_WhiteOnImage.webp');
+        background-size: 85%;
+    }
+
+    #discord_btn .icon {
+        background-image: url('../img/Discord-Logo-Color.webp');
+        background-size: 85%;
+    }
+
+    #email_btn .icon {
+        background-image: url('../img/gmail-vector-png--1600.webp');
+        background-size: 85%;
+    }
+
+    #steam_btn .icon {
+        background-image: url('../img/steam.webp');
+        background-size: 70%;
+    }
+
+    #linkedin_btn .icon {
+        background-image: url('../img/LI-In-Bug.webp');
+        background-size: 65%;
+    }
+
+
+    @keyframes stretch {
+        from {
+            width: 0%
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    .notification {
+        position: fixed;
+        bottom: 2vh;
+        right: 1vw;
+        height: 20vh;
+        width: 98%;
+        transform: translate(0vw, 25vh);
+        border-top: 0.5vw solid #2bff00;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
+        cursor: pointer;
+        transition: transform 500ms, box-shadow 200ms;
+        z-index: 999;
+    }
+
+    .notification:hover {
+        box-shadow: 0vh 0vh 2vh 0vh #ffffff;
+    }
+
+    .notification .title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 5.5vh;
+        font-size: 4.5vh;
+        padding-right: 1vw;
+        text-align: right;
+        white-space: nowrap;
+        cursor: inherit;
+    }
+
+    .notification .title::after {
+        position: absolute;
+        top: 0;
+        left: 1.2vw;
+        height: 5.5vh;
+        width: 5.5vh;
+        background-image: url('../img/favico.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        cursor: inherit;
+    }
+
+    .notification .title::before {
+        position: absolute;
+        transform: translate(0, 100%);
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: rgb(255, 255, 255);
+        height: 0.5vh;
+        animation: stretch 11000ms;
+        content: "";
+        cursor: inherit;
+    }
+
+    .notification .notifbody {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        padding: 0.5vh 0.5vw;
+        height: 13.5vh;
+        font-size: 2.5vh;
+        overflow: hidden;
+        cursor: inherit;
+    }
+}
+
+/*    <--  Landscape overwrite -->     */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+
+    /*   Type 3 notification   */
+    .notification {
+        position: fixed;
+        bottom: 2vh;
+        right: 1vw;
+        height: 15vh;
+        width: 25vw;
+        transform: translate(30vw, 0vh);
+        border-top: none;
+        border-left: 0.5vw solid #2bff00;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
+        cursor: pointer;
+        transition: transform 500ms, box-shadow 200ms;
+        z-index: 999;
+    }
+
+    .notification:hover {
+        box-shadow: 0vh 0vh 2vh 0vh #ffffff;
+    }
+
+    .notification .title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 5.5vh;
+        font-size: 4.5vh;
+        padding-right: 1vw;
+        text-align: right;
+        white-space: nowrap;
+        cursor: inherit;
+    }
+
+    .notification .title::after {
+        position: absolute;
+        top: 0;
+        left: 1.2vw;
+        height: 5.5vh;
+        width: 5.5vh;
+        background-image: url('../img/favico.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        cursor: inherit;
+    }
+
+    .notification .title::before {
+        position: absolute;
+        transform: translate(0, 100%);
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: rgb(255, 255, 255);
+        height: 0.5vh;
+        animation: stretch 11000ms;
+        content: "";
+        cursor: inherit;
+    }
+
+    .notification .notifbody {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        padding: 0.5vh 0.5vw;
+        height: 8.5vh;
+        font-size: 2.5vh;
+        overflow: hidden;
+        cursor: inherit;
+    }
+}
 }
