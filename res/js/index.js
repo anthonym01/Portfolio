@@ -65,7 +65,10 @@ let UI = {
             clipboard('+18765744801')
             notify.new('Dial','Coppied +18765744801 to clipboard');
         })
-
+        document.getElementById('skype_btn').addEventListener('click',function(){
+            clipboard('samuelmatheson15@gmail.com')
+            notify.new('Skype','Coppied samuelmatheson15@gmail.com to clipboard');
+        })
         switch (config.data.current_view) {
             case "home": this.navigate.home(); break;
             case "about": this.navigate.about(); break;

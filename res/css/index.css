@@ -423,6 +423,14 @@ font-family: 'Lexend Deca', sans-serif;*/
         background-size: 65%;
     }
 
+    #facebook_btn .icon {
+        background-image: url('../img/facebook-512.webp');
+        background-size: 65%;
+    }
+    #skype_btn .icon {
+        background-image: url('../img/skype.webp');
+        background-size: 65%;
+    }
 
     @keyframes stretch {
         from {
@@ -583,5 +591,4 @@ font-family: 'Lexend Deca', sans-serif;*/
         overflow: hidden;
         cursor: inherit;
     }
-}
 }
