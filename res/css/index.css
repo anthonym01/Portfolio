@@ -19,7 +19,7 @@ font-family: 'Lexend Deca', sans-serif;*/
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-color: white;
+        /*background-color: white;*/
         background-image: url('../img/background-purple.jpg');
         color: #ffffff;
 
@@ -35,45 +35,37 @@ font-family: 'Lexend Deca', sans-serif;*/
     }
 
     .headbar {
-        height: 4.5vw;
+        height: fit-content;
         position: relative;
         padding: 0px;
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     }
 
-    .btnbar {
-        /*  Contains action buttons  */
-        width: 98vw;
-        margin-left: auto;
-        margin-right: auto;
-        height: calc(6.5vw + 0.4vh);
-        z-index: 5;
-        padding: 0px;
-    }
-
     .headbar_content {
         /* Centers The buttons */
         padding: 0px;
         height: 100%;
-        width: 66vw;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
     }
 
     .actionbtn,
     .actionbtn_active {
         /*   Action buttons at the top of the main content section   */
-        margin-right: 0.6vw;
-        margin-left: 0vw;
-        margin-top: 0.55vw;
-        height: 2.4vw;
-        font-size: 2vw;
+        margin-left: 0.4vw;
+        margin-right: 0.4vw;
+        margin-top: 0.4vw;
+        font-size: 3.5vw;
         padding: 0.4vw;
         position: relative;
         font-family: mc11;
         text-align: center;
-        float: right;
         white-space: nowrap;
         cursor: pointer;
         transition: box-shadow 500ms, background-color 500ms, color 500ms;
@@ -81,16 +73,16 @@ font-family: 'Lexend Deca', sans-serif;*/
         /* prevent callout to copy image, etc when tap to hold */
         -webkit-user-select: none;
         /* prevent copy paste, to allow, change 'none' to 'text' */
-        border-radius: 0.5vh;
-        border-bottom: 0.4vh solid #ffffff;
+        border-radius: 1vw;
+        border-bottom: 0.5vw solid #ffffff;
         /*   Default color    */
         color: #ffffff;
-        box-shadow: 0vh 0vh 0vh 0vh #ffffff;
+        box-shadow: 0em 0em 0em 0em #ffffff;
     }
 
     .actionbtn:hover,
     .actionbtn_active:hover {
-        box-shadow: 0vh 0vh 1.5vh 0vh #ffffff;
+        box-shadow: 0em 0em 0.3em 0em #ffffff;
     }
 
     .actionbtn:active,
@@ -102,83 +94,89 @@ font-family: 'Lexend Deca', sans-serif;*/
 
     .action_txt {
         /*   text- transform effect   */
-        transform: translate(0, 0.8vh);
+        transform: translate(0, 15%);
         height: 100%;
         width: 100%;
         transition: transform 400ms;
     }
 
-    .action_txt:hover {
-        transform: translate(0, 0.2vw);
+    .actionbtn:hover .action_txt,
+    .actionbtn_active .action_txt {
+        transform: translate(0, 2%);
     }
 
     #service_btn {
-        border-bottom: 0.4vh solid #ff0000;
-        box-shadow: 0vh 0vh 0vh 0vh #ff0000;
+        border-color: #ff0000;
+        box-shadow: 0em 0em 0em 0em #ff0000;
     }
 
-    /*  Service button    */
+    #service_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #ff0000;
+    }
+
     #service_btn:active {
         color: #000000;
         background-color: #ff0000;
     }
 
     #project_btn {
-        border-bottom: 0.4vh solid #2bff00;
-        box-shadow: 0vh 0vh 0vh 0vh #2bff00;
+        border-color: #2bff00;
+        box-shadow: 0em 0em 0em 0em #2bff00;
     }
 
-    /*  Project button    */
+    #project_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #2bff00;
+    }
+
     #project_btn:active {
         color: #000000;
         background-color: #2bff00;
     }
 
     #about_btn {
-        border-bottom: 0.4vh solid #0026ff;
-        box-shadow: 0vh 0vh 0vh 0vh #0026ff;
+        border-color: #0026ff;
+        box-shadow: 0em 0em 0em 0em #0026ff;
     }
 
-    /*  About button    */
+    #about_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #0026ff;
+    }
+
     #about_btn:active {
         color: #000000;
         background-color: #0026ff;
     }
 
     #contact_btn {
-        border-bottom: 0.4vh solid #ff00ff;
-        box-shadow: 0vh 0vh 0vh 0vh #ff00ff;
+        border-color: #ff00ff;
+        box-shadow: 0em 0em 0em 0em #ff00ff;
     }
 
-    /*  About button    */
+    #contact_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #ff00ff;
+    }
+
     #contact_btn:active {
         color: #000000;
         background-color: #ff00ff;
     }
 
-    #service_btn:hover {
-        box-shadow: 0vh 0vh 1.5vh 0vh #ff0000;
-    }
 
-    #project_btn:hover {
-        box-shadow: 0vh 0vh 1.5vh 0vh #2bff00;
-    }
 
-    #about_btn:hover {
-        box-shadow: 0vh 0vh 1.5vh 0vh #0026ff;
-    }
 
-    #contact_btn:hover {
-        box-shadow: 0vh 0vh 1.5vh 0vh #ff00ff;
-    }
+
+
+
 
     /* View pannels */
     .main_view {
+        position: static;
         display: none;
-        height: 100%;
+        height: fit-content;
         width: 100%;
         overflow: scroll;
         -ms-overflow-style: none;
+        margin-top: 0.2em;
         /* IE 11 */
         scrollbar-width: none;
         /* Firefox 64 */
@@ -189,14 +187,8 @@ font-family: 'Lexend Deca', sans-serif;*/
     }
 
     /*  Service view    */
-    #service_view {
-        display: none;
-    }
 
     /*  Project view    */
-    #project_view {
-        display: none;
-    }
 
     .pedistals_container {
         position: relative;
@@ -204,36 +196,32 @@ font-family: 'Lexend Deca', sans-serif;*/
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 100%;
-        height: 100vh;
+        height: fit-content;
     }
 
     .pedistal {
-        /* Convert to rtf or em scaling */
+        -webkit-text-size-adjust: none;
         -webkit-touch-callout: none;
         /* prevent callout to copy image, etc when tap to hold */
-        -webkit-text-size-adjust: none;
-        /* prevent webkit from resizing text to fit */
         background-color: #000000;
         color: #ffffff;
-        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
+        box-shadow: 0em 0em 0.3em 0em #ffffff;
         position: relative;
-        height: 20vw;
-        width: 15vw;
-        margin: 2vw;
+        height: calc(fit-content + 0.5em);
+        width: 15em;
+        margin: 1em;
         cursor: pointer;
         transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms;
-        -webkit-touch-callout: none;
-        /* prevent callout to copy image, etc when tap to hold */
-        -webkit-text-size-adjust: none;
-        /* prevent webkit from resizing text to fit */
+        text-decoration: none;
         overflow: hidden;
-        flex: auto;
-
+        transform: translate(0, 0);
+        font-family: 'Lexend Deca', sans-serif;
+        float: auto;
     }
 
     .pedistal:hover {
-        transform: translate(0, -1vh);
-        box-shadow: 0vh 0.4vh 2vh 0vh #ffffff;
+        transform: translate(0, -0.5em);
+        box-shadow: 0em 0.3em 1.2em 0em #ffffff;
     }
 
     .pedistal:active {
@@ -243,41 +231,22 @@ font-family: 'Lexend Deca', sans-serif;*/
     }
 
     .pedistal_img {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        height: 50%;
+        position: static;
+        height: 10em;
         width: 100%;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-image: url('../img/background-dark-3.webp');
-        background-size: cover;
-    }
-
-    .pedistal_img::after {
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
-        position: absolute;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        transform: rotate(30deg) translate(100%, -200%);
-        transition: transform 500ms;
-        content: "";
-    }
-
-    .pedistal:hover .pedistal_img::after {
-        transform: rotate(40deg) translate(20%, -50%)
+        background-position: center;
     }
 
     .pedistal_title {
+        position: static;
         -webkit-touch-callout: none;
         /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;
         /* prevent webkit from resizing text to fit */
-        position: absolute;
-        top: 50%;
-        height: 10%;
-        font-size: 2vmax;
+        font-size: 2em;
         width: 100%;
         text-align: center;
 
@@ -288,13 +257,11 @@ font-family: 'Lexend Deca', sans-serif;*/
         /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;
         /* prevent webkit from resizing text to fit */
-        position: absolute;
-        top: 63%;
-        height: 37%;
-        font-size: 1.2vw;
-        width: calc(100% - 1vw);
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
+        position: static;
+        height: fit-content;
+        font-size: 1em;
+        width: calc(100% - 1.2em);
+        margin: 0.6em;
         text-align: center;
         font-family: 'Lexend Deca', sans-serif;
     }
@@ -303,10 +270,397 @@ font-family: 'Lexend Deca', sans-serif;*/
         color: #ffffff;
     }
 
-    .pallet_swap .pedistal_img::after {
-        /*   Temporary   */
+    /*.pallet_swap .pedistal_img::after {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+    }*/
+
+    /*  Pallet images   */
+    #timetable_pedistal .pedistal_img {
+        background-image: url('../img/timetable_icon.webp');
     }
+
+    #Password_warrior_pedistal .pedistal_img {
+        background-image: url('../img/password\ worrior\ icon\ prototype.webp');
+    }
+
+    #periodic_table .pedistal_img {
+        background-image: url('../img/Periodic_icon.webp');
+    }
+
+    /*  ABout view  */
+    #about_view {
+        display: none;
+    }
+
+    /* Contact */
+    #contact_container {
+        /* Barkened square */
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        width: 90vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow-y: auto;
+        font-family: 'Lexend Deca', sans-serif;
+
+    }
+
+    .contact_dot {
+        position: relative;
+        height: 10em;
+        width: 10em;
+        margin: 1.5em;
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: background-color 300ms, transform 300ms;
+        transform: translate(0, 0);
+        -webkit-user-select: none;
+    }
+
+    .contact_dot:hover {
+        background-color: #000000;
+    }
+
+    .contact_dot:active {
+        transition: transform 0ms;
+        transform: translate(0, 5%);
+    }
+
+    .contact_dot .name {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1.5em;
+        font-size: 1.5em;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .contact_dot .icon {
+        position: absolute;
+        bottom: 1.5em;
+        width: 100%;
+        height: 8.5em;
+        color: #ffffff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+
+    #whatsapp_btn .icon {
+        background-image: url('../img/whatsapp_icon.webp');
+        background-size: 85%;
+    }
+
+    #phone_btn .icon {
+        background-image: url('../img/phone_icon.webp');
+        background-size: 70%;
+    }
+
+    #twitter_btn .icon {
+        background-image: url('../img/Twitter_Logo_WhiteOnImage.webp');
+        background-size: 85%;
+    }
+
+    #discord_btn .icon {
+        background-image: url('../img/Discord-Logo-Color.webp');
+        background-size: 85%;
+    }
+
+    #email_btn .icon {
+        background-image: url('../img/gmail-vector-png--1600.webp');
+        background-size: 85%;
+    }
+
+    #steam_btn .icon {
+        background-image: url('../img/steam.webp');
+        background-size: 70%;
+    }
+
+    #linkedin_btn .icon {
+        background-image: url('../img/LI-In-Bug.webp');
+        background-size: 65%;
+    }
+
+    #facebook_btn .icon {
+        background-image: url('../img/facebook-512.webp');
+        background-size: 65%;
+    }
+
+    #skype_btn .icon {
+        background-image: url('../img/skype.webp');
+        background-size: 65%;
+    }
+
+    @keyframes stretch {
+        from {
+            width: 0%
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    .notification {
+        position: fixed;
+        bottom: 2vh;
+        right: 1vw;
+        height: 20vh;
+        width: 98%;
+        transform: translate(0vw, 25vh);
+        border-top: 0.5vw solid #2bff00;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
+        cursor: pointer;
+        transition: transform 500ms, box-shadow 200ms;
+        z-index: 999;
+    }
+
+    .notification:hover {
+        box-shadow: 0vh 0vh 1.5vh 0vh #ffffff;
+    }
+
+    .notification .title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 5.5vh;
+        font-size: 4.5vh;
+        padding-right: 1vw;
+        text-align: right;
+        white-space: nowrap;
+        cursor: inherit;
+    }
+
+    .notification .title::after {
+        position: absolute;
+        top: 0;
+        left: 1.2vw;
+        height: 5.5vh;
+        width: 5.5vh;
+        background-image: url('../img/favico.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        cursor: inherit;
+    }
+
+    .notification .title::before {
+        position: absolute;
+        transform: translate(0, 100%);
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: rgb(255, 255, 255);
+        height: 0.3vh;
+        animation: stretch 11000ms;
+        content: "";
+        cursor: inherit;
+    }
+
+    .notification .notifbody {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        padding: 0.5vh 0.5vw;
+        height: 13vh;
+        font-size: 2.5vh;
+        overflow: hidden;
+        cursor: inherit;
+    }
+}
+
+/*    <--  Landscape overwrite -->     */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+
+    .actionbtn,
+    .actionbtn_active {
+        /*   Action buttons at the top of the main content section   */
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        margin-top: 0.2em;
+        font-size: 1.7em;
+        padding: 0.2em;
+        border-radius: 0.3em;
+        border-bottom: 0.15em solid;
+        box-shadow: 0em 0em 0em 0em #ffffff;
+    }
+
+    #service_btn {
+        border-color: #ff0000;
+        box-shadow: 0em 0em 0em 0em #ff0000;
+    }
+
+    #service_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #ff0000;
+    }
+
+    #service_btn:active {
+        color: #000000;
+        background-color: #ff0000;
+    }
+
+    #project_btn {
+        border-color: #2bff00;
+        box-shadow: 0em 0em 0em 0em #2bff00;
+    }
+
+    #project_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #2bff00;
+    }
+
+    #project_btn:active {
+        color: #000000;
+        background-color: #2bff00;
+    }
+
+    #about_btn {
+        border-color: #0026ff;
+        box-shadow: 0em 0em 0em 0em #0026ff;
+    }
+
+    #about_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #0026ff;
+    }
+
+    #about_btn:active {
+        color: #000000;
+        background-color: #0026ff;
+    }
+
+    #contact_btn {
+        border-color: #ff00ff;
+        box-shadow: 0em 0em 0em 0em #ff00ff;
+    }
+
+    #contact_btn:hover {
+        box-shadow: 0em 0em 0.5em 0em #ff00ff;
+    }
+
+    #contact_btn:active {
+        color: #000000;
+        background-color: #ff00ff;
+    }
+
+
+
+
+
+
+
+
+    /* View pannels */
+    .main_view {
+        position: static;
+        display: none;
+        height: fit-content;
+        width: 100%;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        margin-top: 0.2em;
+        /* IE 11 */
+        scrollbar-width: none;
+        /* Firefox 64 */
+    }
+
+    .main_view::-webkit-scrollbar {
+        width: 0vw;
+    }
+
+    /*  Service view    */
+
+    /*  Project view    */
+
+    .pedistals_container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .pedistal {
+        /* Convert to rtf or em scaling */
+        -webkit-touch-callout: none;
+        /* prevent webkit from resizing text to fit */
+        background-color: #000000;
+        color: #ffffff;
+        box-shadow: 0em 0em 0.3em 0em #ffffff;
+        position: relative;
+        cursor: pointer;
+        transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms;
+        text-decoration: none;
+        overflow: hidden;
+        transform: translate(0, 0);
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .pedistal:hover {
+        transform: translate(0, -0.5em);
+        box-shadow: 0em 0.3em 1.2em 0em #ffffff;
+    }
+
+    .pedistal:active {
+        background-color: #ffffff;
+        color: #000000;
+        transition: color 0ms, background-color 0ms;
+    }
+
+    .pedistal_img {
+        position: static;
+        height: 10em;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../img/background-dark-3.webp');
+        background-position: center;
+    }
+
+    .pedistal_title {
+        position: static;
+        -webkit-touch-callout: none;
+        /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none;
+        /* prevent webkit from resizing text to fit */
+        font-size: 1.8em;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .pedistal_text {
+        -webkit-touch-callout: none;
+        /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none;
+        /* prevent webkit from resizing text to fit */
+        position: static;
+        font-size: 1.2em;
+        width: calc(100% - 0.8em);
+        margin: 0.4em;
+        text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .pallet_swap .pedistal_title {
+        color: #ffffff;
+    }
+
+    /*.pallet_swap .pedistal_img::after {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+    }*/
 
     /*  Pallet images   */
     #RNG_pedistal .pedistal_img {
@@ -329,9 +683,10 @@ font-family: 'Lexend Deca', sans-serif;*/
     /* Contact */
     #contact_container {
         /* Barkened square */
-        position: fixed;
-        top: 10vh;
+        position: relative;
         left: 5vw;
+        margin-left: unset;
+        margin-right: unset;
         height: 85vh;
         width: 90vw;
         background-color: rgba(0, 0, 0, 0.7);
@@ -427,96 +782,11 @@ font-family: 'Lexend Deca', sans-serif;*/
         background-image: url('../img/facebook-512.webp');
         background-size: 65%;
     }
+
     #skype_btn .icon {
         background-image: url('../img/skype.webp');
         background-size: 65%;
     }
-
-    @keyframes stretch {
-        from {
-            width: 0%
-        }
-
-        to {
-            width: 100%
-        }
-    }
-
-    .notification {
-        position: fixed;
-        bottom: 2vh;
-        right: 1vw;
-        height: 20vh;
-        width: 98%;
-        transform: translate(0vw, 25vh);
-        border-top: 0.5vw solid #2bff00;
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
-        cursor: pointer;
-        transition: transform 500ms, box-shadow 200ms;
-        z-index: 999;
-    }
-
-    .notification:hover {
-        box-shadow: 0vh 0vh 2vh 0vh #ffffff;
-    }
-
-    .notification .title {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 5.5vh;
-        font-size: 4.5vh;
-        padding-right: 1vw;
-        text-align: right;
-        white-space: nowrap;
-        cursor: inherit;
-    }
-
-    .notification .title::after {
-        position: absolute;
-        top: 0;
-        left: 1.2vw;
-        height: 5.5vh;
-        width: 5.5vh;
-        background-image: url('../img/favico.webp');
-        background-size: contain;
-        background-repeat: no-repeat;
-        content: "";
-        cursor: inherit;
-    }
-
-    .notification .title::before {
-        position: absolute;
-        transform: translate(0, 100%);
-        bottom: 0;
-        left: 0;
-        z-index: 99;
-        background-color: rgb(255, 255, 255);
-        height: 0.5vh;
-        animation: stretch 11000ms;
-        content: "";
-        cursor: inherit;
-    }
-
-    .notification .notifbody {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 95%;
-        padding: 0.5vh 0.5vw;
-        height: 13.5vh;
-        font-size: 2.5vh;
-        overflow: hidden;
-        cursor: inherit;
-    }
-}
-
-/*    <--  Landscape overwrite -->     */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
 
     /*   Type 3 notification   */
     .notification {

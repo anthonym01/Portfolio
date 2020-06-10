@@ -53,21 +53,21 @@ let UI = {
         document.getElementById('home_btn').addEventListener('click', this.navigate.home);
         document.getElementById('contact_btn').addEventListener('click', this.navigate.contact);
 
-        document.getElementById('discord_btn').addEventListener('click',function(){
+        document.getElementById('discord_btn').addEventListener('click', function () {
             clipboard('Samuel_15#4257')
-            notify.new('Discord','Coppied Samuel_15#4257 to clipboard');
+            notify.new('Discord', 'Coppied Samuel_15#4257 to clipboard');
         })
-        document.getElementById('whatsapp_btn').addEventListener('click',function(){
+        document.getElementById('whatsapp_btn').addEventListener('click', function () {
             clipboard('+18765744801')
-            notify.new('Dial','Coppied +18765744801 to clipboard');
+            notify.new('Dial', 'Coppied +18765744801 to clipboard');
         })
-        document.getElementById('phone_btn').addEventListener('click',function(){
+        document.getElementById('phone_btn').addEventListener('click', function () {
             clipboard('+18765744801')
-            notify.new('Dial','Coppied +18765744801 to clipboard');
+            notify.new('Dial', 'Coppied +18765744801 to clipboard');
         })
-        document.getElementById('skype_btn').addEventListener('click',function(){
+        document.getElementById('skype_btn').addEventListener('click', function () {
             clipboard('samuelmatheson15@gmail.com')
-            notify.new('Skype','Coppied samuelmatheson15@gmail.com to clipboard');
+            notify.new('Skype', 'Coppied samuelmatheson15@gmail.com to clipboard');
         })
         switch (config.data.current_view) {
             case "home": this.navigate.home(); break;
@@ -86,12 +86,12 @@ let UI = {
             var pair = vars[i].split('=');
             params[pair[0]] = decodeURIComponent(pair[1]);
         }
-        
-        if(params.contact == "me"){
+
+        if (params.contact == "me") {
             this.navigate.contact();
-            document.getElementById('headbar').style.display="none"
-            document.getElementById('contact_container').style.top="5vh"
-            document.getElementById('contact_container').style.height="90vh"
+            document.getElementById('headbar').style.display = "none"
+            /*document.getElementById('contact_container').style.top = "7.5vh"*/
+            document.getElementById('contact_container').style.height = "99vh"
         }
 
     },
