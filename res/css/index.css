@@ -8,10 +8,6 @@
     src: url(../handwriting.otf);
 }
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Lexend Deca', sans-serif;*/
-
 
 @media screen {
     body {
@@ -22,7 +18,7 @@ font-family: 'Lexend Deca', sans-serif;*/
         /*background-color: white;*/
         background-image: url('../img/background-purple.jpg');
         color: #ffffff;
-
+        font-family: 'Lexend Deca', sans-serif;
     }
 
     #page_shade {
@@ -34,12 +30,17 @@ font-family: 'Lexend Deca', sans-serif;*/
         z-index: 500;
     }
 
-    .headbar {
+    .headbar,
+    .headbar_2 {
         height: fit-content;
         position: relative;
         padding: 0px;
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    }
+
+    .headbar_2 {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     }
 
     .headbar_content {
@@ -61,7 +62,7 @@ font-family: 'Lexend Deca', sans-serif;*/
         margin-left: 0.4vw;
         margin-right: 0.4vw;
         margin-top: 0.4vw;
-        font-size: 3.5vw;
+        font-size: 3.7vw;
         padding: 0.4vw;
         position: relative;
         font-family: mc11;
@@ -105,60 +106,46 @@ font-family: 'Lexend Deca', sans-serif;*/
         transform: translate(0, 2%);
     }
 
-    #service_btn {
+    #project_btn {
         border-color: #ff0000;
         box-shadow: 0em 0em 0em 0em #ff0000;
     }
 
-    #service_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #ff0000;
-    }
-
-    #service_btn:active {
-        color: #000000;
-        background-color: #ff0000;
-    }
-
-    #project_btn {
-        border-color: #2bff00;
-        box-shadow: 0em 0em 0em 0em #2bff00;
-    }
-
     #project_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #2bff00;
+        box-shadow: 0em 0em 0.5em 0em #ff0000;
     }
 
     #project_btn:active {
         color: #000000;
-        background-color: #2bff00;
+        background-color: #ff0000;
     }
 
     #about_btn {
-        border-color: #0026ff;
-        box-shadow: 0em 0em 0em 0em #0026ff;
+        border-color: #00ff00;
+        box-shadow: 0em 0em 0em 0em #00ff00;
     }
 
     #about_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #0026ff;
+        box-shadow: 0em 0em 0.5em 0em #00ff00;
     }
 
     #about_btn:active {
         color: #000000;
-        background-color: #0026ff;
+        background-color: #00ff00;
     }
 
     #contact_btn {
-        border-color: #ff00ff;
-        box-shadow: 0em 0em 0em 0em #ff00ff;
+        border-color: #0000ff;
+        box-shadow: 0em 0em 0em 0em #0000ff;
     }
 
     #contact_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #ff00ff;
+        box-shadow: 0em 0em 0.5em 0em #0000ff;
     }
 
     #contact_btn:active {
         color: #000000;
-        background-color: #ff00ff;
+        background-color: #0000ff;
     }
 
 
@@ -176,7 +163,7 @@ font-family: 'Lexend Deca', sans-serif;*/
         width: 100%;
         overflow: scroll;
         -ms-overflow-style: none;
-        margin-top: 0.2em;
+        /*margin-top: 0.2em;*/
         /* IE 11 */
         scrollbar-width: none;
         /* Firefox 64 */
@@ -197,6 +184,8 @@ font-family: 'Lexend Deca', sans-serif;*/
         justify-content: space-evenly;
         width: 100%;
         height: fit-content;
+        min-height: 90vh;
+        align-content: center;
     }
 
     .pedistal {
@@ -216,7 +205,7 @@ font-family: 'Lexend Deca', sans-serif;*/
         overflow: hidden;
         transform: translate(0, 0);
         font-family: 'Lexend Deca', sans-serif;
-        float: auto;
+        /*flex:1;*/
     }
 
     .pedistal:hover {
@@ -295,11 +284,11 @@ font-family: 'Lexend Deca', sans-serif;*/
     /* Contact */
     #contact_container {
         /* Barkened square */
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        height: fit-content;
-        width: 90vw;
+        position: absolute;
+        /*top:0;*/
+        left: 0;
+        height: 100%;
+        width: 100%;
         background-color: rgba(0, 0, 0, 0.7);
         display: flex;
         flex-wrap: wrap;
@@ -498,68 +487,6 @@ font-family: 'Lexend Deca', sans-serif;*/
         box-shadow: 0em 0em 0em 0em #ffffff;
     }
 
-    #service_btn {
-        border-color: #ff0000;
-        box-shadow: 0em 0em 0em 0em #ff0000;
-    }
-
-    #service_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #ff0000;
-    }
-
-    #service_btn:active {
-        color: #000000;
-        background-color: #ff0000;
-    }
-
-    #project_btn {
-        border-color: #2bff00;
-        box-shadow: 0em 0em 0em 0em #2bff00;
-    }
-
-    #project_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #2bff00;
-    }
-
-    #project_btn:active {
-        color: #000000;
-        background-color: #2bff00;
-    }
-
-    #about_btn {
-        border-color: #0026ff;
-        box-shadow: 0em 0em 0em 0em #0026ff;
-    }
-
-    #about_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #0026ff;
-    }
-
-    #about_btn:active {
-        color: #000000;
-        background-color: #0026ff;
-    }
-
-    #contact_btn {
-        border-color: #ff00ff;
-        box-shadow: 0em 0em 0em 0em #ff00ff;
-    }
-
-    #contact_btn:hover {
-        box-shadow: 0em 0em 0.5em 0em #ff00ff;
-    }
-
-    #contact_btn:active {
-        color: #000000;
-        background-color: #ff00ff;
-    }
-
-
-
-
-
-
-
 
     /* View pannels */
     .main_view {
@@ -569,7 +496,7 @@ font-family: 'Lexend Deca', sans-serif;*/
         width: 100%;
         overflow: scroll;
         -ms-overflow-style: none;
-        margin-top: 0.2em;
+        /*margin-top: 0.2em;*/
         /* IE 11 */
         scrollbar-width: none;
         /* Firefox 64 */
@@ -681,22 +608,7 @@ font-family: 'Lexend Deca', sans-serif;*/
     }
 
     /* Contact */
-    #contact_container {
-        /* Barkened square */
-        position: relative;
-        left: 5vw;
-        margin-left: unset;
-        margin-right: unset;
-        height: 85vh;
-        width: 90vw;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        overflow-y: auto;
-        font-family: 'Lexend Deca', sans-serif;
 
-    }
 
     .contact_dot {
         position: relative;
