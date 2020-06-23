@@ -149,12 +149,6 @@
     }
 
 
-
-
-
-
-
-
     /* View pannels */
     .main_view {
         position: static;
@@ -172,8 +166,6 @@
     .main_view::-webkit-scrollbar {
         width: 0vw;
     }
-
-    /*  Service view    */
 
     /*  Project view    */
 
@@ -604,11 +596,10 @@
 
     /* Contact */
 
-
     .contact_dot {
         position: relative;
         height: 10em;
-        width: 10em;
+        width: 20em;
         margin: 1.5em;
         display: block;
         text-decoration: none;
@@ -642,7 +633,7 @@
     .contact_dot .icon {
         position: absolute;
         bottom: 1.5em;
-        width: 100%;
+        width: 8.5em;
         height: 8.5em;
         color: #ffffff;
         background-position: center;

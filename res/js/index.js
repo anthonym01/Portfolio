@@ -3,7 +3,7 @@ window.addEventListener('load', function () {//window loads
     if (localStorage.getItem("SamuelAMatheson_cfg")) { config.load() }
     else { config.validate() }
     UI.initalize();
-
+    
     UI.unblurse();//must happen last, blursing takes the place of a loading screen
 });
 
