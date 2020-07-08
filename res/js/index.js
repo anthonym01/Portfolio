@@ -3,7 +3,7 @@ window.addEventListener('load', function () {//window loads
     if (localStorage.getItem("SamuelAMatheson_cfg")) { config.load() }
     else { config.validate() }
     UI.initalize();
-    
+
     UI.unblurse();//must happen last, blursing takes the place of a loading screen
 });
 
@@ -87,12 +87,7 @@ let UI = {
             params[pair[0]] = decodeURIComponent(pair[1]);
         }
 
-        if (params.contact == "me") {
-            this.navigate.contact();
-            document.getElementById('headbar').style.display = "none"
-            /*document.getElementById('contact_container').style.top = "7.5vh"*/
-            document.getElementById('contact_container').style.height = "99vh"
-        }
+        if (params.contact == "me") { this.navigate.contact() }
 
     },
     navigate: {//Navigate to a view
