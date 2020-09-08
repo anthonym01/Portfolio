@@ -9,26 +9,39 @@
 }
 
 :root {
+    --background-image:url('../img/background-purple.jpg');
     --text-color: #000000;
     --background-color: rgb(255, 255, 255);
+    --t_background-color: rgba(255, 255, 255,0);
     --background-transparent: rgba(255, 255, 255, 0.7);
+    --gitg: url('../img/git-white.webp');
+    --link_arrow:url('../img/arrow-light.webp');
+    --headbar_1:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    --headbar_2:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --background-image:url('../img/Kj5cd8B.jpg');
         --text-color: #ffffff;
-        --background-color: #000;
+        --background-color: rgb(0, 0, 0);
+        --t_background-color: rgba(0, 0, 0,0);
         --background-transparent: rgba(0, 0, 0, 0.7);
+        --gitg: url('../img/git-dark.webp');
+        --link_arrow:url('../img/arrow-dark.webp');
+        --headbar_1:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        --headbar_2:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     }
 }
 
 body {
     margin: 0px;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     /*background-color: white;*/
-    background-image: url('../img/background-purple.jpg');
+    background-image:  var(--background-image);
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -50,11 +63,11 @@ body {
     position: relative;
     padding: 0px;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background-image: var(--headbar_1);
 }
 
 .headbar_2 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background-image: var(--headbar_2);
 }
 
 .headbar_content {
@@ -67,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .actionbtn,
@@ -89,21 +102,21 @@ body {
     -webkit-user-select: none;
     /* prevent copy paste, to allow, change 'none' to 'text' */
     border-radius: 1vw;
-    border-bottom: 0.5vw solid #ffffff;
+    border-bottom: 0.5vw solid var(--text-color);
     /*   Default color    */
-    color: #ffffff;
-    box-shadow: 0em 0em 0em 0em #ffffff;
+    color: var(--text-color);
+    box-shadow: 0em 0em 0em 0em var(--text-color);
 }
 
 .actionbtn:hover,
 .actionbtn_active:hover {
-    box-shadow: 0em 0em 0.3em 0em #ffffff;
+    box-shadow: 0em 0em 0.3em 0em var(--text-color);
 }
 
 .actionbtn:active,
 .actionbtn_active:active {
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--background-color);
+    background-color: var(--text-color);
     transition: box-shadow 0ms, background-color 0ms, color 0ms;
 }
 
@@ -130,7 +143,7 @@ body {
 }
 
 #project_btn:active {
-    color: #000000;
+    /*color: #000000;*/
     background-color: #ff0000;
 }
 
@@ -144,7 +157,7 @@ body {
 }
 
 #about_btn:active {
-    color: #000000;
+    /*color: #000000;*/
     background-color: #00ff00;
 }
 
@@ -158,7 +171,7 @@ body {
 }
 
 #contact_btn:active {
-    color: #000000;
+    /*color: #000000;*/
     background-color: #0000ff;
 }
 
@@ -198,9 +211,9 @@ body {
     -webkit-text-size-adjust: none;
     -webkit-touch-callout: none;
     /* prevent callout to copy image, etc when tap to hold */
-    background-color: #000000;
-    color: #ffffff;
-    box-shadow: 0em 0em 0.3em 0em #ffffff;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: 0em 0em 0.3em 0em var(--text-color);
     position: relative;
     height: calc(fit-content + 0.5em);
     width: 15em;
@@ -216,12 +229,12 @@ body {
 
 .pedistal:hover {
     transform: translate(0, -0.5em);
-    box-shadow: 0em 0.3em 1.2em 0em #ffffff;
+    box-shadow: 0em 0.3em 1.2em 0em var(--text-color);
 }
 
 .pedistal:active {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--text-color);
+    color: var(--background-color);
     transition: color 0ms, background-color 0ms;
 }
 
@@ -261,10 +274,7 @@ body {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.pallet_swap .pedistal_title {
-    color: #ffffff;
-}
-.linkbar{
+.linkbar {
     position: absolute;
     left: 0;
     bottom: -5em;
@@ -275,32 +285,42 @@ body {
     justify-content: space-evenly;
     transition: bottom 500ms;
 }
-.pedistal:hover .linkbar{
+
+.pedistal:hover .linkbar {
     bottom: 0em;
 }
-.link_dot{
+
+.link_dot {
     height: 3.5em;
     width: 3.5em;
-    background-color: white;
+    background-color: var(--text-color);
     border-radius: 50%;
-    background-image: url('../img/git-dark.webp');
+    background-image: var(--gitg);
     background-size: 105%;
     background-clip: border-box;
     background-position: center;
+    background-repeat: no-repeat;
+}
+.link_dot_to_site{
+    background-image: var(--link_arrow);
+    background-size: 65%;
 }
 
 
 /*  Pallet images   */
 #timetable_pedistal .pedistal_img {
-    background-image: url('../img/timetable_icon.webp');
+    /*background-image: url('../img/timetable_icon.webp');*/
+    background-image: url('https://raw.githubusercontent.com/anthonym01/Timetable-application/master/Timetable-electron/assets/icons/icon.webp');
 }
 
 #Password_warrior_pedistal .pedistal_img {
-    background-image: url('../img/password\ worrior\ icon\ prototype.webp');
+    /*background-image: url('../img/password\ worrior\ icon\ prototype.webp');*/
+    background-image: url('https://raw.githubusercontent.com/anthonym01/Password-Worrior/master/Assets/password worrior icon prototype.webp');
 }
 
 #periodic_table .pedistal_img {
-    background-image: url('../img/Periodic_icon.webp');
+    /*background-image: url('../img/Periodic_icon.webp');*/
+    background-image: url('https://raw.githubusercontent.com/anthonym01/Interactive-Periodic-table/master/res/icon/icon.png');
 }
 
 /*  ABout view  */
@@ -757,11 +777,12 @@ body {
         width: calc(100% - 2em);
         margin: 1em;
         /*background-clip: content-box;*/
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: var(--background-transparent);
         min-height: 5.6em;
         height: 32em;
         border-radius: 0.5em;
         transition: height 500ms;
+        color: var(--text-color);
     }
 
     .name_container_expansive .mename {
@@ -772,7 +793,7 @@ body {
         width: 100%;
         box-sizing: border-box;
         text-align: center;
-        color: #ffffff;
+        color: var(--text-color);
         user-select: none;
         -webkit-touch-callout: none;
         transition: width 500ms;
@@ -803,8 +824,8 @@ body {
         margin: 1.5em;
         display: block;
         text-decoration: none;
-        color: #ffffff;
-        background-color: rgba(0, 0, 0, 0);
+        color: var(--text-color);
+        background-color: var(--t_background-color);
         cursor: pointer;
         transition: background-color 300ms, color 300ms, transform 300ms;
         transform: translate(0, 0);
@@ -813,8 +834,8 @@ body {
     }
 
     .contact_dot:hover {
-        background-color: #ffffff;
-        color: #000;
+        background-color: var(--text-color);
+        color: var(--background-color);
     }
 
     .contact_dot:active {
@@ -946,17 +967,17 @@ body {
         transform: translate(30vw, 0vh);
         border-top: none;
         border-left: 0.5vw solid #2bff00;
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
+        background-color: var(--background-color);
+        color: var(--text-color);
         overflow: hidden;
-        box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
+        box-shadow: 0vh 0vh 0.5vh 0vh var(--text-color);
         cursor: pointer;
         transition: transform 500ms, box-shadow 200ms;
         z-index: 999;
     }
 
     .notification:hover {
-        box-shadow: 0vh 0vh 2vh 0vh #ffffff;
+        box-shadow: 0vh 0vh 2vh 0vh var(--text-color);
     }
 
     .notification .title {
@@ -991,7 +1012,6 @@ body {
         bottom: 0;
         left: 0;
         z-index: 99;
-        background-color: rgb(255, 255, 255);
         height: 0.5vh;
         animation: stretch 11000ms;
         content: "";
