@@ -1,3 +1,4 @@
 # Sites
-A repo i Put my projects in
+My portfolio
 
+Take it and learn my secrets if you must

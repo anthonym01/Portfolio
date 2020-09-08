@@ -8,6 +8,20 @@
     src: url(../handwriting.otf);
 }
 
+:root {
+    --text-color: #000000;
+    --background-color: rgb(255, 255, 255);
+    --background-transparent: rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #ffffff;
+        --background-color: #000;
+        --background-transparent: rgba(0, 0, 0, 0.7);
+    }
+}
+
 body {
     margin: 0px;
     background-size: cover;
@@ -16,6 +30,8 @@ body {
     /*background-color: white;*/
     background-image: url('../img/background-purple.jpg');
     font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 #page_shade {
@@ -248,6 +264,31 @@ body {
 .pallet_swap .pedistal_title {
     color: #ffffff;
 }
+.linkbar{
+    position: absolute;
+    left: 0;
+    bottom: -5em;
+    height: 4em;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    transition: bottom 500ms;
+}
+.pedistal:hover .linkbar{
+    bottom: 0em;
+}
+.link_dot{
+    height: 3.5em;
+    width: 3.5em;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('../img/git-dark.webp');
+    background-size: 105%;
+    background-clip: border-box;
+    background-position: center;
+}
+
 
 /*  Pallet images   */
 #timetable_pedistal .pedistal_img {
@@ -265,6 +306,68 @@ body {
 /*  ABout view  */
 #about_view {
     display: none;
+}
+
+.name_container_expansive,
+.name_container_compact {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(100% - 2vw);
+    margin: 1vw;
+    /*background-clip: content-box;*/
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 5.6em;
+    height: 50vw;
+    border-radius: 0.5vw;
+    transition: height 500ms;
+}
+
+.mename {
+    position: absolute;
+    bottom: 0.1vw;
+    font-size: 7vw;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    user-select: none;
+    -webkit-touch-callout: none;
+    transition: width 500ms;
+}
+
+.mepic {
+    position: absolute;
+    top: 0.8vw;
+    right: 0;
+    height: 40vw;
+    width: 100%;
+    overflow: hidden;
+    transition: height 500ms, right 500ms, top 500ms, width 500ms, border-radius 500ms, background-size 500ms;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../img/nephews.webp');
+    background-color: none;
+    border-radius: 0%;
+    background-repeat: no-repeat;
+}
+
+.melyfe {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(100% - 2vw);
+    margin: 1vw;
+    margin-top: 2.5vw;
+    /*background-clip: content-box;*/
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 5.6em;
+    height: fit-content;
+    border-radius: 0.5vw;
+}
+
+.melyfe p {
+    text-anchor: middle;
+    text-align: center;
 }
 
 /* Contact */
@@ -492,7 +595,6 @@ body {
         width: 0vw;
     }
 
-    /*  Service view    */
 
     /*  Project view    */
 
@@ -519,6 +621,10 @@ body {
         overflow: hidden;
         transform: translate(0, 0);
         font-family: 'Lexend Deca', sans-serif;
+        width: 26em;
+        box-sizing: border-box;
+        height: 10em;
+        border-radius: 0.4em;
     }
 
     .pedistal:hover {
@@ -533,16 +639,18 @@ body {
     }
 
     .pedistal_img {
-        position: static;
-        height: 10em;
-        width: 100%;
+        position: absolute;
+        top: 0.1em;
+        left: 0.2em;
+        height: 4.5em;
+        width: 4.5em;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     .pedistal_title {
-        position: static;
+        position: absolute;
         -webkit-touch-callout: none;
         /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;
@@ -550,7 +658,11 @@ body {
         font-size: 1.8em;
         width: 100%;
         text-align: center;
-
+        top: 0;
+        right: 0;
+        left: unset;
+        /*height: 4.5em;*/
+        width: calc(100% - 2.6em);
     }
 
     .pedistal_text {
@@ -558,12 +670,17 @@ body {
         /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust: none;
         /* prevent webkit from resizing text to fit */
-        position: static;
-        font-size: 1.2em;
-        width: calc(100% - 0.8em);
-        margin: 0.4em;
+        position: absolute;
+        font-size: 1.1em;
+        width: calc(100% - 3em);
+        margin: 0;
+        padding: 0.4em;
         text-align: center;
         font-family: 'Lexend Deca', sans-serif;
+        bottom: 0;
+        right: 0;
+        height: 7em;
+        box-sizing: border-box;
     }
 
     .pallet_swap .pedistal_title {
@@ -592,6 +709,91 @@ body {
         display: none;
     }
 
+    .name_container_compact {
+        position: relative;
+        box-sizing: border-box;
+        width: calc(100% - 2em);
+        margin: 1em;
+        /*background-clip: content-box;*/
+        background-color: rgba(0, 0, 0, 0.7);
+        min-height: 5.6em;
+        height: 5.4em;
+        border-radius: 0.5em;
+        transition: height 500ms;
+    }
+
+    .name_container_compact .mepic {
+        position: absolute;
+        top: 0.2em;
+        right: 0.2em;
+        height: 5em;
+        width: 5em;
+        overflow: hidden;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/nephews.webp');
+        border-radius: 50%;
+        transition: height 500ms, right 500ms, top 500ms, width 500ms, border-radius 500ms, background-size 500ms;
+        background-repeat: no-repeat;
+    }
+
+    .name_container_compact .mename {
+        position: absolute;
+        bottom: 0.1em;
+        font-size: 3.4em;
+        left: 0;
+        width: calc(100% - 3em);
+        box-sizing: border-box;
+        text-align: center;
+        color: #ffffff;
+        user-select: none;
+        -webkit-touch-callout: none;
+        transition: width 500ms;
+    }
+
+    .name_container_expansive {
+        position: relative;
+        box-sizing: border-box;
+        width: calc(100% - 2em);
+        margin: 1em;
+        /*background-clip: content-box;*/
+        background-color: rgba(0, 0, 0, 0.7);
+        min-height: 5.6em;
+        height: 32em;
+        border-radius: 0.5em;
+        transition: height 500ms;
+    }
+
+    .name_container_expansive .mename {
+        position: absolute;
+        bottom: 0.1em;
+        font-size: 3.4em;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: #ffffff;
+        user-select: none;
+        -webkit-touch-callout: none;
+        transition: width 500ms;
+    }
+
+    .name_container_expansive .mepic {
+        position: absolute;
+        top: 0.8em;
+        right: 0;
+        height: 27em;
+        width: 100%;
+        overflow: hidden;
+        transition: height 500ms, right 500ms, top 500ms, width 500ms, border-radius 500ms, background-size 500ms;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/nephews.webp');
+        background-color: none;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+    }
+
     /* Contact */
 
     .contact_dot {
@@ -607,10 +809,11 @@ body {
         transition: background-color 300ms, color 300ms, transform 300ms;
         transform: translate(0, 0);
         -webkit-user-select: none;
+        border-radius: 0.3em;
     }
 
     .contact_dot:hover {
-        background-color: #bbbbbb;
+        background-color: #ffffff;
         color: #000;
     }
 
@@ -626,7 +829,7 @@ body {
         width: 0%;
         height: 5%;
         transition: width 300ms;
-        background-color: #ffffff;
+        background-color: #506ffe;
     }
 
     .contact_dot:hover .contact_bar {
@@ -653,7 +856,7 @@ body {
         color: inherit;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 70%;
+        background-size: contain;
     }
 
     #whatsapp_btn .icon {
