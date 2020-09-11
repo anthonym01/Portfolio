@@ -1,9 +1,28 @@
 
 window.addEventListener('load', function () {//window loads
     if (localStorage.getItem("SamuelAMatheson_cfg")) { config.load() }
-    UI.initalize();
 
-    UI.unblurse();//must happen last, blursing takes the place of a loading screen
+    //go to last view
+    switch (config.data.current_view) {
+        case "about": navigate.about(); break;
+        case "project": navigate.project(); break;
+        case "contact": navigate.contact(); break;
+        default: navigate.project();
+    }
+    var params = {};
+    var parser = document.createElement('a');
+    parser.href = window.location.href;
+    var query = parser.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        params[pair[0]] = decodeURIComponent(pair[1]);
+    }
+
+    if ('contact' in params) { navigate.contact() }
+
+    document.getElementById('page_shade').style.backgroundColor = "rgba(0,0,0,0)";
+    setTimeout(() => { document.getElementById('page_shade').style.display = "none"; }, 400);
 });
 
 let config = {/*  Configuaration manager  */
@@ -27,100 +46,76 @@ let config = {/*  Configuaration manager  */
     }
 }
 
-let UI = {
-    initalize: function () {//Put the listeners in after the page loads so people cant break things by clicking
-        document.getElementById('about_btn').addEventListener('click', this.navigate.about);
-        document.getElementById('project_btn').addEventListener('click', this.navigate.project);
-        document.getElementById('contact_btn').addEventListener('click', this.navigate.contact);
-
-        document.getElementById('name_container').addEventListener('click',function(){
-            if(this.classList=='name_container_compact'){
-                this.classList='name_container_expansive'
-            }else{
-                this.classList='name_container_compact'
-            }
-        })
-        //contact buttons
-        document.getElementById('discord_btn').addEventListener('click', function () {
-            clipboard('Samuel_15#4257')
-            notify.new('Discord', 'Coppied Samuel_15#4257 to clipboard');
-        })
-        document.getElementById('whatsapp_btn').addEventListener('click', function () {
-            clipboard('+18765744801')
-            notify.new('Dial', 'Coppied +18765744801 to clipboard');
-        })
-        document.getElementById('phone_btn').addEventListener('click', function () {
-            clipboard('+18765744801')
-            notify.new('Dial', 'Coppied +18765744801 to clipboard');
-        })
-        document.getElementById('skype_btn').addEventListener('click', function () {
-            clipboard('samuelmatheson15@gmail.com')
-            notify.new('Skype', 'Coppied samuelmatheson15@gmail.com to clipboard');
-        })
-
-        //go to last view
-        switch (config.data.current_view) {
-            case "about": this.navigate.about(); break;
-            case "project": this.navigate.project(); break;
-            case "contact": this.navigate.contact(); break;
-            default: this.navigate.project();
-        }
-        var params = {};
-        var parser = document.createElement('a');
-        parser.href = window.location.href;
-        var query = parser.search.substring(1);
-        var vars = query.split('&');
-        for (var i = 0; i < vars.length; i++) {
-            var pair = vars[i].split('=');
-            params[pair[0]] = decodeURIComponent(pair[1]);
-        }
-
-        if ('contact' in params) { this.navigate.contact() }
-        //if (params.contact == "me") { this.navigate.contact() }
-
+let navigate = {//Navigate to a view
+    about: function () {
+        document.getElementById('about_view').style.display = 'block';
+        document.getElementById('project_view').style.display = 'none';
+        document.getElementById('contact_view').style.display = 'none';
+        document.getElementById('about_btn').className = "actionbtn_active";
+        document.getElementById('project_btn').className = "actionbtn";
+        document.getElementById('contact_btn').className = "actionbtn";
+        document.getElementById('headbar').classList = "headbar"
+        config.data.current_view = "about";
+        config.save();
     },
-    navigate: {//Navigate to a view
-        about: function () {
-            document.getElementById('about_view').style.display = 'block';
-            document.getElementById('project_view').style.display = 'none';
-            document.getElementById('contact_view').style.display = 'none';
-            document.getElementById('about_btn').className = "actionbtn_active";
-            document.getElementById('project_btn').className = "actionbtn";
-            document.getElementById('contact_btn').className = "actionbtn";
-            document.getElementById('headbar').classList = "headbar"
-            config.data.current_view = "about";
-            config.save();
-        },
-        project: function () {
-            document.getElementById('about_view').style.display = 'none';
-            document.getElementById('project_view').style.display = 'block';
-            document.getElementById('contact_view').style.display = 'none';
-            document.getElementById('about_btn').className = "actionbtn";
-            document.getElementById('project_btn').className = "actionbtn_active";
-            document.getElementById('contact_btn').className = "actionbtn";
-            document.getElementById('headbar').classList = "headbar"
-            config.data.current_view = "project";
-            config.save();
-        },
-        contact: function () {
-            document.getElementById('about_view').style.display = 'none';
-            document.getElementById('project_view').style.display = 'none';
-            document.getElementById('contact_view').style.display = 'block';
-            document.getElementById('about_btn').className = "actionbtn";
-            document.getElementById('project_btn').className = "actionbtn";
-            document.getElementById('contact_btn').className = "actionbtn_active";
-            document.getElementById('headbar').classList = "headbar_2"
-            config.data.current_view = "contact";
-            config.save();
-        },
+    project: function () {
+        document.getElementById('about_view').style.display = 'none';
+        document.getElementById('project_view').style.display = 'block';
+        document.getElementById('contact_view').style.display = 'none';
+        document.getElementById('about_btn').className = "actionbtn";
+        document.getElementById('project_btn').className = "actionbtn_active";
+        document.getElementById('contact_btn').className = "actionbtn";
+        document.getElementById('headbar').classList = "headbar"
+        config.data.current_view = "project";
+        config.save();
     },
-    unblurse: function () {//Un-sade the page after loading is complete
-        document.getElementById('page_shade').style.backgroundColor = "rgba(0,0,0,0)";
-        setTimeout(() => { document.getElementById('page_shade').style.display = "none"; }, 400);
+    contact: function () {
+        document.getElementById('about_view').style.display = 'none';
+        document.getElementById('project_view').style.display = 'none';
+        document.getElementById('contact_view').style.display = 'block';
+        document.getElementById('about_btn').className = "actionbtn";
+        document.getElementById('project_btn').className = "actionbtn";
+        document.getElementById('contact_btn').className = "actionbtn_active";
+        document.getElementById('headbar').classList = "headbar_2"
+        config.data.current_view = "contact";
+        config.save();
+    },
+};
+//Navigate buttons
+document.getElementById('about_btn').addEventListener('click', navigate.about);
+document.getElementById('project_btn').addEventListener('click', navigate.project);
+document.getElementById('contact_btn').addEventListener('click', navigate.contact);
+
+
+
+//name container in the About
+document.getElementById('name_container').addEventListener('click', function () {
+    if (this.classList == 'name_container_compact') {
+        this.classList = 'name_container_expansive'
+    } else {
+        this.classList = 'name_container_compact'
     }
-}
+})
 
-async function clipboard(textpush) {
+//contact buttons
+document.getElementById('discord_btn').addEventListener('click', function () {
+    clipboard('Samuel_15#4257')
+    notify.new('Discord', 'Coppied Samuel_15#4257 to clipboard');
+})
+document.getElementById('whatsapp_btn').addEventListener('click', function () {
+    clipboard('+18765744801')
+    notify.new('Dial', 'Coppied +18765744801 to clipboard');
+})
+document.getElementById('phone_btn').addEventListener('click', function () {
+    clipboard('+18765744801')
+    notify.new('Dial', 'Coppied +18765744801 to clipboard');
+})
+document.getElementById('skype_btn').addEventListener('click', function () {
+    clipboard('samuelmatheson15@gmail.com')
+    notify.new('Skype', 'Coppied samuelmatheson15@gmail.com to clipboard');
+})
+
+async function clipboard(textpush) {//Push text to clipboard
     textpush.toString()
     var temptxtbox = document.createElement("input")
     document.body.appendChild(temptxtbox)

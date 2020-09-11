@@ -9,28 +9,30 @@
 }
 
 :root {
-    --background-image:url('../img/background-purple.jpg');
+    --background-image: url('../img/background-purple.jpg');
     --text-color: #000000;
     --background-color: rgb(255, 255, 255);
-    --t_background-color: rgba(255, 255, 255,0);
+    --t_background-color: rgba(255, 255, 255, 0);
     --background-transparent: rgba(255, 255, 255, 0.7);
     --gitg: url('../img/git-white.webp');
-    --link_arrow:url('../img/arrow-light.webp');
-    --headbar_1:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
-    --headbar_2:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    --link_arrow: url('../img/arrow-light.webp');
+    --link: url('../img/link-white.webp');
+    --headbar_1: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    --headbar_2: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-image:url('../img/Kj5cd8B.jpg');
+        --background-image: url('../img/Kj5cd8B.jpg');
         --text-color: #ffffff;
         --background-color: rgb(0, 0, 0);
-        --t_background-color: rgba(0, 0, 0,0);
+        --t_background-color: rgba(0, 0, 0, 0);
         --background-transparent: rgba(0, 0, 0, 0.7);
         --gitg: url('../img/git-dark.webp');
-        --link_arrow:url('../img/arrow-dark.webp');
-        --headbar_1:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-        --headbar_2:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        --link_arrow: url('../img/arrow-dark.webp');
+        --link: url('../img/link-black.webp');
+        --headbar_1: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        --headbar_2: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     }
 }
 
@@ -41,7 +43,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     /*background-color: white;*/
-    background-image:  var(--background-image);
+    background-image: var(--background-image);
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -50,7 +52,7 @@ body {
 #page_shade {
     /* Set to transparent then hidden by script after page finihes loading */
     position: fixed;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--background-color);
     transition: background-color 600ms;
     height: 100%;
     width: 100%;
@@ -301,26 +303,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-.link_dot_to_site{
-    background-image: var(--link_arrow);
-    background-size: 65%;
-}
 
-
-/*  Pallet images   */
-#timetable_pedistal .pedistal_img {
-    /*background-image: url('../img/timetable_icon.webp');*/
-    background-image: url('https://raw.githubusercontent.com/anthonym01/Timetable-application/master/Timetable-electron/assets/icons/icon.webp');
-}
-
-#Password_warrior_pedistal .pedistal_img {
-    /*background-image: url('../img/password\ worrior\ icon\ prototype.webp');*/
-    background-image: url('https://raw.githubusercontent.com/anthonym01/Password-Worrior/master/Assets/password worrior icon prototype.webp');
-}
-
-#periodic_table .pedistal_img {
-    /*background-image: url('../img/Periodic_icon.webp');*/
-    background-image: url('https://raw.githubusercontent.com/anthonym01/Interactive-Periodic-table/master/res/icon/icon.png');
+.link_dot_to_site {
+    background-image: var(--link);
+    background-size: 75%;
 }
 
 /*  ABout view  */
@@ -335,7 +321,7 @@ body {
     width: calc(100% - 2vw);
     margin: 1vw;
     /*background-clip: content-box;*/
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--background-transparent);
     min-height: 5.6em;
     height: 50vw;
     border-radius: 0.5vw;
@@ -350,7 +336,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    color: #ffffff;
+    color: var(--text-color);
     user-select: none;
     -webkit-touch-callout: none;
     transition: width 500ms;
@@ -398,7 +384,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--background-transparent);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -414,8 +400,8 @@ body {
     margin: 1.5em;
     display: block;
     text-decoration: none;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-color);
+    background-color: var(--t_background-color);
     cursor: pointer;
     transition: background-color 300ms, transform 300ms;
     transform: translate(0, 0);
@@ -423,7 +409,7 @@ body {
 }
 
 .contact_dot:hover {
-    background-color: #000000;
+    background-color: var(--background-color);
 }
 
 .contact_dot:active {
@@ -437,7 +423,7 @@ body {
     width: 100%;
     height: 1.5em;
     font-size: 1.5em;
-    color: #ffffff;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -446,55 +432,10 @@ body {
     bottom: 1.5em;
     width: 100%;
     height: 8.5em;
-    color: #ffffff;
+    color: var(--text-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
-}
-
-#whatsapp_btn .icon {
-    background-image: url('../img/whatsapp_icon.webp');
-    background-size: 85%;
-}
-
-#phone_btn .icon {
-    background-image: url('../img/phone_icon.webp');
-    background-size: 70%;
-}
-
-#twitter_btn .icon {
-    background-image: url('../img/Twitter_Logo_WhiteOnImage.webp');
-    background-size: 85%;
-}
-
-#discord_btn .icon {
-    background-image: url('../img/Discord-Logo-Color.webp');
-    background-size: 85%;
-}
-
-#email_btn .icon {
-    background-image: url('../img/gmail-vector-png--1600.webp');
-    background-size: 85%;
-}
-
-#steam_btn .icon {
-    background-image: url('../img/steam.webp');
-    background-size: 70%;
-}
-
-#linkedin_btn .icon {
-    background-image: url('../img/LI-In-Bug.webp');
-    background-size: 65%;
-}
-
-#facebook_btn .icon {
-    background-image: url('../img/facebook-512.webp');
-    background-size: 65%;
-}
-
-#skype_btn .icon {
-    background-image: url('../img/skype.webp');
-    background-size: 65%;
 }
 
 @keyframes stretch {
@@ -515,17 +456,17 @@ body {
     width: 98%;
     transform: translate(0vw, 25vh);
     border-top: 0.5vw solid #2bff00;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: var(--background-color);
+    color: var(--text-color);
     overflow: hidden;
-    box-shadow: 0vh 0vh 0.5vh 0vh #ffffff;
+    box-shadow: 0vh 0vh 0.5vh 0vh var(--text-color);
     cursor: pointer;
     transition: transform 500ms, box-shadow 200ms;
     z-index: 999;
 }
 
 .notification:hover {
-    box-shadow: 0vh 0vh 1.5vh 0vh #ffffff;
+    box-shadow: 0vh 0vh 1.5vh 0vh var(--text-color);
 }
 
 .notification .title {
@@ -560,7 +501,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: 99;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--text-color);
     height: 0.3vh;
     animation: stretch 11000ms;
     content: "";
@@ -593,7 +534,7 @@ body {
         padding: 0.2em;
         border-radius: 0.3em;
         border-bottom: 0.15em solid;
-        box-shadow: 0em 0em 0em 0em #ffffff;
+        box-shadow: 0em 0em 0em 0em var(--text-color);
     }
 
 
@@ -630,10 +571,7 @@ body {
     .pedistal {
         /* Convert to rtf or em scaling */
         -webkit-touch-callout: none;
-        /* prevent webkit from resizing text to fit */
-        background-color: #000000;
-        color: #ffffff;
-        box-shadow: 0em 0em 0.3em 0em #ffffff;
+        user-select: none;
         position: relative;
         cursor: pointer;
         transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms;
@@ -645,17 +583,6 @@ body {
         box-sizing: border-box;
         height: 10em;
         border-radius: 0.4em;
-    }
-
-    .pedistal:hover {
-        transform: translate(0, -0.5em);
-        box-shadow: 0em 0.3em 1.2em 0em #ffffff;
-    }
-
-    .pedistal:active {
-        background-color: #ffffff;
-        color: #000000;
-        transition: color 0ms, background-color 0ms;
     }
 
     .pedistal_img {
@@ -703,27 +630,6 @@ body {
         box-sizing: border-box;
     }
 
-    .pallet_swap .pedistal_title {
-        color: #ffffff;
-    }
-
-    /*.pallet_swap .pedistal_img::after {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
-    }*/
-
-    /*  Pallet images   */
-    #RNG_pedistal .pedistal_img {
-        background-image: url('../img/rng_gif.gif');
-    }
-
-    #Color_selector_pedistal .pedistal_img {
-        background-image: url('../img/Colorwheel.webp');
-    }
-
-    #Password_warrior_pedistal .pedistal_img {
-        background-image: url('../img/password\ worrior\ icon\ prototype.webp');
-    }
-
     /*  ABout view  */
     #about_view {
         display: none;
@@ -735,7 +641,7 @@ body {
         width: calc(100% - 2em);
         margin: 1em;
         /*background-clip: content-box;*/
-        background-color: rgba(0, 0, 0, 0.7);
+        /*background-color: var(--background-transparent);*/
         min-height: 5.6em;
         height: 5.4em;
         border-radius: 0.5em;
@@ -765,7 +671,7 @@ body {
         width: calc(100% - 3em);
         box-sizing: border-box;
         text-align: center;
-        color: #ffffff;
+        /*color: var(--text-color);*/
         user-select: none;
         -webkit-touch-callout: none;
         transition: width 500ms;
@@ -777,7 +683,7 @@ body {
         width: calc(100% - 2em);
         margin: 1em;
         /*background-clip: content-box;*/
-        background-color: var(--background-transparent);
+        /*background-color: var(--background-transparent);*/
         min-height: 5.6em;
         height: 32em;
         border-radius: 0.5em;
@@ -793,7 +699,7 @@ body {
         width: 100%;
         box-sizing: border-box;
         text-align: center;
-        color: var(--text-color);
+        /*color: var(--text-color);*/
         user-select: none;
         -webkit-touch-callout: none;
         transition: width 500ms;
@@ -824,23 +730,13 @@ body {
         margin: 1.5em;
         display: block;
         text-decoration: none;
-        color: var(--text-color);
-        background-color: var(--t_background-color);
+        /*color: var(--text-color);
+        background-color: var(--t_background-color);*/
         cursor: pointer;
         transition: background-color 300ms, color 300ms, transform 300ms;
         transform: translate(0, 0);
         -webkit-user-select: none;
         border-radius: 0.3em;
-    }
-
-    .contact_dot:hover {
-        background-color: var(--text-color);
-        color: var(--background-color);
-    }
-
-    .contact_dot:active {
-        transition: transform 0ms;
-        transform: translate(0, 5%);
     }
 
     .contact_dot .contact_bar {
@@ -851,6 +747,7 @@ body {
         height: 5%;
         transition: width 300ms;
         background-color: #506ffe;
+        /*defsult for phone icon*/
     }
 
     .contact_dot:hover .contact_bar {
@@ -880,83 +777,6 @@ body {
         background-size: contain;
     }
 
-    #whatsapp_btn .icon {
-        background-image: url('../img/whatsapp_icon.webp');
-        background-size: 85%;
-    }
-
-    #whatsapp_btn .contact_bar {
-        background-color: #3de35b;
-    }
-
-    #phone_btn .icon {
-        background-image: url('../img/phone_icon.webp');
-        background-size: 70%;
-    }
-
-    #twitter_btn .icon {
-        background-image: url('../img/Twitter_Logo_WhiteOnImage.webp');
-        background-size: 85%;
-    }
-
-    #twitter_btn .contact_bar {
-        background-color: #2daae1;
-    }
-
-    #discord_btn .icon {
-        background-image: url('../img/Discord-Logo-Color.webp');
-        background-size: 85%;
-    }
-
-    #discord_btn .contact_bar {
-        background-color: #7289da;
-    }
-
-    #email_btn .icon {
-        background-image: url('../img/gmail-vector-png--1600.webp');
-        background-size: 85%;
-    }
-
-    #email_btn .contact_bar {
-        background-color: #e8504c;
-    }
-
-    #steam_btn .icon {
-        background-image: url('../img/steam.webp');
-        background-size: 70%;
-    }
-
-    #steam_btn .contact_bar {
-        background-color: #136a9c;
-    }
-
-    #linkedin_btn .icon {
-        background-image: url('../img/LI-In-Bug.webp');
-        background-size: 65%;
-    }
-
-    #linkedin_btn .contact_bar {
-        background-color: #2868b2;
-    }
-
-    #facebook_btn .icon {
-        background-image: url('../img/facebook-512.webp');
-        background-size: 65%;
-    }
-
-    #facebook_btn .contact_bar {
-        background-color: #45619d;
-    }
-
-    #skype_btn .icon {
-        background-image: url('../img/skype.webp');
-        background-size: 65%;
-    }
-
-    #skype_btn .contact_bar {
-        background-color: #00b0ee;
-    }
-
     /*   Type 3 notification   */
     .notification {
         position: fixed;
@@ -966,7 +786,7 @@ body {
         width: 25vw;
         transform: translate(30vw, 0vh);
         border-top: none;
-        border-left: 0.5vw solid #2bff00;
+        border-left: 0.5vw solid var(--text-color);
         background-color: var(--background-color);
         color: var(--text-color);
         overflow: hidden;
@@ -974,6 +794,7 @@ body {
         cursor: pointer;
         transition: transform 500ms, box-shadow 200ms;
         z-index: 999;
+        border-radius: 0.3vw;
     }
 
     .notification:hover {
