@@ -3,6 +3,7 @@
 
 <head>
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8;Set-Cookie: flavor=choco; SameSite=None; Secure;">
     <link rel="icon" href="res/img/favico.webp" type="image/webp" sizes="32x32">
     <link rel="stylesheet" type="text/css" href="res/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto&display=swap" rel="stylesheet">
@@ -41,6 +42,19 @@
         <div class="pedistals_container">
 
             <!-- Password worrior -->
+            <div class="pedistal" id="Music_pedistal">
+                <div class="pedistal_img"
+                    style="background-image: url('https://raw.githubusercontent.com/anthonym01/Anthonym/main/icon.png')">
+                </div>
+                <div class="pedistal_title">Music Player</div>
+                <div class="pedistal_text">Anthonym music player</div>
+                <div class="linkbar">
+                    <a href="https://github.com/anthonym01/Anthonym" target="_blank" class="link_dot"
+                        title="view on Github"></a>
+                </div>
+            </div>
+
+            <!-- Password worrior -->
             <div class="pedistal" id="Password_warrior_pedistal">
                 <div class="pedistal_img"
                     style="background-image: url('https://raw.githubusercontent.com/anthonym01/Password-Worrior/master/Assets/password worrior icon prototype.webp')">
@@ -63,8 +77,7 @@
                 <div class="linkbar">
                     <a class="link_dot" href="https://github.com/anthonym01/Timetable-application" target="_blank"
                         title="view on Github"></a>
-                    <a class="link_dot link_dot_to_site" href="https://anthonym01.github.io/Timetable-application" target="_blank" onclick="(e)=>{e.stopPropagation()}"
-                        title="Link to Timetables's website"></a>
+                    <a class="link_dot link_dot_to_site" href="https://anthonym01.github.io/Timetable-application"                        target="_blank" title="Link to Timetables's website"></a>
                 </div>
             </div>
 
@@ -81,18 +94,19 @@
                 </div>
             </div>
 
-            <div class="pedistal" style="display: block;">
-                <div class="pedistal_img"></div>
+            <!-- Prototype -->
+            <div class="pedistal" id="Prototype_pedistal" style="display: block;">
+                <div class="pedistal_img" style="background-image: url('/res/img/facebook-512.webp');"></div>
                 <div class="pedistal_title">Placeholder</div>
                 <div class="pedistal_text">Placeholder text</div>
                 <div class="linkbar">
-                    <a class="link_dot" href="" target="_blank" onclick="(e)=>{e.stopPropagation()}"
-                        title="View on github"></a>
-                    <a class="link_dot link_dot_to_site" href="" target="_blank" onclick="(e)=>{e.stopPropagation()}"
-                        title="Link to __'s website"></a>
+                    <a class="link_dot" href="" target="_blank" title="View on github"></a>
+                    <a class="link_dot link_dot_to_site" href="" target="_blank" title="Link to __'s website"></a>
                 </div>
             </div>
 
+            <!-- P shade blurs background and closes active pedistals -->
+            <div id="P_shade" title="Click to close"></div>
         </div>
     </div>
 
@@ -126,34 +140,40 @@
 
             <a class="contact_dot" id="whatsapp_btn" href="https://wa.me/18765744801" target="_blank"
                 title="Opens whatsapp app">
-                <div class="icon" style="background-image: url('res/img/whatsapp_icon.webp');background-size: 85%;"></div>
+                <div class="icon" style="background-image: url('res/img/whatsapp_icon.webp');background-size: 85%;">
+                </div>
                 <div class="name">WhatsApp</div>
                 <div class="contact_bar" style="background-color: #3de35b;"></div>
             </a>
 
             <a class="contact_dot" id="twitter_btn" href="https://twitter.com/SamuelM56522253" target="_blank"
                 title="My twitter Profile">
-                <div class="icon" style=" background-image: url('res/img/Twitter_Logo_WhiteOnImage.webp');background-size: 85%;"></div>
+                <div class="icon"
+                    style=" background-image: url('res/img/Twitter_Logo_WhiteOnImage.webp');background-size: 85%;">
+                </div>
                 <div class="name">Twitter</div>
                 <div class="contact_bar" style="background-color: #2daae1;"></div>
             </a>
 
             <a class="contact_dot" id="facebook_btn" href="https://www.facebook.com/samuel.matheson.75" target="_blank"
                 title="My facebook Profile">
-                <div class="icon" style="background-image: url('res/img/facebook-512.webp');background-size: 65%;"></div>
+                <div class="icon" style="background-image: url('res/img/facebook-512.webp');background-size: 65%;">
+                </div>
                 <div class="name">Facebook</div>
                 <div class="contact_bar" style="background-color: #45619d;"></div>
             </a>
 
             <div class="contact_dot" id="discord_btn" title="Copy Discord ID to clipboard">
-                <div class="icon" style="background-image: url('res/img/Discord-Logo-Color.webp');background-size: 85%;"></div>
+                <div class="icon"
+                    style="background-image: url('res/img/Discord-Logo-Color.webp');background-size: 85%;"></div>
                 <div class="name">Discord</div>
                 <div class="contact_bar" style="background-color: #7289da;"></div>
             </div>
 
             <a class="contact_dot" id="email_btn" href="mailto:samuelmatheson20@gmail.com"
                 title="mail to samuelmatheson20@gmail.com">
-                <div class="icon" style="background-image: url('res/img/gmail-vector-png--1600.webp');background-size: 85%;"></div>
+                <div class="icon"
+                    style="background-image: url('res/img/gmail-vector-png--1600.webp');background-size: 85%;"></div>
                 <div class="name">E-mail</div>
                 <div class="contact_bar" style="background-color: #e8504c;"></div>
             </a>

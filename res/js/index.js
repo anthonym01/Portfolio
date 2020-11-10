@@ -1,14 +1,17 @@
 
-window.addEventListener('load', function () {//window loads
-    if (localStorage.getItem("SamuelAMatheson_cfg")) { config.load() }
 
-    //go to last view
-    switch (config.data.current_view) {
-        case "about": navigate.about(); break;
-        case "project": navigate.project(); break;
-        case "contact": navigate.contact(); break;
-        default: navigate.project();
+window.addEventListener('load', function () {//window loads
+    if (document.cookie != undefined) {
+        //go to last view
+        switch (document.cookie) {
+            case "view=about": go_to_about(); break;
+            case "view=project": go_to_project(); break;
+            case "view=contact": go_to_contact(); break;
+            default: go_to_project();
+        }
     }
+
+    //Check for link variables
     var params = {};
     var parser = document.createElement('a');
     parser.href = window.location.href;
@@ -18,75 +21,87 @@ window.addEventListener('load', function () {//window loads
         var pair = vars[i].split('=');
         params[pair[0]] = decodeURIComponent(pair[1]);
     }
-
+    //act upon
     if ('contact' in params) { navigate.contact() }
 
+    //Un-shade the page
     document.getElementById('page_shade').style.backgroundColor = "rgba(0,0,0,0)";
     setTimeout(() => { document.getElementById('page_shade').style.display = "none"; }, 400);
 });
 
-let config = {/*  Configuaration manager  */
-    data: {
-        current_view: "project",//switch back to home when complete
-    },
-    save: function () {//Save the config file
-        localStorage.setItem("SamuelAMatheson_cfg", JSON.stringify(config.data));
-        console.log('config saved: ');
-        console.table(config.data);
-    },
-    load: function () {//Load the config file into memory
-        config.data = JSON.parse(localStorage.getItem("SamuelAMatheson_cfg"));
-        console.log('config Loaded: ');
-        console.table(config.data);
-    },
-    delete: function () {//Does not delete the file itself. Just sets it to empty
-        localStorage.clear("SamuelAMatheson_cfg");
-        console.log('config deleted: ');
-        console.table(config.data);
+
+//Go to about
+document.getElementById('about_btn').addEventListener('click', go_to_about);
+function go_to_about() {
+    document.getElementById('about_view').style.display = 'block';
+    document.getElementById('project_view').style.display = 'none';
+    document.getElementById('contact_view').style.display = 'none';
+    document.getElementById('about_btn').className = "actionbtn_active";
+    document.getElementById('project_btn').className = "actionbtn";
+    document.getElementById('contact_btn').className = "actionbtn";
+    document.getElementById('headbar').classList = "headbar"
+    document.cookie = "view=about; SameSite=Strict";
+}
+
+//Go to Project
+document.getElementById('project_btn').addEventListener('click', go_to_project);
+function go_to_project() {
+    document.getElementById('about_view').style.display = 'none';
+    document.getElementById('project_view').style.display = 'block';
+    document.getElementById('contact_view').style.display = 'none';
+    document.getElementById('about_btn').className = "actionbtn";
+    document.getElementById('project_btn').className = "actionbtn_active";
+    document.getElementById('contact_btn').className = "actionbtn";
+    document.getElementById('headbar').classList = "headbar"
+    document.cookie = "view=project; SameSite=Strict";
+}
+
+//Go to Contact
+document.getElementById('contact_btn').addEventListener('click', go_to_contact);
+function go_to_contact() {
+    document.getElementById('about_view').style.display = 'none';
+    document.getElementById('project_view').style.display = 'none';
+    document.getElementById('contact_view').style.display = 'block';
+    document.getElementById('about_btn').className = "actionbtn";
+    document.getElementById('project_btn').className = "actionbtn";
+    document.getElementById('contact_btn').className = "actionbtn_active";
+    document.getElementById('headbar').classList = "headbar_2"
+    document.cookie = "view=contact; SameSite=Strict";
+}
+
+//Pedistal Actions
+document.getElementById('P_shade').addEventListener('click', function () {//close P_shade on click
+    closeP_shade();
+    var active_pedistals = document.querySelectorAll('.pedistal_active')
+    active_pedistals.forEach(pedistal => { pedistal.classList = "pedistal" })
+})
+
+//Stop Link dots from trigering pedistals
+document.querySelectorAll('.link_dot').forEach(link_dot => { link_dot.addEventListener('click', function (e) { e.stopImmediatePropagation() }) })
+
+document.querySelectorAll('.pedistal').forEach(pedistal => {//Pedistal actions
+    console.log(pedistal)
+    pedistal.addEventListener('click', function (e) {//click on a pedistal
+        e.stopPropagation()
+        openP_shade()
+        Open_pedistal(this)
+    })
+})
+
+async function Open_pedistal(element) {//activate a pedistal
+    console.log('Open pedistal: ', element)
+    if (element.classList == "pedistal") {
+        element.classList = "pedistal_active"
     }
 }
 
-let navigate = {//Navigate to a view
-    about: function () {
-        document.getElementById('about_view').style.display = 'block';
-        document.getElementById('project_view').style.display = 'none';
-        document.getElementById('contact_view').style.display = 'none';
-        document.getElementById('about_btn').className = "actionbtn_active";
-        document.getElementById('project_btn').className = "actionbtn";
-        document.getElementById('contact_btn').className = "actionbtn";
-        document.getElementById('headbar').classList = "headbar"
-        config.data.current_view = "about";
-        config.save();
-    },
-    project: function () {
-        document.getElementById('about_view').style.display = 'none';
-        document.getElementById('project_view').style.display = 'block';
-        document.getElementById('contact_view').style.display = 'none';
-        document.getElementById('about_btn').className = "actionbtn";
-        document.getElementById('project_btn').className = "actionbtn_active";
-        document.getElementById('contact_btn').className = "actionbtn";
-        document.getElementById('headbar').classList = "headbar"
-        config.data.current_view = "project";
-        config.save();
-    },
-    contact: function () {
-        document.getElementById('about_view').style.display = 'none';
-        document.getElementById('project_view').style.display = 'none';
-        document.getElementById('contact_view').style.display = 'block';
-        document.getElementById('about_btn').className = "actionbtn";
-        document.getElementById('project_btn').className = "actionbtn";
-        document.getElementById('contact_btn').className = "actionbtn_active";
-        document.getElementById('headbar').classList = "headbar_2"
-        config.data.current_view = "contact";
-        config.save();
-    },
-};
-//Navigate buttons
-document.getElementById('about_btn').addEventListener('click', navigate.about);
-document.getElementById('project_btn').addEventListener('click', navigate.project);
-document.getElementById('contact_btn').addEventListener('click', navigate.contact);
+async function openP_shade() {// Open pedistal shade
+    document.getElementById('P_shade').style.display = "block"
+}
 
-
+async function closeP_shade() {//Close Pedistal shade
+    document.getElementById('P_shade').style.display = "none"
+}
 
 //name container in the About
 document.getElementById('name_container').addEventListener('click', function () {
@@ -97,7 +112,7 @@ document.getElementById('name_container').addEventListener('click', function () 
     }
 })
 
-//contact buttons
+//active contact buttons
 document.getElementById('discord_btn').addEventListener('click', function () {
     clipboard('Samuel_15#4257')
     notify.new('Discord', 'Coppied Samuel_15#4257 to clipboard');

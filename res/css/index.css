@@ -108,6 +108,7 @@ body {
     /*   Default color    */
     color: var(--text-color);
     box-shadow: 0em 0em 0em 0em var(--text-color);
+    z-index: 100;
 }
 
 .actionbtn:hover,
@@ -209,7 +210,8 @@ body {
     align-content: center;
 }
 
-.pedistal {
+.pedistal,
+.pedistal_active {
     -webkit-text-size-adjust: none;
     -webkit-touch-callout: none;
     /* prevent callout to copy image, etc when tap to hold */
@@ -234,11 +236,12 @@ body {
     box-shadow: 0em 0.3em 1.2em 0em var(--text-color);
 }
 
+/*
 .pedistal:active {
     background-color: var(--text-color);
     color: var(--background-color);
     transition: color 0ms, background-color 0ms;
-}
+}*/
 
 .pedistal_img {
     position: static;
@@ -302,6 +305,10 @@ body {
     background-clip: border-box;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.link_dot:active {
+    background-color: var(--background-color);
 }
 
 .link_dot_to_site {
@@ -568,13 +575,14 @@ body {
         height: fit-content;
     }
 
-    .pedistal {
+    .pedistal,
+    .pedistal_active {
         /* Convert to rtf or em scaling */
         -webkit-touch-callout: none;
         user-select: none;
         position: relative;
-        cursor: pointer;
-        transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms;
+        /*cursor: pointer;*/
+        transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms, height 0ms;
         text-decoration: none;
         overflow: hidden;
         transform: translate(0, 0);
@@ -584,6 +592,37 @@ body {
         height: 10em;
         border-radius: 0.4em;
     }
+
+    .pedistal_active {/* Mode swwitch for peedistal */
+        position: fixed;
+        top: 3.5em;
+        height: calc(100% - 6em);
+        width: 90%;
+        left: 5%;
+        z-index: 50;
+        margin: 0;
+        cursor: default;
+        transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms, height 0ms;
+    }
+
+    #P_shade{/* Blur effectfor focused pedistals */
+        position: fixed;
+        top:0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(3px);
+        /*background-color: var(--background-transparent);*/
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        /*background-color: white;*/
+        background-image: var(--background-image);
+        display: none;
+        cursor: pointer;
+    }
+
 
     .pedistal_img {
         position: absolute;
