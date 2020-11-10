@@ -47,7 +47,7 @@ function go_to_about() {
 document.getElementById('project_btn').addEventListener('click', go_to_project);
 function go_to_project() {
     document.getElementById('about_view').style.display = 'none';
-    document.getElementById('project_view').style.display = 'block';
+    document.getElementById('project_view').style.display = 'flex';
     document.getElementById('contact_view').style.display = 'none';
     document.getElementById('about_btn').className = "actionbtn";
     document.getElementById('project_btn').className = "actionbtn_active";
@@ -69,7 +69,7 @@ function go_to_contact() {
     document.cookie = "view=contact; SameSite=Strict";
 }
 
-//Pedistal Actions
+/* Pedistal Actions */
 document.getElementById('P_shade').addEventListener('click', function () {//close P_shade on click
     closeP_shade();
     var active_pedistals = document.querySelectorAll('.pedistal_active')
