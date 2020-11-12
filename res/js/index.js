@@ -47,7 +47,7 @@ function go_to_about() {
 document.getElementById('project_btn').addEventListener('click', go_to_project);
 function go_to_project() {
     document.getElementById('about_view').style.display = 'none';
-    document.getElementById('project_view').style.display = 'flex';
+    document.getElementById('project_view').style.display = 'block';
     document.getElementById('contact_view').style.display = 'none';
     document.getElementById('about_btn').className = "actionbtn";
     document.getElementById('project_btn').className = "actionbtn_active";
