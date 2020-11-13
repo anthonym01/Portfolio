@@ -7,6 +7,19 @@
     font-family: handwriting;
     src: url(../handwriting.otf);
 }
+/*@keyframes blonk{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}*/
+
+@keyframes blonk{
+    0%{filter: blur(0px);}
+    100%{filter: blur(3px);}
+}
+@keyframes fadein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 :root {
     --background-image: url('../img/background-purple.jpg');
@@ -48,6 +61,7 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     overflow-y: auto;
+    overflow: hidden;
 }
 
 #page_shade {
@@ -60,6 +74,8 @@ body {
     z-index: 500;
     top: 0;
     right: 0;
+    display: block;
+    overflow: hidden;
 }
 
 .headbar,
@@ -211,6 +227,7 @@ body {
     background-image: var(--background-image);
     display: none;
     cursor: pointer;
+    animation: blonk 2s;
 }
 
 .pedistals_container {
@@ -235,7 +252,7 @@ body {
     position: relative;
     /*height: calc(fit-content + 0.5em);*/
     /*width: 15em;*/
-    margin: 1.7em;
+    margin: 0.7em;
     cursor: pointer;
     transition: box-shadow 400ms, transform 400ms, color 400ms, background-color 400ms;
     text-decoration: none;
@@ -264,18 +281,6 @@ body {
 .pedistal:hover {
     transform: translate(0, -0.5em);
     box-shadow: 0em 0.3em 1.2em 0em var(--text-color);
-}
-
-.pedistal_img {
-    position: absolute;
-    top: 0.1em;
-    left: 0.2em;
-    height: 4.5em;
-    width: 4.5em;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../img/icon.png');
 }
 
 .pedistal_title {
@@ -349,10 +354,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.link_dot:active {
-    background-color: var(--background-color);
-}
-
 .link_dot_to_site {
     background-image: var(--link);
     background-size: 75%;
@@ -364,8 +365,6 @@ body {
     position: absolute;
     top: 0.1em;
     left: 0.2em;
-    height: 4.5em;
-    width: 4.5em;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -380,8 +379,8 @@ body {
 
 .pedistal_active .pedistal_img {
     /* Activated Pedistal image */
-    height: 6em;
-    width: 6em;
+    height: 4em;
+    width: 4em;
 }
 
 .pedistal_title {
@@ -401,7 +400,7 @@ body {
 }
 
 .pedistal_active .pedistal_title {
-    font-size: 2.8em;
+    font-size: 2em;
     width: calc(100% - 2em);
 }
 
@@ -434,7 +433,7 @@ body {
     -webkit-text-size-adjust: none;
     position: absolute;
     font-size: 1.1em;
-    width: calc(100% - 6em);
+    width: calc(100% - 4em);
     margin: 0;
     padding-left: 0.4em;
     padding-right: 0.4em;
@@ -499,10 +498,10 @@ body {
     /* Link menu container in activated pedistal */
     display: block;
     position: absolute;
-    top: 6.5em;
+    top: 4.5em;
     left: 0;
-    height: calc(100% - 6.5em);
-    width: 6.6em;
+    height: calc(100% - 4.5em);
+    width: 4em;
 }
 
 .menu_item {
@@ -526,7 +525,7 @@ body {
 .menu_item .icon {
     position: absolute;
     top: 0;
-    left: 1.65em;
+    left: 0.5em;
     height: 3em;
     width: 3em;
     border-radius: 50%;
@@ -540,15 +539,15 @@ body {
 }
 
 .menu_item:hover .icon {
-    left: 0.5em;
+    left: 0.2em;
 }
 
 .menu_item .text {
     position: absolute;
-    left: -20.5em;
+    left: -15.5em;
     bottom: 0.1em;
     line-height: 100%;
-    font-size: 2.5em;
+    font-size: 1.7em;
     height: auto;
     width: 0;
     opacity: 0;
@@ -564,7 +563,7 @@ body {
 
 .menu_item:hover .text {
     width: auto;
-    left: 1.5em;
+    left: 2em;
     opacity: 1;
     transition: left 200ms, opacity 200ms 150ms;
 }
@@ -601,6 +600,7 @@ body {
     color: var(--text-color);
     -webkit-touch-callout: none;
     transition: width 500ms;
+    white-space: nowrap;
 }
 
 .mepic {
@@ -1085,7 +1085,32 @@ body {
     .menu_item:hover .icon {
         left: 0.5em;
     }
-
+    .menu_item .text {
+        position: absolute;
+        left: -20.5em;
+        bottom: 0.1em;
+        line-height: 100%;
+        font-size: 2.5em;
+        height: auto;
+        width: 0;
+        opacity: 0;
+        transition: left 200ms, opacity 0ms;
+        background-color: var(--background-transparent);
+        box-sizing: border-box;
+        padding: 0.05em;
+        border-radius: 0.5em;
+        white-space: nowrap;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+    
+    .menu_item:hover .text {
+        width: auto;
+        left: 1.5em;
+        opacity: 1;
+        transition: left 200ms, opacity 200ms 150ms;
+    }
+    
     /* About View */
 
     .name_container_compact {

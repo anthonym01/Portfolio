@@ -80,7 +80,6 @@ document.getElementById('P_shade').addEventListener('click', function () {//clos
 document.querySelectorAll('.link_dot').forEach(link_dot => { link_dot.addEventListener('click', function (e) { e.stopImmediatePropagation() }) })
 
 document.querySelectorAll('.pedistal').forEach(pedistal => {//Pedistal actions
-    console.log(pedistal)
     pedistal.addEventListener('click', function (e) {//click on a pedistal
         e.stopPropagation()
         openP_shade()
