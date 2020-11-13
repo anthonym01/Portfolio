@@ -552,19 +552,21 @@ body {
     height: auto;
     width: 0;
     opacity: 0;
-    transition: left 200ms, opacity 200ms;
+    transition: left 200ms, opacity 0ms;
     background-color: var(--background-transparent);
     box-sizing: border-box;
     padding: 0.05em;
     border-radius: 0.5em;
     white-space: nowrap;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .menu_item:hover .text {
     width: auto;
     left: 1.5em;
     opacity: 1;
-    transition: left 200ms, opacity 200ms;
+    transition: left 200ms, opacity 200ms 150ms;
 }
 
 
