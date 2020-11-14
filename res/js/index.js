@@ -22,7 +22,7 @@ window.addEventListener('load', function () {//window loads
         params[pair[0]] = decodeURIComponent(pair[1]);
     }
     //act upon
-    if ('contact' in params) { navigate.contact() }
+    if ('contact' in params) { go_to_contact() }
 
     //Un-shade the page
     document.getElementById('page_shade').style.backgroundColor = "rgba(0,0,0,0)";

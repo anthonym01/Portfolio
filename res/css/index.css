@@ -410,7 +410,7 @@ body {
     -webkit-text-size-adjust: none;
     position: absolute;
     font-size: 1.1em;
-    width: calc(100% - 3em);
+    width: calc(100% - 4.4em);
     margin: 0;
     padding: 0.4em;
     text-align: center;
@@ -955,7 +955,7 @@ body {
         -webkit-text-size-adjust: none;
         position: absolute;
         font-size: 1.1em;
-        width: calc(100% - 3em);
+        width: calc(100% - 4.4em);
         margin: 0;
         padding: 0.4em;
         text-align: center;
