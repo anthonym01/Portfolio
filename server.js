@@ -48,16 +48,3 @@ const server = http.createServer(function (req, res) {///make server
     }
 
 })
-
-async function getmifile(filepath){
-    fs.readFile(req.url.replace('/', ''), function (err, data) {//read index.html file
-        if (err) {//error because file not found
-            res.writeHead(404);
-            res.write('404 page not found');
-            console.error('File not found: ', req.url)
-        } else {
-            res.write(data);
-        }
-        res.end()
-    })
-}
