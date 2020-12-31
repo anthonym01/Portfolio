@@ -17,7 +17,7 @@ window.addEventListener('load', function () {//window loads
     parser.href = window.location.href;
     var query = parser.search.substring(1);
     var vars = query.split('&');
-    for (let in vars) {
+    for (let i in vars) {
         var pair = vars[i].split('=');
         params[pair[0]] = decodeURIComponent(pair[1]);
     }
