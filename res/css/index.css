@@ -626,7 +626,7 @@ body {
     margin: 1vw;
     margin-top: 2.5vw;
     /*background-clip: content-box;*/
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--background-transparent);
     min-height: 5.6em;
     height: fit-content;
     border-radius: 0.5vw;
