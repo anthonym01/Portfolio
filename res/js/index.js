@@ -1,6 +1,31 @@
 
 
 window.addEventListener('load', function () {//window loads
+
+    console.log("             ⣀⣠⣤⣤⣤⣤⣤⣄⣀⡀")
+    console.log("         ⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⡀")
+    console.log("      ⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣆")
+    console.log("    ⢠⣿⣿⣿⣿⣿⢻⣿⣿⣿⣿⣿⣿⣿⣿⣯⢻⣿⣿⣿⣿⣆")
+    console.log("  ⣼⢀⣿⣿⣿⣿⣏⡏⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢻⣿⣿⣿⣿⡆")
+    console.log("  ⡟⣼⣿⣿⣿⣿⣿⠄⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿⣿⣇⢻⣿⣿⣿⣿")
+    console.log(" ⢰⠃⣿⣿⠿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠙⠿⣿⣿⣿⣿⣿⠄⢿⣿⣿⣿⡄")
+    console.log(" ⢸⢠⣿⣿⣧⡙⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠈⠛⢿⣿⣿⡇⠸⣿⡿⣸⡇")
+    console.log(" ⠈⡆⣿⣿⣿⣿⣦⡙⠳⠄⠄⠄⠄⠄⠄⢀⣠⣤⣀⣈⠙⠃⠄⠿⢇⣿⡇")
+    console.log("  ⡇⢿⣿⣿⣿⣿⡇⠄⠄⠄⠄⠄⣠⣶⣿⣿⣿⣿⣿⣿⣷⣆⡀⣼⣿⡇")
+    console.log("  ⢹⡘⣿⣿⣿⢿⣷⡀⠄⢀⣴⣾⣟⠉⠉⠉⠉⣽⣿⣿⣿⣿⠇⢹⣿⠃")
+    console.log("   ⢷⡘⢿⣿⣎⢻⣷⠰⣿⣿⣿⣿⣦⣀⣀⣴⣿⣿⣿⠟⢫⡾⢸⡟")
+    console.log("    ⠻⣦⡙⠿⣧⠙⢷⠙⠻⠿⢿⡿⠿⠿⠛⠋⠉⠄⠂⠘⠁⠞")
+    console.log("     ⠈⠙⠑⣠⣤⣴⡖⠄⠿⣋⣉⣉⡁⠄⢾⣦")
+    console.log("        ⠛⠛⠋⠁⣠⣾⣿⣿⣿⣿⡆⠄⣿")
+    console.log("                             。")
+    console.log("                               ｏ")
+    console.log("                                 ○")
+    console.log("                               ╭◜◝  ͡  ◜  ͡  ╮  ╭◜◝  ͡  ◜◝  ͡  ◝╮")
+    console.log("                              (      No     )  (     thoughts   )")
+    console.log("                               ╰◟◞  ͜  ╭◜◝  ͡ ◜◝  ͡  ◝  ͡  ╮◞◟◞╯")
+    console.log(" 　 　                                (   just employ me )")
+    console.log("      　                              ╰◟◞  ͜    ◟◞   ͜   ◟◞  ╯")
+
     if (document.cookie != undefined) {
         //go to last view
         switch (document.cookie) {
@@ -10,6 +35,7 @@ window.addEventListener('load', function () {//window loads
             default: go_to_project();
         }
     }
+    document.body.style.backgroundImage = "url('res/img/Kj5cd8B.jpg')";//ios background image bug
 
     //Check for link variables
     var params = {};

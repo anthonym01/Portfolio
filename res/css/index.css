@@ -8,12 +8,7 @@
     src: url(../handwriting.otf);
 }
 
-/*@keyframes blonk{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}*/
-
-@keyframes blonk {
+@keyframes blonk {/* Blur background around pedistals */
     0% {
         filter: blur(0px);
     }
@@ -619,6 +614,7 @@ body {
     height: 50vw;
     border-radius: 0.5vw;
     transition: height 500ms;
+    cursor: pointer;
 }
 
 .mename {
@@ -1016,7 +1012,28 @@ body {
         -webkit-text-size-adjust: none;
         position: absolute;
         font-size: 1.1em;
-        width: calc(100% - 6em);
+        width: calc(50% - 6em);
+        margin: 0;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        text-align: auto;
+        font-family: 'Lexend Deca', sans-serif;
+        bottom: 0;
+        right: 50%;
+        height: calc(100% - 3.4em);
+        box-sizing: border-box;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .framed_preview{
+        display: block;
+        /* Long desciption in activated pedistal */
+        -webkit-touch-callout: none;
+        -webkit-text-size-adjust: none;
+        position: absolute;
+        font-size: 1.1em;
+        width: 50%;
         margin: 0;
         padding-left: 0.4em;
         padding-right: 0.4em;
