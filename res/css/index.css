@@ -478,6 +478,8 @@ body {
     display: none;
 }
 
+.framed_preview{display: none;}
+
 .pedistal .linkbar {
     /* 'Linkbar', link menu for unactivated pedistals */
     position: absolute;
@@ -1026,7 +1028,7 @@ body {
         overflow-x: hidden;
     }
 
-    .framed_preview{
+    .pedistal_active .framed_preview{
         display: block;
         /* Long desciption in activated pedistal */
         -webkit-touch-callout: none;
@@ -1035,19 +1037,19 @@ body {
         font-size: 1.1em;
         width: 50%;
         margin: 0;
-        padding-left: 0.4em;
-        padding-right: 0.4em;
+        padding: 0;
         text-align: auto;
         font-family: 'Lexend Deca', sans-serif;
         bottom: 0;
         right: 0;
         height: calc(100% - 3.4em);
+        border: none;
         box-sizing: border-box;
         overflow-y: auto;
         overflow-x: hidden;
     }
 
-    .pedistal .long_description {
+    .pedistal .long_description,.pedistal .framed_preview {
         display: none;
     }
 
