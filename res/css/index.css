@@ -60,11 +60,6 @@
 
 body {
     margin: 0px;
-    /*background-size: cover;
-    background-position: center;
-    /*background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: var(--background-image,url('../img/Kj5cd8B.jpg'));*/
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -134,9 +129,9 @@ body {
     /*   Action buttons at the top of the main content section   */
     margin-left: 0.1em;
     margin-right: 0.1em;
-    margin-top: 0.1em;
+    /*margin-top: 0.1em;*/
     font-size: 1.1em;
-    padding: 0.1em;
+    padding: 0;
     border-radius: 0.3em;
     border-bottom: 0.15em solid;
     box-shadow: 0em 0em 0em 0em var(--text-color);
@@ -150,6 +145,10 @@ body {
     -webkit-user-select: none;
     color: var(--text-color);
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .actionbtn:hover,
@@ -166,15 +165,18 @@ body {
 
 .action_txt {
     /*   text- transform effect   */
-    transform: translate(0, 25%);
-    height: 100%;
+    position: relative;
+    /*transform: translate(0, 25%);*/
+    transform: translate(0, 20%);
+    /*height: 100%;*/
+    height: fit-content;
     width: 100%;
     transition: transform 400ms;
 }
 
 .actionbtn:hover .action_txt,
 .actionbtn_active .action_txt {
-    transform: translate(0, 20%);
+    transform: translate(0, 0);
 }
 
 #project_btn {
