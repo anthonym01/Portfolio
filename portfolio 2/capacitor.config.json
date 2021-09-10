@@ -1,0 +1,13 @@
+{
+  "appId": "com.ANTHONYM.SamuelsPortfolio",
+  "appName": "Samuel's Portfolio",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "docs",
+  "linuxAndroidStudioPath": "/usr/bin/android-studio",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
