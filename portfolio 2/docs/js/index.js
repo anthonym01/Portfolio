@@ -1,4 +1,4 @@
-const { Browser, App, Camera, Toast, Storage } = Capacitor.Plugins;
+const { Browser, App, Camera, Toast, Storage, Device } = Capacitor.Plugins;
 
 const remote_host = 'http://192.168.0.13:1999';//a host
 
@@ -10,7 +10,10 @@ App.addListener('backButton', () => {//back button on android
     console.warn('back button pressed')
 })
 
+let info
+
 window.addEventListener('load', async function () {
+    
 
     try {
         await config.load()
@@ -19,6 +22,10 @@ window.addEventListener('load', async function () {
     } finally {
 
     }
+    
+    info = await Device.getInfo(); 
+
+    console.log(info);
 })
 
 let config = {
@@ -262,30 +269,43 @@ document.getElementById('name_container').addEventListener('click', function () 
 //active contact buttons
 document.getElementById('discord_btn').addEventListener('click', function () {
     clipboard('Samuel_15#4257')
-    notify.new('Discord', 'Coppied Samuel_15#4257 to clipboard');
+    Toast.show({
+        text: 'Coppied Samuel_15#4257 to clipboard',
+        duration: 'long',
+        position: 'bottom',
+    });
 })
 document.getElementById('whatsapp_btn').addEventListener('click', function () {
-    clipboard('+18765744801')
-    notify.new('Dial', 'Coppied +18765744801 to clipboard');
+    clipboard('18765744801')
+    Toast.show({
+        text: 'Coppied 18765744801 to clipboard',
+        duration: 'long',
+        position: 'bottom',
+    });
 })
 document.getElementById('phone_btn').addEventListener('click', function () {
-    clipboard('+18765744801')
-    notify.new('Dial', 'Coppied +18765744801 to clipboard');
+    clipboard('18765744801')
+    Toast.show({
+        text: 'Coppied 18765744801 to clipboard',
+        duration: 'long',
+        position: 'bottom',
+    });
 })
 document.getElementById('skype_btn').addEventListener('click', function () {
     clipboard('samuelmatheson15@gmail.com')
-    notify.new('Skype', 'Coppied samuelmatheson15@gmail.com to clipboard');
+    Toast.show({
+        text: 'Coppied samuelmatheson15@gmail.com to clipboard',
+        duration: 'long',
+        position: 'bottom',
+    });
 })
 
 async function clipboard(textpush) {//Push text to clipboard
-    textpush.toString()
-    var temptxtbox = document.createElement("input")
-    document.body.appendChild(temptxtbox)
-    temptxtbox.setAttribute("id", "temp_copy")
-    document.getElementById("temp_copy").value = textpush
-    temptxtbox.select()
-    document.execCommand("copy")
-    document.body.removeChild(temptxtbox)
+    try {
+        Clipboard.write({ string: textpush });
+    } catch (error) {
+        navigator.clipboard.writeText(textpush)
+    }
 }
 
 let notify = {  /*  Notification handler  */
@@ -315,7 +335,7 @@ let notify = {  /*  Notification handler  */
         document.getElementById("notif" + this.current).appendChild(tmpbdy);  //put the 'notifbody' div into the 'notification' div from before
         document.getElementById("body" + this.current).innerHTML = body;    //puts body text into the 'notifbody' div
 
-        tempnotif.addEventListener('click', function () { notify.clearall() });//click to close notifications
+        // tempnotif.addEventListener('click', function () { notify.clearall() });//click to close notifications
         tempnotif.title = 'click to dismiss';
 
         tempnotif.setAttribute("class", "notification");    //set the class of the div to 'notification_style1'
