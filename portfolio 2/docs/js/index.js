@@ -1,7 +1,5 @@
 const { Browser, App, Camera, Toast, Device } = Capacitor.Plugins;
 
-const remote_host = 'http://192.168.0.13:1999';//a host
-
 App.addListener('appStateChange', ({ isActive }) => {// app state is changed, usually sent to the background or suspended
     console.warn('App state changed. Is active: ', isActive);
 });
@@ -13,7 +11,7 @@ App.addListener('backButton', () => {//back button on android
 let devinfo
 
 
-window.addEventListener('load', function () {//window loads
+window.addEventListener('load', async function () {//window loads
 
     console.log("             ⣀⣠⣤⣤⣤⣤⣤⣄⣀⡀")
     console.log("         ⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⡀")
