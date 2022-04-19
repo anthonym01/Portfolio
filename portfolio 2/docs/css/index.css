@@ -53,7 +53,7 @@ html, body {
   --text-color: #ffffff;
   --background-color: rgb(0, 0, 0);
   --t_background-color: rgba(0, 0, 0, 0);
-  --background-transparent: rgba(0, 0, 0, 0.7);
+  --background-transparent: rgba(0, 0, 0, 0.8);
   --gitg: url('../img/git-dark.webp');
   --link_arrow: url('../img/arrow-dark.webp');
   --link: url('../img/link-black.webp');
@@ -154,6 +154,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  backdrop-filter: blur(20px);
 }
 
 .actionbtn:hover,
@@ -268,12 +269,13 @@ body {
   align-content: center;
 }
 
+
 .pedistal,
 .pedistal_active {
   -webkit-text-size-adjust: none;
   -webkit-touch-callout: none;
   /* prevent callout to copy image, etc when tap to hold */
-  background-color: var(--background-color);
+  background-color: var(--background-transparent);
   color: var(--text-color);
   box-shadow: 0em 0em 0.3em 0em var(--text-color);
   position: relative;
@@ -291,6 +293,7 @@ body {
   box-sizing: border-box;
   height: 10em;
   border-radius: 0.4em;
+  backdrop-filter: blur(20px);
 }
 
 .pedistal_active {
@@ -913,7 +916,7 @@ body {
       /* Pedistals */
       -webkit-text-size-adjust: none;
       -webkit-touch-callout: none;
-      background-color: var(--background-color);
+     /* background-color: var(--background-color);*/
       color: var(--text-color);
       box-shadow: 0em 0em 0.3em 0em var(--text-color);
       position: relative;
