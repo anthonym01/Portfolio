@@ -18,7 +18,7 @@ window.addEventListener('load', function () {//window loads
     console.log("     ⠈⠙⠑⣠⣤⣴⡖⠄⠿⣋⣉⣉⡁⠄⢾⣦")
     console.log("        ⠛⠛⠋⠁⣠⣾⣿⣿⣿⣿⡆⠄⣿")
     console.log("                             。")
-    console.log("                               ｏ")
+    console.log("                               o")
     console.log("                                 ○")
     console.log("                               ╭◜◝  ͡  ◜  ͡  ╮  ╭◜◝  ͡  ◜◝  ͡  ◝╮")
     console.log("                              (      No     )  (     thoughts   )")
@@ -139,8 +139,8 @@ document.getElementById('name_container').addEventListener('click', function () 
 
 //active contact buttons
 document.getElementById('discord_btn').addEventListener('click', function () {
-    clipboard('Samuel_15#4257')
-    notify.new('Discord', 'Coppied Samuel_15#4257 to clipboard');
+    clipboard('Operative 2 electric boogaloo#4040')
+    notify.new('Discord', 'Coppied "Operative 2 electric boogaloo#4040" to clipboard');
 })
 document.getElementById('whatsapp_btn').addEventListener('click', function () {
     clipboard('+18765744801')
