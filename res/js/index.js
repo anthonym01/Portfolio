@@ -141,6 +141,10 @@ document.getElementById('name_container').addEventListener('click', function () 
 document.getElementById('discord_btn').addEventListener('click', function () {
     clipboard('Operative 2 electric boogaloo#4040')
     notify.new('Discord', 'Coppied "Operative 2 electric boogaloo#4040" to clipboard');
+    setTimeout(() => {
+        //open piscord link
+        window.open('https://discord.com/channels/@Operative 2 electric boogaloo#4040', '_blank').focus();
+    }, 1000);
 })
 document.getElementById('whatsapp_btn').addEventListener('click', function () {
     clipboard('+18765744801')
