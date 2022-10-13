@@ -34,6 +34,8 @@ window.addEventListener('load', function () {//window loads
             case "view=contact": go_to_contact(); break;
             default: go_to_project();
         }
+    }else{
+        go_to_project()
     }
     document.body.style.backgroundImage = "url('res/img/Kj5cd8B.jpg')";//ios background image bug
 
