@@ -52,6 +52,8 @@ window.addEventListener('load', function () {//window loads
     //act upon
     if ('contact' in params) { go_to_contact() }
 
+    if ('type2speak' in params) { /* Focus the type to speak pedistal*/ }
+
     //Un-shade the page
     document.getElementById('page_shade').style.backgroundColor = "rgba(0,0,0,0)";
     setTimeout(() => { document.getElementById('page_shade').style.display = "none"; }, 400);
