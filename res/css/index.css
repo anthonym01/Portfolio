@@ -76,7 +76,7 @@ body {
     /*background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;*/
-    background-image: var(--background-image, url('/img/Kj5cd8B.jpg'));
+    background-image: var(--background-image);
 }
 
 #page_shade {
