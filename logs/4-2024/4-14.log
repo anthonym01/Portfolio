@@ -1,0 +1,28 @@
+Start log - Tue May 14 2024 22:25:09 GMT-0500 (Colombia Standard Time)
+
+Tue May 14 2024 22:25:09 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Tue May 14 2024 22:25:09 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Tue May 14 2024 22:25:09 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Tue May 14 2024 22:25:09 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Tue May 14 2024 22:28:16 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Tue May 14 2024 22:28:16 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Tue May 14 2024 22:28:16 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Tue May 14 2024 22:28:16 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------

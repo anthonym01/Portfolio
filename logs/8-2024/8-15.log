@@ -1,0 +1,19 @@
+Start log - Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time)
+
+Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time) : Server starting
+------------------------------------------------------------
+Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time) : Running on port  8082
+------------------------------------------------------------
+Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time) : Process ID:  268205
+------------------------------------------------------------
+Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time) : Process path:  /home/samuel/Code_bin/full-node-service-template/express-server template
+------------------------------------------------------------
+Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time) : Initalize database with default path:  
+{
+  "root_db_directory": "/home/samuel/Code_bin/full-node-service-template/express-server template/database/"
+}
+------------------------------------------------------------
+Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time) : Prior database exists
+------------------------------------------------------------
+Thu Aug 15 2024 23:42:24 GMT-0400 (Eastern Daylight Time) : Database check succeded
+------------------------------------------------------------

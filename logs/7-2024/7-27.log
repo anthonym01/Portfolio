@@ -1,0 +1,62 @@
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : Initalize database with default path:  
+{
+  "root_db_directory": "/home/samuel/Code_bin/full-node-service-template/express-server template/database/"
+}
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : Prior database exists
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : Database check succeded
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : Get user data for:  1720721750676
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : testduplicate coresponds to:  
+{
+  "uuid": 1717343929743,
+  "uname": "testduplicate"
+} at index:  2
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : Get user data for:  1717344541826
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : 1717344541826 coresponds to:  
+{
+  "uuid": 1717344541826,
+  "uname": "testduplicate"
+} at index:  4
+------------------------------------------------------------
+
+****************************************
+Error:
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) :
+User could not be found 1720721750676
+******************************************
+
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : 
+testduplicate's data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Sat Jul 27 2024 10:13:49 GMT-0400 (Eastern Daylight Time) : 
+1717344541826's data:  
+{
+  "version": 0,
+  "lastupdate": 1717344541827,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------

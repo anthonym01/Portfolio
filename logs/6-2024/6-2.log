@@ -1,0 +1,171 @@
+Start log - Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time)
+
+Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time) : Initalize database:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sun Jun 02 2024 10:58:49 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Sun Jun 02 2024 11:03:32 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sun Jun 02 2024 11:03:32 GMT-0500 (Colombia Standard Time) : Initalize database:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Sun Jun 02 2024 11:03:32 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sun Jun 02 2024 11:03:32 GMT-0500 (Colombia Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Sun Jun 02 2024 11:03:32 GMT-0500 (Colombia Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:03:32 GMT-0500 (Colombia Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:03:32 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : Initalize database:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Sun Jun 02 2024 11:04:32 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Sun Jun 02 2024 11:08:32 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sun Jun 02 2024 11:08:32 GMT-0500 (Colombia Standard Time) : Initalize database:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Sun Jun 02 2024 11:08:32 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sun Jun 02 2024 11:08:32 GMT-0500 (Colombia Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Sun Jun 02 2024 11:08:32 GMT-0500 (Colombia Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:08:32 GMT-0500 (Colombia Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:08:32 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Sun Jun 02 2024 11:09:01 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sun Jun 02 2024 11:09:01 GMT-0500 (Colombia Standard Time) : Initalize database:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Sun Jun 02 2024 11:09:01 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sun Jun 02 2024 11:09:01 GMT-0500 (Colombia Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Sun Jun 02 2024 11:09:01 GMT-0500 (Colombia Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:09:01 GMT-0500 (Colombia Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sun Jun 02 2024 11:09:01 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Initalize database:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Username coresponds to:  1717343929743
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Get user data for:  1717343929743
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Sun Jun 02 2024 15:25:36 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------

@@ -1,0 +1,235 @@
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Initalizing database
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1717343929743
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : Get user data for:  1717343929743
+------------------------------------------------------------
+Thu Jul 11 2024 13:01:46 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:25 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:25 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:25 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:25 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:26 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:26 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:26 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:26 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:26 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1717343929743
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:26 GMT-0500 (Eastern Standard Time) : Get user data for:  1717343929743
+------------------------------------------------------------
+Thu Jul 11 2024 13:08:26 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Initalize database on:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\chickenn time
+------------------------------------------------------------
+
+****************************************
+Error:
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) :
+Database does not exist
+******************************************
+
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Creating user data directory C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\chickenn time\userdata\
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Creating test users record : C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\chickenn time\users.json
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "test",
+  "password": "0000"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "Anthonym",
+  "password": "0000"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+
+****************************************
+Error:
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) :
+Error in get_user_data:  
+{
+  "errno": -4058,
+  "code": "ENOENT",
+  "syscall": "open",
+  "path": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\chickenn time\\userdata\\1717209024517.json"
+}
+******************************************
+
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:15:50 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1720721750698,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Initalize database on:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\chickenn time
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+
+****************************************
+Error:
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) :
+Error in get_user_data:  
+{
+  "errno": -4058,
+  "code": "ENOENT",
+  "syscall": "open",
+  "path": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\chickenn time\\userdata\\1717209024517.json"
+}
+******************************************
+
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : User already exists at:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:16:29 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1720721750698,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Initalize database on:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\chickenn time
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750676
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1720721750676,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : User already exists at:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750698
+------------------------------------------------------------
+Thu Jul 11 2024 13:17:34 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1720721750698,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------

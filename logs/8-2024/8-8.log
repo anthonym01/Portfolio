@@ -1,0 +1,60 @@
+Start log - Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time)
+
+Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time) : Server starting
+------------------------------------------------------------
+Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time) : Initalize database with default path:  
+{
+  "root_db_directory": "/home/samuel/Code_bin/full-node-service-template/express-server template/database/"
+}
+------------------------------------------------------------
+Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time) : Prior database exists
+------------------------------------------------------------
+Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time) : Database check succeded
+------------------------------------------------------------
+Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time) : Running on port  8082
+------------------------------------------------------------
+Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time) : Process ID:  5704
+------------------------------------------------------------
+Thu Aug 08 2024 15:05:51 GMT-0400 (Eastern Daylight Time) : Process path:  /home/samuel/Code_bin/full-node-service-template/express-server template
+------------------------------------------------------------
+Thu Aug 08 2024 15:06:30 GMT-0400 (Eastern Daylight Time) : test post to server
+------------------------------------------------------------
+Thu Aug 08 2024 15:06:30 GMT-0400 (Eastern Daylight Time) : Posted :  
+{
+  "payload": "henlo"
+}
+------------------------------------------------------------
+Thu Aug 08 2024 21:26:39 GMT-0400 (Eastern Daylight Time) : Server starting
+------------------------------------------------------------
+Thu Aug 08 2024 21:26:39 GMT-0400 (Eastern Daylight Time) : Initalize database with default path:  
+{
+  "root_db_directory": "/home/samuel/Code_bin/full-node-service-template/express-server template/database/"
+}
+------------------------------------------------------------
+Thu Aug 08 2024 21:26:39 GMT-0400 (Eastern Daylight Time) : Prior database exists
+------------------------------------------------------------
+Thu Aug 08 2024 21:26:39 GMT-0400 (Eastern Daylight Time) : Database check succeded
+------------------------------------------------------------
+Thu Aug 08 2024 21:26:39 GMT-0400 (Eastern Daylight Time) : Running on port  8082
+------------------------------------------------------------
+Thu Aug 08 2024 21:26:39 GMT-0400 (Eastern Daylight Time) : Process ID:  6942
+------------------------------------------------------------
+Thu Aug 08 2024 21:26:39 GMT-0400 (Eastern Daylight Time) : Process path:  /home/samuel/Code_bin/full-node-service-template/express-server template
+------------------------------------------------------------
+Thu Aug 08 2024 21:36:05 GMT-0400 (Eastern Daylight Time) : Server starting
+------------------------------------------------------------
+Thu Aug 08 2024 21:36:05 GMT-0400 (Eastern Daylight Time) : Running on port  8082
+------------------------------------------------------------
+Thu Aug 08 2024 21:36:05 GMT-0400 (Eastern Daylight Time) : Process ID:  7048
+------------------------------------------------------------
+Thu Aug 08 2024 21:36:05 GMT-0400 (Eastern Daylight Time) : Process path:  /home/samuel/Code_bin/full-node-service-template/express-server template
+------------------------------------------------------------
+Thu Aug 08 2024 21:36:05 GMT-0400 (Eastern Daylight Time) : Initalize database with default path:  
+{
+  "root_db_directory": "/home/samuel/Code_bin/full-node-service-template/express-server template/database/"
+}
+------------------------------------------------------------
+Thu Aug 08 2024 21:36:05 GMT-0400 (Eastern Daylight Time) : Prior database exists
+------------------------------------------------------------
+Thu Aug 08 2024 21:36:05 GMT-0400 (Eastern Daylight Time) : Database check succeded
+------------------------------------------------------------

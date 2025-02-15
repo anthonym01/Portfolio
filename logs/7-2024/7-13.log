@@ -1,0 +1,153 @@
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : User could not be found 1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : testduplicate coresponds to:  
+{
+  "uuid": 1717343929743,
+  "uname": "testduplicate"
+} at index:  2
+------------------------------------------------------------
+Sat Jul 13 2024 00:02:41 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : User could not be found 1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : testduplicate coresponds to:  
+{
+  "uuid": 1717343929743,
+  "uname": "testduplicate"
+} at index:  2
+------------------------------------------------------------
+Sat Jul 13 2024 00:04:20 GMT-0500 (Eastern Standard Time) : testduplicate  data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : User could not be found 1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : testduplicate coresponds to:  
+{
+  "uuid": 1717343929743,
+  "uname": "testduplicate"
+} at index:  2
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:23 GMT-0500 (Eastern Standard Time) : testduplicate's data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:50 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : Get user data for:  1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : User could not be found 1720721750676
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : testduplicate coresponds to:  
+{
+  "uuid": 1717343929743,
+  "uname": "testduplicate"
+} at index:  2
+------------------------------------------------------------
+Sat Jul 13 2024 00:05:51 GMT-0500 (Eastern Standard Time) : 
+testduplicate's data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------

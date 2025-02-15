@@ -1,0 +1,72 @@
+Start log - Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time)
+
+Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym  at  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\users.json
+------------------------------------------------------------
+Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time) : Found user at:  0
+------------------------------------------------------------
+Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time) : incomming connection:  function(req, res, next) {
+    app.handle(req, res, next);
+  }
+------------------------------------------------------------
+Thu May 30 2024 10:19:13 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Thu May 30 2024 10:38:35 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Thu May 30 2024 10:38:35 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Thu May 30 2024 10:38:35 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu May 30 2024 10:38:35 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym  at  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\users.json
+------------------------------------------------------------
+Thu May 30 2024 10:38:35 GMT-0500 (Colombia Standard Time) : Found user at:  0
+------------------------------------------------------------
+Thu May 30 2024 10:38:35 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Thu May 30 2024 10:38:35 GMT-0500 (Colombia Standard Time) : Does "Anthonym" exist:  true
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+
+****************************************
+Error:
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) :
+Database does not exist
+******************************************
+
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Creating test users record : C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\users.json
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Creating user data directory C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\userdata\
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym  at  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\users.json
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Found user at:  0
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Running on port  8082
+------------------------------------------------------------
+Thu May 30 2024 23:10:26 GMT-0500 (Colombia Standard Time) : Does "Anthonym" exist:  true
+------------------------------------------------------------

@@ -1,0 +1,271 @@
+Start log - Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time)
+
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+
+****************************************
+Error:
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) :
+Database does not exist
+******************************************
+
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) : Creating test users records
+------------------------------------------------------------
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) : Creating user data directory C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\userdata\
+------------------------------------------------------------
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym
+------------------------------------------------------------
+Sat Apr 27 2024 12:03:53 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:08:37 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:08:37 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:08:37 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:08:37 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym
+------------------------------------------------------------
+
+****************************************
+Error:
+Sat Apr 27 2024 12:08:37 GMT-0500 (Colombia Standard Time) :
+Error in does_user_exist:  
+{
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+******************************************
+
+Sat Apr 27 2024 12:08:37 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:08:37 GMT-0500 (Colombia Standard Time) : Does user exist:  error
+------------------------------------------------------------
+Sat Apr 27 2024 12:09:56 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:09:56 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:09:56 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:09:56 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym
+------------------------------------------------------------
+
+****************************************
+Error:
+Sat Apr 27 2024 12:09:56 GMT-0500 (Colombia Standard Time) :
+Error in does_user_exist:  
+{
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+******************************************
+
+Sat Apr 27 2024 12:09:56 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:09:56 GMT-0500 (Colombia Standard Time) : Does user exist:  error
+------------------------------------------------------------
+Sat Apr 27 2024 12:12:30 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:12:30 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:12:30 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:12:30 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym
+------------------------------------------------------------
+
+****************************************
+Error:
+Sat Apr 27 2024 12:12:30 GMT-0500 (Colombia Standard Time) :
+Error in does_user_exist:  
+{
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+******************************************
+
+Sat Apr 27 2024 12:12:30 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:12:30 GMT-0500 (Colombia Standard Time) : Does user exist:  error
+------------------------------------------------------------
+Sat Apr 27 2024 12:13:36 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:13:36 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:13:36 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:13:36 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym  at  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\userdata\
+------------------------------------------------------------
+
+****************************************
+Error:
+Sat Apr 27 2024 12:13:36 GMT-0500 (Colombia Standard Time) :
+Error in does_user_exist:  
+{
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+******************************************
+
+Sat Apr 27 2024 12:13:36 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:13:36 GMT-0500 (Colombia Standard Time) : Does user exist:  error
+------------------------------------------------------------
+Sat Apr 27 2024 12:36:48 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:36:48 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:36:48 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:36:48 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym  at  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\users.json
+------------------------------------------------------------
+
+****************************************
+Error:
+Sat Apr 27 2024 12:36:48 GMT-0500 (Colombia Standard Time) :
+Error in does_user_exist:  
+{
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+******************************************
+
+Sat Apr 27 2024 12:36:48 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:36:48 GMT-0500 (Colombia Standard Time) : Does user exist:  error
+------------------------------------------------------------
+Sat Apr 27 2024 12:39:47 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:39:47 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:39:47 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:39:47 GMT-0500 (Colombia Standard Time) : Check database for user:  Anthonym  at  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\users.json
+------------------------------------------------------------
+Sat Apr 27 2024 12:39:47 GMT-0500 (Colombia Standard Time) : User data:  {"db_version":0,"users":[{"uname":"Anthonym","password":"0000"},{"uname":"test","password":"0000"}]}
+------------------------------------------------------------
+Sat Apr 27 2024 12:39:47 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:39:47 GMT-0500 (Colombia Standard Time) : Does user exist:  true
+------------------------------------------------------------
+Sat Apr 27 2024 12:54:20 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:54:20 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 12:54:20 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 12:54:20 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 12:58:42 GMT-0500 (Colombia Standard Time) : test post to server
+------------------------------------------------------------
+Sat Apr 27 2024 12:58:42 GMT-0500 (Colombia Standard Time) : Posted :  
+{
+  "type": "Buffer",
+  "data": [
+    123,
+    34,
+    112,
+    97,
+    121,
+    108,
+    111,
+    97,
+    100,
+    34,
+    58,
+    34,
+    103,
+    116,
+    101,
+    115,
+    116,
+    34,
+    125
+  ]
+}
+------------------------------------------------------------
+Sat Apr 27 2024 12:59:24 GMT-0500 (Colombia Standard Time) : test post to server
+------------------------------------------------------------
+Sat Apr 27 2024 12:59:24 GMT-0500 (Colombia Standard Time) : Posted :  
+{
+  "type": "Buffer",
+  "data": [
+    123,
+    34,
+    112,
+    97,
+    121,
+    108,
+    111,
+    97,
+    100,
+    34,
+    58,
+    34,
+    103,
+    116,
+    101,
+    115,
+    116,
+    34,
+    125
+  ]
+}
+------------------------------------------------------------
+Sat Apr 27 2024 13:01:28 GMT-0500 (Colombia Standard Time) : Initalize database:  
+{
+  "root": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\",
+  "users_file": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\users.json",
+  "users_data_records": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\userdata\\"
+}
+------------------------------------------------------------
+Sat Apr 27 2024 13:01:28 GMT-0500 (Colombia Standard Time) : Database check succeded
+------------------------------------------------------------
+Sat Apr 27 2024 13:01:28 GMT-0500 (Colombia Standard Time) : Server starting
+------------------------------------------------------------
+Sat Apr 27 2024 13:01:28 GMT-0500 (Colombia Standard Time) : Running on port  8080
+------------------------------------------------------------
+Sat Apr 27 2024 13:01:35 GMT-0500 (Colombia Standard Time) : test post to server
+------------------------------------------------------------
+Sat Apr 27 2024 13:01:35 GMT-0500 (Colombia Standard Time) : Posted :  
+{
+  "payload": "gtest"
+}
+------------------------------------------------------------

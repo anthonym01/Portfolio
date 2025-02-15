@@ -1,0 +1,19 @@
+Start log - Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time)
+
+Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time) : Server starting
+------------------------------------------------------------
+Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time) : Running on port  8082
+------------------------------------------------------------
+Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time) : Process ID:  4225
+------------------------------------------------------------
+Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time) : Process path:  /mnt/raid5/Code_bin/full-node-service-template/express-server template
+------------------------------------------------------------
+Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time) : Initalize database with default path:  
+{
+  "root_db_directory": "/mnt/raid5/Code_bin/full-node-service-template/express-server template/database/"
+}
+------------------------------------------------------------
+Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time) : Prior database exists
+------------------------------------------------------------
+Tue Oct 15 2024 00:43:47 GMT-0400 (Eastern Daylight Time) : Database check succeded
+------------------------------------------------------------

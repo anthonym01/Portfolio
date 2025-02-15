@@ -1,0 +1,19 @@
+Start log - Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time)
+
+Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time) : Server starting
+------------------------------------------------------------
+Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time) : Running on port  8082
+------------------------------------------------------------
+Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time) : Process ID:  1341995
+------------------------------------------------------------
+Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time) : Process path:  /mnt/raid/samuel/Code_bin/full-node-service-template/express-server template
+------------------------------------------------------------
+Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "/mnt/raid/samuel/Code_bin/full-node-service-template/express-server template/database/"
+}
+------------------------------------------------------------
+Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Fri Feb 14 2025 19:02:20 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------

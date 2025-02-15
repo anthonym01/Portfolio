@@ -1,0 +1,211 @@
+Start log - Wed Jul 10 2024 15:28:27 GMT-0500 (Eastern Standard Time)
+
+Wed Jul 10 2024 15:28:27 GMT-0500 (Eastern Standard Time) : Server starting
+------------------------------------------------------------
+Wed Jul 10 2024 15:28:27 GMT-0500 (Eastern Standard Time) : Initalizing database
+------------------------------------------------------------
+
+****************************************
+Error:
+Wed Jul 10 2024 15:28:27 GMT-0500 (Eastern Standard Time) :
+Catastrophy on server start:  
+{}
+******************************************
+
+Wed Jul 10 2024 15:28:27 GMT-0500 (Eastern Standard Time) : Running on port  8082
+------------------------------------------------------------
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : Server starting
+------------------------------------------------------------
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : Initalizing database
+------------------------------------------------------------
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+
+****************************************
+Error:
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) :
+Catastrophy on server start:  
+{}
+******************************************
+
+Wed Jul 10 2024 15:29:26 GMT-0500 (Eastern Standard Time) : Running on port  8082
+------------------------------------------------------------
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : Server starting
+------------------------------------------------------------
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : Initalizing database
+------------------------------------------------------------
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+
+****************************************
+Error:
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) :
+Catastrophy on server start:  
+{}
+******************************************
+
+Wed Jul 10 2024 20:40:48 GMT-0500 (Eastern Standard Time) : Running on port  8082
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Server starting
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Initalizing database
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Get user data for:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Wed Jul 10 2024 20:41:50 GMT-0500 (Eastern Standard Time) : Running on port  8082
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Initalizing database
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  C:\Users\samue\Desktop\Code_bin\full-node-service-template\express-server template\database\
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : Get user data for:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:17 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Initalizing database
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Initalize database with default path:  
+{
+  "root_db_directory": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+}
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Prior database exists
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Database check succeded
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Get user data for:  1717209024517
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717209024517,
+  "data": {
+    "test": "C:\\Users\\samue\\Desktop\\Code_bin\\full-node-service-template\\express-server template\\database\\"
+  }
+}
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Add new user entry to database : 
+{
+  "uname": "testduplicate",
+  "password": "0000"
+}
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : User already exists at:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Get user data for:  testduplicate
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Username coresponds to:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : Get user data for:  1717343929743
+------------------------------------------------------------
+Wed Jul 10 2024 21:21:59 GMT-0500 (Eastern Standard Time) : User data:  
+{
+  "version": 0,
+  "lastupdate": 1717343929743,
+  "data": {
+    "test": "no data passed to user"
+  }
+}
+------------------------------------------------------------
