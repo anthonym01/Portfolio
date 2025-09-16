@@ -59,6 +59,20 @@ window.addEventListener('load', function () {//window loads
     setTimeout(() => { document.getElementById('page_shade').style.display = "none"; }, 400);
 });
 
+//go to models page
+document.getElementById('model_btn').addEventListener('click', go_to_models);
+function go_to_models() {
+    document.getElementById('about_view').style.display = 'none';
+    document.getElementById('project_view').style.display = 'none';
+    document.getElementById('contact_view').style.display = 'none';
+    document.getElementById('model_view').style.display = 'block';
+    document.getElementById('about_btn').className = "actionbtn";
+    document.getElementById('model_btn').className = "actionbtn_active";
+    document.getElementById('project_btn').className = "actionbtn";
+    document.getElementById('contact_btn').className = "actionbtn";
+    document.getElementById('headbar').classList = "headbar"
+    document.cookie = "view=models; SameSite=Strict";
+}
 
 //Go to about
 document.getElementById('about_btn').addEventListener('click', go_to_about);
