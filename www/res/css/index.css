@@ -655,18 +655,19 @@ body {
     position: relative;
     box-sizing: border-box;
     width: calc(100% - 2vw);
+    max-height: calc(100vh - 8.2vw);
     margin: 1vw;
-    margin-top: 2.5vw;
+    margin-top: 1rem;
     /*background-clip: content-box;*/
     background-color: var(--background-transparent);
     min-height: 5.6em;
-    height: fit-content;
-    border-radius: 0.5vw;
+    height: calc(100% - 3rem);
 }
 
-.melyfe p {
-    text-anchor: middle;
-    text-align: center;
+.melyfe iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
 }
 
 /* Contact */
