@@ -825,6 +825,8 @@ body {
 #model-viewer{
     height: 30rem;
     width: 45rem;
+    background-color: mediumpurple;
+
 }
 
 /*    <--  Landscape overwrite -->     */
