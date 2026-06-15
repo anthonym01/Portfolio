@@ -50,3 +50,12 @@ app.post('/post/test', (req, res) => {//test post
         logs.error('Catastrophy on test post: ', err);
     }
 });
+
+app.get('/get/alive', (req, res) => {//alive get
+    try {
+        logs.info('alive test');
+        res.send(JSON.stringify({ alive: 'yes' }));
+    } catch (error) {
+        logs.error('Catastrophy on alive get: ', err);
+    }
+});
